@@ -1,0 +1,101 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start" class="tema">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="tema">Desafios</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Desafios</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div *ngIf="!finalizado" id="container" class="tema">
+    <h1>{{ gerarTitulo() }}</h1>
+    <div class="timer">
+      <ion-icon name="alarm-outline"></ion-icon>
+      <p style="color: white">
+        <strong>00:{{ tempo }}</strong>
+      </p>
+      <p *ngIf="statusConexao === 'aguardando'" color="light">
+        <img src="./assets/spinner.gif" />
+      </p>
+      <ion-button
+        *ngIf="statusConexao === 'sucesso'"
+        color="light"
+        (click)="iniciar()"
+        [disabled]="desabilitar"
+        >Iniciar</ion-button
+      >
+      <ion-button
+        *ngIf="statusConexao === 'falha'"
+        color="light"
+        [disabled]="true"
+        >Iniciar</ion-button
+      >
+    </div>
+    <div class="caixaDesafio">
+      <ion-textarea class="textoPergunta">
+        <p *ngIf="statusConexao === 'aguardando'">Aguardando conexão...</p>
+        <p *ngIf="statusConexao === 'sucesso'">{{ desafio.pergunta }}</p>
+        <p *ngIf="statusConexao === 'falha'" style="color: red">
+          Não foi possível se conectar ao servidor ou não há conexão com a
+          internet.
+        </p>
+      </ion-textarea>
+
+      <div class="caixaRespostas">
+        <ion-list>
+          <ion-radio-group #respostaGroup value="a">
+            <ion-item>
+              <p>{{ desafio.respostaA }}</p>
+              <ion-radio slot="start" value="a"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+              <p>{{ desafio.respostaB }}</p>
+              <ion-radio slot="start" value="b"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+              <p>{{ desafio.respostaC }}</p>
+              <ion-radio slot="start" value="c"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+              <p>{{ desafio.respostaD }}</p>
+              <ion-radio slot="start" value="d"></ion-radio>
+            </ion-item>
+          </ion-radio-group>
+        </ion-list>
+      </div>
+      <div class="enviar">
+        <ion-button
+          color="light"
+          [disabled]="!desabilitar"
+          (click)="conferirResposta(respostaGroup.value)"
+          >Enviar</ion-button
+        >
+      </div>
+    </div>
+  </div>
+  <div *ngIf="finalizado" class="finalizacao">
+    <div class="textos">
+      <h1>{{ gerarTitulo() }}</h1>
+      <p>Quantidade de acertos: {{ acertos }}</p>
+      <p>Pontuação: {{ pontos }}</p>
+      <p>Entrar no Ranking ?</p>
+    </div>
+    <ion-input #nome type="text" placeholder="Insira seu nome" maxlength="10"></ion-input>
+
+    <div class="botoes">
+      <ion-button (click)="enviar(nome.value.toString())">Enviar</ion-button>
+      <ion-button (click)="sair()">Sair</ion-button>
+    </div>
+
+  </div>
+</ion-content>

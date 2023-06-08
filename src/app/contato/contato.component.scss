@@ -1,0 +1,86 @@
+#wrapper {
+  margin-top: 10px;
+  color: #3f7041;
+  width: 50%;
+  height: 300px;
+  text-align: left;
+  align-items: center;
+  float: left;
+  border: #3f7041 solid 1px;
+}
+.tema {
+  color: #3f7041;
+  background-color: #ffffff;
+}
+
+ion-menu-button {
+  color: #3f7041;
+}
+
+h5 {
+  color: #ffffff;
+}
+ion-label {
+  color: #3f7041;
+}
+ion-input {
+  border: #3f7041 solid 1px;
+  height: 20px;
+}
+ion-textarea {
+  border: #3f7041 solid 1px;
+  overflow-y: scroll;
+  height: 100px;
+}
+
+#container {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #8c8c8c;
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+.donativos {
+  margin-top: 10px;
+  color: #3f7041;
+  width: 50%;
+  height: 300px;
+  text-align: center;
+  align-items: center;
+  float: right;
+  border: #3f7041 solid 1px;
+}
+.imagem {
+  width: 180px;
+  height: 180px;
+  margin: auto;
+  background-image: url("/assets/cifrao1.jpg");
+}
+.sociais {
+  color: #ffffff;
+  background-color: #3f7041
+}
+
+ion-icon {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+

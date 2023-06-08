@@ -1,0 +1,7 @@
+{
+  "name": "teste-sua-logica-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

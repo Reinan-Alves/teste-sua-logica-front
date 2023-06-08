@@ -1,0 +1,67 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start" class="tema">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="tema">Ranking</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div *ngIf="statusConexao === 'sucesso'" class="container">
+    <div class="ranking-raciocinio-titulo">
+      <strong class="titulo">Raciocínio<br />lógico</strong>
+      <table>
+        <thead>
+          <tr>
+            <th class="pos">Pos.</th>
+            <th>Nome</th>
+            <th class="pontos">Pontos</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+
+    <div class="ranking-logica-titulo">
+      <strong class="titulo">Lógica<br />matemática</strong>
+      <table>
+        <thead>
+          <tr>
+            <th class="pos">Pos.</th>
+            <th>Nome</th>
+            <th class="pontos">Pontos</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+
+    <div class="ranking-raciocinio">
+      <table *ngFor="let pontuacaoPessoal of rankingRaciocinioLogico">
+        <tr>
+          <td>{{ pontuacaoPessoal.posicao }}</td>
+          <td>{{ pontuacaoPessoal.nome }}</td>
+          <td>{{ pontuacaoPessoal.pontos }}</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="ranking-logica">
+      <table *ngFor="let pontuacaoPessoal of rankingLogicaMatematica">
+        <tr>
+          <td>{{ pontuacaoPessoal.posicao }}</td>
+          <td>{{ pontuacaoPessoal.nome }}</td>
+          <td>{{ pontuacaoPessoal.pontos }}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div *ngIf="statusConexao === 'aguardando'" class="container">
+    <img src="./assets/spinner.gif" />
+    <p>Aguardando conexão...</p>
+  </div>
+  <div *ngIf="statusConexao === 'falha'" class="container">
+    <p style="color: red">
+      Não foi possível se conectar ao servidor ou não há conexão com a internet.
+    </p>
+  </div>
+</ion-content>

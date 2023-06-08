@@ -1,0 +1,25 @@
+<ion-app>
+  <ion-split-pane  contentId="main-content">
+    <ion-menu contentId="main-content" type="overlay">
+      <ion-menu-button></ion-menu-button>
+      <ion-content>
+
+        <ion-list class="tema" id="inbox-list">
+
+          <ion-list-header>Menu</ion-list-header>
+          <ion-note>Desenvolvido por<br>Reinan Santos</ion-note>
+        </ion-list>
+        <ion-list class="tema" id="inbox-list">
+          <a  routerLink="/">Home</a>
+        </ion-list>
+        <ion-list class="tema" id="inbox-list">
+          <a  routerLink="/ranking">Ranking</a>
+        </ion-list>
+        <ion-list class="tema" id="inbox-list">
+          <a  routerLink="/contato">Contato</a>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet id="main-content"></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>

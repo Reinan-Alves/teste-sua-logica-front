@@ -1,0 +1,88 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start" class="tema">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="tema">Contato</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Contato</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container" class="tema">
+    <div class="sociais">
+      <h5>Contato</h5>
+      <p>Midias socias</p>
+      <a href="https://www.linkedin.com/in/reinan-alves-3a364821a/">
+        <ion-icon name="logo-linkedin"></ion-icon
+      ></a>
+      <a href="https://github.com/Reinan-Alves"
+        ><ion-icon name="logo-octocat"></ion-icon
+      ></a>
+      <a href="https://wa.me/+5579988058202?text=Ol%C3%A1,%20tudo%20bem?">
+        <ion-icon name="logo-whatsapp"></ion-icon>
+      </a>
+
+      <a href="https://cv-reinan-santos.netlify.app/"
+        ><ion-icon name="code-slash-outline"></ion-icon
+      ></a>
+    </div>
+    <div id="wrapper">
+      <p>Deixe seu recado ou envie um feedback</p>
+      <form action="" class="form">
+        <p class="field required half">
+          <ion-label class="label required" for="name">Seu Nome</ion-label>
+          <ion-input
+            class="text-input"
+            id="name"
+            name="name"
+            required
+            type="text"
+          ></ion-input>
+        </p>
+        <p class="field required half">
+          <ion-label class="label" for="email">Seu E-mail</ion-label>
+          <ion-input
+            class="text-input"
+            id="email"
+            name="email"
+            required
+            type="email"
+          ></ion-input>
+        </p>
+        <p class="field">
+          <ion-label class="label" for="message">Sua Mensagem</ion-label>
+          <ion-textarea
+            class="textarea"
+            cols="50"
+            id="message"
+            name="message"
+            required
+            rows="4"
+          ></ion-textarea>
+        </p>
+        <p class="field">
+          <ion-button
+            class="button"
+            type="submit"
+            value="Enviar"
+            color="secondary"
+            >Enviar</ion-button
+          >
+        </p>
+      </form>
+    </div>
+    <div class="donativos">
+      <a href="https://nubank.com.br/pagar/gfnsy/NXTDcLMQS5">
+      <p style="margin-bottom: 20px">Está curtindo meu trabalho?</p>
+      <div class="imagem"></div>
+      <p style="margin-top: 10px">Aqui você pode me pagar um guaraná.</p>
+    </a>
+    </div>
+  </div>
+</ion-content>

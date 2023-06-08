@@ -1,0 +1,93 @@
+.tema {
+  background-color: #3f7041;
+  color: #ffffff;
+}
+
+ion-menu-button {
+  color: #ffffff;
+}
+
+h5 {
+  color: #ffffff;
+}
+
+.container {
+  color: #3f7041;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.container p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #8c8c8c;
+  margin: 0;
+}
+
+.container a {
+  text-decoration: none;
+}
+
+.ranking-raciocinio {
+  float: left;
+  border-right: 1px solid #3f7041;
+  width: 50%;
+  height: 300px;
+  overflow-y: scroll;
+}
+.ranking-logica {
+  float: right;
+  border-left: 1px solid #3f7041;
+  width: 50%;
+  height: 300px;
+  overflow-y: scroll;
+}
+.ranking-raciocinio-titulo {
+  float: left;
+
+  width: 50%;
+  height: 100px;
+}
+.ranking-logica-titulo {
+  float: right;
+
+  width: 50%;
+  height: 100px;
+}
+
+.ranking-raciocinio table {
+  text-align: center;
+  width: 90%;
+}
+
+.ranking-logica table {
+  text-align: center;
+  width: 90%;
+}
+
+.ranking-raciocinio-titulo table {
+  text-align: center;
+  width: 90%;
+  border-top: 1px solid #3f7041;
+}
+
+.ranking-logica-titulo table {
+  text-align: center;
+  width: 90%;
+  border-top: 1px solid #3f7041;
+}
+.pos {
+  text-align: left;
+}
+.pontos {
+  text-align: right;
+}
