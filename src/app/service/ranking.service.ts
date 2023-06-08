@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 export class RankingService {
   public emitEvent = new EventEmitter();
 
-  private url = 'http://localhost:8080/';
+  private url = 'http://reinan1971.c41.integrator.host/';
 
   constructor(private http: HttpClient) {}
 
