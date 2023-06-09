@@ -20,6 +20,7 @@ export class DesafiosComponent implements OnInit {
   finalizado = false;
   pontos = 0;
   nome = '';
+  nomeValido = true;
   statusConexao = 'sucesso';
   titulo = '';
   desabilitar = false;
@@ -169,13 +170,16 @@ export class DesafiosComponent implements OnInit {
   }
 
   public enviar(nome: string) {
-    if (nome === '') {
-      nome = 'Anônimo';
+    if (this.nome.length < 3 || this.nome.length > 10) {
+      this.nomeValido = false;
+    } else {
+      this.nomeValido = true;
+      this.dadosDaPontuacao(nome);
+      this.inserir(this.pontuacao);
+      this.router.navigate(['ranking']);
     }
-    this.dadosDaPontuacao(nome);
-    this.inserir(this.pontuacao);
-    this.router.navigate(['ranking']);
   }
+
   public sair() {
     this.router.navigate(['ranking']);
   }
