@@ -59,6 +59,7 @@ export class DesafiosComponent implements OnInit {
       this.router.navigate(['']);
       console.log('erro para ser tratado');
     }
+    console.log(this.categoria);
   }
 
   async requisicaoDesafio() {
@@ -113,7 +114,7 @@ export class DesafiosComponent implements OnInit {
   }
 
   public async iniciar() {
-    console.log(this.storage.get('categoria'));
+    console.log(this.categoria);
     this.desabilitar = true;
     this.montarDesafio();
   }
@@ -125,6 +126,9 @@ export class DesafiosComponent implements OnInit {
   }
 
   public templateDesafio(){
+    while(this.listaDeDesafios[this.posicao].categoria !== this.categoria){
+      this.proximoDesafio();
+    }
     this.desafio.pergunta =
       this.listaDeDesafios[this.posicao].pergunta.toString();
     this.desafio.respostaA =
