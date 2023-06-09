@@ -5,6 +5,7 @@ import { DesafiosService } from './../service/desafios.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Storage } from '@ionic/storage-angular';
+import { shuffle } from 'lodash';
 
 @Component({
   selector: 'app-desafios',
@@ -67,7 +68,8 @@ export class DesafiosComponent implements OnInit {
     setTimeout(() => {
       this.desafioService.listaDeDesafios().subscribe({
         next: (res) => {
-          this.listaDeDesafios = res;
+          // Embaralhar a lista de desafios de forma aleatória
+        this.listaDeDesafios = shuffle(res);
           this.statusConexao = 'sucesso';
         },
         error: (err) => {
