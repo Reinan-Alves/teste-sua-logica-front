@@ -17,7 +17,8 @@ export class DesafiosService {
   // eslint-disable-next-line @typescript-eslint/member-ordering
   httpOptions = {
     // eslint-disable-next-line @typescript-eslint/naming-convention
-    headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
+    headers: new HttpHeaders({ 'Content-Type': 'application/json',
+    accept: '*/*'}),
     withCredentials: true
   };
 
