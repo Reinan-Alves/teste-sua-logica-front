@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 export class RankingService {
   public emitEvent = new EventEmitter();
 
-  private url = 'reinan1971.c41.integrator.host/';
+  private url = 'https://www.reinan1971.c41.integrator.host/';
 
   constructor(private http: HttpClient) {}
 
@@ -18,7 +18,7 @@ export class RankingService {
       // eslint-disable-next-line @typescript-eslint/naming-convention
       headers: new HttpHeaders({ 'Content-Type': 'application/json',
       accept: '*/*'}),
-      withCredentials: true
+      withCredentials: false
     };
 
   public listaDeRanking(): Observable<Array<Pontuacao>> {
