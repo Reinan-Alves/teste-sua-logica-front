@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
 export class DesafiosService {
   public emitEvent = new EventEmitter();
 
-  private url = 'https://reinan1971.c41.integrator.host/';
+  private url = 'http://reinan1971.c41.integrator.host/';
 
   constructor(private http: HttpClient) {}
 
@@ -18,6 +18,7 @@ export class DesafiosService {
   httpOptions = {
     // eslint-disable-next-line @typescript-eslint/naming-convention
     headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
+    withCredentials: true
   };
 
   public listaDeDesafios(): Observable<Array<Desafio>> {

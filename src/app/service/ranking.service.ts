@@ -1,5 +1,5 @@
 import { Pontuacao } from './../model/potuacao.model';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { EventEmitter, Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
@@ -9,9 +9,16 @@ import { Observable } from 'rxjs';
 export class RankingService {
   public emitEvent = new EventEmitter();
 
-  private url = 'https://reinan1971.c41.integrator.host/';
+  private url = 'http://reinan1971.c41.integrator.host/';
 
   constructor(private http: HttpClient) {}
+
+    // eslint-disable-next-line @typescript-eslint/member-ordering
+    httpOptions = {
+      // eslint-disable-next-line @typescript-eslint/naming-convention
+      headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
+      withCredentials: true
+    };
 
   public listaDeRanking(): Observable<Array<Pontuacao>> {
     return this.http
