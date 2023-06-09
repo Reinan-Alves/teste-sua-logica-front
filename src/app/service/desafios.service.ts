@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
 export class DesafiosService {
   public emitEvent = new EventEmitter();
 
-  private url = 'http://reinan1971.c41.integrator.host/';
+  private url = 'https://reinan1971.c41.integrator.host/';
 
   constructor(private http: HttpClient) {}
 
