@@ -18,14 +18,14 @@ export class DesafiosComponent implements OnInit {
   id = 0;
   categoria = '';
   finalizado = false;
-  pontos = 0;
+  pontos = 0.00;
   nome = '';
   nomeValido = true;
   statusConexao = 'sucesso';
   titulo = '';
   desabilitar = false;
-  tempo = 60;
-  temporizador: any = 0;
+  tempo = 1000;
+  temporizador: any = 0.00;
   posicao = 0;
   acertos = 0;
   desafio: Desafio = new Desafio(
@@ -123,7 +123,7 @@ export class DesafiosComponent implements OnInit {
   }
 
   public montarDesafio() {
-    this.tempo = 60;
+    this.tempo = 1000;
     this.relogio();
     this.templateDesafio();
   }
@@ -149,7 +149,7 @@ export class DesafiosComponent implements OnInit {
   public conferirResposta(suaResposta: string) {
     if (suaResposta === this.desafio.respostaCerta) {
       this.acertos += 1;
-      this.pontos = this.acertos * 10;
+     this.pontos = Number((this.tempo / 100).toFixed(4));
       this.proximoDesafio();
     } else {
       clearInterval(this.temporizador);

@@ -19,7 +19,7 @@
     <div class="timer">
       <ion-icon name="alarm-outline"></ion-icon>
       <p style="color: white">
-        <strong>00:{{ tempo }}</strong>
+        <strong>{{ tempo }}</strong>
       </p>
       <p *ngIf="statusConexao === 'aguardando'" color="light">
         <img src="./assets/spinner.gif" />
@@ -87,7 +87,7 @@
     <div class="textos">
       <h1>{{ gerarTitulo() }}</h1>
       <p>Quantidade de acertos: {{ acertos }}</p>
-      <p>Pontuação: {{ pontos }}</p>
+      <p>Pontuação: {{ pontos | number:'1.2-2' }}</p>
       <p>Entrar no Ranking ?</p>
     </div>
     <ion-input [(ngModel)]="nome" type="text" placeholder="Insira seu nome" maxlength="10"></ion-input>

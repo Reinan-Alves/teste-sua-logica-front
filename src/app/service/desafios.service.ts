@@ -9,8 +9,10 @@ import { Observable } from 'rxjs';
 })
 export class DesafiosService {
   public emitEvent = new EventEmitter();
-
-  private url = 'https://www.reinan1971.c41.integrator.host/';
+   //Ambiente procução produção
+   private url = 'https://www.reinan1971.c41.integrator.host/';
+   //Ambiente teste
+  //private url = 'http://localhost:8080/';
 
   constructor(private http: HttpClient) {}
 
