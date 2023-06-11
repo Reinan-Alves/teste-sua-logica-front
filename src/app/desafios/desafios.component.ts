@@ -149,7 +149,7 @@ export class DesafiosComponent implements OnInit {
   public conferirResposta(suaResposta: string) {
     if (suaResposta === this.desafio.respostaCerta) {
       this.acertos += 1;
-     this.pontos = Number((this.tempo / 100).toFixed(4));
+     this.pontos += Number((this.tempo / 100).toFixed(4));
       this.proximoDesafio();
     } else {
       clearInterval(this.temporizador);
