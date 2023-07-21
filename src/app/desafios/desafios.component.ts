@@ -196,4 +196,11 @@ export class DesafiosComponent implements OnInit {
       error: (err) => console.log(err),
     });
   }
+  jogarNovamente(){
+    this.acertos = 0;
+    this.pontos = 0.00;
+    this.requisicaoRanking();
+    this.finalizado = false;
+    this.iniciar();
+  }
 }
