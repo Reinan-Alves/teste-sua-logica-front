@@ -37,6 +37,7 @@
         [disabled]="true"
         >Iniciar</ion-button
       >
+      <p style="margin-top: 10px;">Restam: {{restam}}</p>
     </div>
     <div class="caixaDesafio">
       <ion-textarea class="textoPergunta">
@@ -99,8 +100,11 @@
       <ion-button (click)="enviar(nome.toString())">Enviar</ion-button>
       <ion-button (click)="sair()">Sair</ion-button>
     </div>
-
     <ion-button (click)="jogarNovamente()">Jogar novamente</ion-button>
-
   </div>
+  <div *ngIf="zerou">
+  <p style="color:red; text-align: center;">PARABÉNS!🎉🥳🥳🎉</p>
+  <p style="color:red; text-align: center;">Voce finalizou todas as questões desta categoria,Tente novos desafios e aguarde novas atualizações.</p>
+  <P style="text-align: center; font-size: xx-large;">🤓</P>
+</div>
 </ion-content>

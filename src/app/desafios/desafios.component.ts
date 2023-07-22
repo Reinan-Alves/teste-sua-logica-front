@@ -18,6 +18,7 @@ export class DesafiosComponent implements OnInit {
   id = 0;
   categoria = '';
   finalizado = false;
+  zerou = false;
   pontos = 0.00;
   nome = '';
   nomeValido = true;
@@ -28,6 +29,7 @@ export class DesafiosComponent implements OnInit {
   temporizador: any = 0.00;
   posicao = 0;
   acertos = 0;
+  restam =0;
   desafio: Desafio = new Desafio(
     0,
     'Cada Desafio tem 4 opções de respostas, marque a resposta correta e clique em enviar antes de esgotar o tempo.',
@@ -52,6 +54,7 @@ export class DesafiosComponent implements OnInit {
   // ver a documentação e implementar o service para evitar bugs
 
   async ngOnInit() {
+    this.zerou = false;
     this.finalizado = false;
     this.requisicaoDesafio();
     this.requisicaoRanking();
@@ -68,10 +71,11 @@ export class DesafiosComponent implements OnInit {
     this.statusConexao = 'aguardando';
     setTimeout(() => {
       this.desafioService.listaDeDesafios().subscribe({
+        //Embaralhar a lista de desafios de forma aleatória
         next: (res) => {
-          // Embaralhar a lista de desafios de forma aleatória
-        this.listaDeDesafios = shuffle(res);
-          this.statusConexao = 'sucesso';
+        this.listaDeDesafios = res.filter((item: {categoria: string}) => item.categoria === this.categoria);
+        this.statusConexao = 'sucesso';
+        console.log(this.listaDeDesafios);
         },
         error: (err) => {
           console.log(err);
@@ -94,15 +98,7 @@ export class DesafiosComponent implements OnInit {
   }
 
   public gerarTitulo() {
-    if (this.categoria === 'raciocinio-logico') {
-      this.titulo = 'Raciocínio Lógico';
-    }
-    if (this.categoria === 'logica-matematica') {
-      this.titulo = 'Lógica Matemática';
-    }
-    if (this.categoria === '') {
-      this.titulo = 'Modelo';
-    }
+    this.titulo = this.categoria.toUpperCase().replace('-',' ');
     return this.titulo;
   }
 
@@ -117,8 +113,11 @@ export class DesafiosComponent implements OnInit {
   }
 
   public async iniciar() {
-    console.log(this.categoria);
+    this.listaDeDesafios =  shuffle( this.listaDeDesafios);
+    this.restam = this.listaDeDesafios.length - 1;
+    console.log(this.listaDeDesafios);
     this.desabilitar = true;
+    this.zerou = false;
     this.montarDesafio();
   }
 
@@ -129,9 +128,6 @@ export class DesafiosComponent implements OnInit {
   }
 
   public templateDesafio(){
-    while(this.listaDeDesafios[this.posicao].categoria !== this.categoria){
-      this.proximoDesafio();
-    }
     this.desafio.pergunta =
       this.listaDeDesafios[this.posicao].pergunta.toString();
     this.desafio.respostaA =
@@ -149,7 +145,7 @@ export class DesafiosComponent implements OnInit {
   public conferirResposta(suaResposta: string) {
     if (suaResposta === this.desafio.respostaCerta) {
       this.acertos += 1;
-     this.pontos += Number((this.tempo / 100).toFixed(4));
+      this.pontos += Number((this.tempo / 100).toFixed(4));
       this.proximoDesafio();
     } else {
       clearInterval(this.temporizador);
@@ -160,7 +156,16 @@ export class DesafiosComponent implements OnInit {
   public proximoDesafio() {
     clearInterval(this.temporizador);
     this.posicao += 1;
-    this.montarDesafio();
+    this.restam -=1;
+    if(this.listaDeDesafios.indexOf(this.listaDeDesafios[this.posicao]) === -1){
+      alert('PARABENS! VOCE FINALIZOU, AGUARDE NOVAS ATUALIZAÇÕES.');
+      this.zerou = true;
+      this.finalizar();
+    }else{
+      console.log(this.listaDeDesafios.indexOf(this.listaDeDesafios[this.posicao]));
+      this.montarDesafio();
+    }
+
   }
   public finalizar() {
     this.finalizado = true;
@@ -199,7 +204,6 @@ export class DesafiosComponent implements OnInit {
   jogarNovamente(){
     this.acertos = 0;
     this.pontos = 0.00;
-    this.requisicaoRanking();
     this.finalizado = false;
     this.iniciar();
   }
