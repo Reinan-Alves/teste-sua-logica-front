@@ -12,6 +12,7 @@ export class RankingComponent implements OnInit {
   public listaDeRanking: Array<Pontuacao> = [];
   public rankingRaciocinioLogico: Array<Pontuacao> = [];
   public rankingLogicaMatematica: Array<Pontuacao> = [];
+  public listaDeCategoria: Array<string> = [];
 
   constructor(private rankingService: RankingService) {}
 
@@ -40,7 +41,7 @@ export class RankingComponent implements OnInit {
 
   // adicionarAoRanking(pontuacaoPessoal: Pontuacao) {
   //   this.listaDeRanking.push(pontuacaoPessoal);
-  //   console.log('ói EU Aqui :-0');
+  //   console.log('ok');
   // }
 
   ordenarRanking() {
@@ -55,6 +56,11 @@ export class RankingComponent implements OnInit {
     });
   }
   dividirCategoria() {
+    // O set forma um array sem valores repetidos
+    const listaDeRankingSet = new Set(this.listaDeRanking.map((e) => e.categoria));
+    //motando uma lista das categorias existentes
+    this.listaDeCategoria = Array.from(listaDeRankingSet);
+
     this.rankingLogicaMatematica = this.listaDeRanking.filter(
       (e) => e.categoria === 'logica-matematica'
     );

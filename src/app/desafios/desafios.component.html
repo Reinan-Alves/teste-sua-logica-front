@@ -25,19 +25,26 @@
         <img src="./assets/spinner.gif" />
       </p>
       <ion-button
-        *ngIf="statusConexao === 'sucesso'"
+        *ngIf="(statusConexao === 'sucesso') && (desabilitar === false)"
         color="light"
         (click)="iniciar()"
         [disabled]="desabilitar"
         >Iniciar</ion-button
-      >
+      ><ion-button
+      *ngIf="(statusConexao === 'sucesso') && (desabilitar === true)"
+      color="danger"
+      (click)="finalizar()"
+      [disabled]="!desabilitar"
+      >SAIR</ion-button
+    >
       <ion-button
         *ngIf="statusConexao === 'falha'"
         color="light"
         [disabled]="true"
         >Iniciar</ion-button
       >
-      <p style="margin-top: 10px; margin-left:5px;">Restam: {{restam}}</p>
+      <p *ngIf="desabilitar === true" style="margin-top: 10px; margin-left:5px;">{{acertos + 1}} de {{restam}}</p>
+      <p *ngIf="desabilitar === false" style="color:rgb(245, 241, 241);margin-top: 10px; margin-left:5px;">Leia as instruções e clique em iniciar.</p>
     </div>
     <div class="caixaDesafio">
       <ion-textarea class="textoPergunta">
