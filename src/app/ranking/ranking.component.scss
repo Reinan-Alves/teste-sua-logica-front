@@ -6,19 +6,24 @@
 ion-menu-button {
   color: #ffffff;
 }
-ion-select{
-margin-top: 5px;
-width: 180px;
-height:25px;
-background-color: #3f7041;
-color: #ffffff;
-}
+
+
+  ion-item {
+  text-align: left;
+  margin: auto;
+  border: 1px solid #3f7041;
+  }
+  ion-select{
+    color: #3f7041;
+  }
+
 
 h5 {
   color: #ffffff;
 }
 
 .container {
+  max-height: calc(100vh - 250px);/* Defina uma altura máxima para a div (ajuste conforme necessário) */
   align-items: center; /* Centralizar verticalmente */
   color: #3f7041;
   text-align: center;
@@ -47,30 +52,51 @@ h5 {
 
 
 .ranking {
-  border-right: 1px solid #3f7041;
+  margin: auto;
   width: 90%;
 }
-
-
 .ranking-titulo {
+  margin: auto;
   width: 90%;
-  height: 100px;
 }
 
 
-.ranking table {
-  text-align: center;
-  width: 90%;
-  margin-left: 10px;
+/* Estilos para a tabela */
+/* Estilização para a tabela principal */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  table-layout: fixed; /* Define a largura da tabela como fixa */
+}
+
+/* Estilização para as células do cabeçalho da tabela */
+th {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+  background-color: #f2f2f2;
+}
+
+/* Estilização para as células do corpo da tabela */
+td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Estilização para linhas alternadas (opcional) */
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Estilização para quando o mouse passar por cima da célula (opcional) */
+td:hover {
+  background-color: #ebebeb;
 }
 
 
-.ranking-titulo table {
-  text-align: center;
-  width: 90%;
-  border-top: 1px solid #3f7041;
-  margin-left: 10px;
-}
+
 
 .pos {
   text-align: left;

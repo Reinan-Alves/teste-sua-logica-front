@@ -32,7 +32,7 @@ export class DesafiosComponent implements OnInit {
   restam =0;
   desafio: Desafio = new Desafio(
     0,
-    'Cada Desafio tem 4 opções de respostas, marque a resposta correta e clique em enviar.',
+    'Ao marcar a resposta clique em enviar.\nCada questão tem valor máximo de 10 pontos e é decrementado ao decorrer do cronômetro',
     'Esta é a opção 1, abaixo tem outra opção',
     'Esta é a opção 2, abaixo tem outra opção',
     'Esta é a opção 3, abaixo tem outra opção',

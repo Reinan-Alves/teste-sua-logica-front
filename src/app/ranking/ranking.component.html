@@ -9,14 +9,14 @@
 
 <ion-content [fullscreen]="true">
   <div *ngIf="statusConexao === 'sucesso'" class="container">
-    <ion-item>
-      <ion-label position="stacked" color="secondary">SELECIONE UMA CATEGORIA :</ion-label>
-      <ion-select [(ngModel)]="categoriaEscolhida" (ionChange)="atualizarRankingCategoria()">
-        <ion-select-option *ngFor="let categoria of listaDeCategoria" value="{{categoria}}">{{categoria}}</ion-select-option>
-      </ion-select>
-    </ion-item>
+
     <div class="ranking-titulo">
-      <strong class="titulo">{{categoriaEscolhida | uppercase}}</strong>
+      <ion-item>
+        <ion-label position="stacked" color="secondary">SELECIONE UMA CATEGORIA :</ion-label>
+        <ion-select  color="secondary"  [(ngModel)]="categoriaEscolhida" (ionChange)="atualizarRankingCategoria()">
+          <ion-select-option  *ngFor="let categoria of listaDeCategoria" value="{{categoria}}">{{categoria | uppercase}}</ion-select-option>
+        </ion-select>
+      </ion-item>
       <table>
         <thead>
           <tr>
