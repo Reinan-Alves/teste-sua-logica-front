@@ -1,6 +1,7 @@
 import { Component, Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { Storage } from '@ionic/storage-angular';
+import { DesafiosService } from '../service/desafios.service';
 
 @Component({
   selector: 'app-home',
@@ -12,11 +13,28 @@ import { Storage } from '@ionic/storage-angular';
 })
 export class HomePage {
   categoria = '';
-  constructor(private router: Router, private storage: Storage) {
+  public modalidades: Array<string>=[];
+
+  constructor(private router: Router, private storage: Storage, private desafioService: DesafiosService) {
     this.init();
-  }
+
+    }
 
   async init() {
+    this.desafioService.listaDeDesafios().subscribe({
+
+      next: (res) => {
+        const listaDedesafiosSet = new Set(res.map((item: {categoria: string}) => item.categoria));
+        this.modalidades = Array.from(listaDedesafiosSet);
+      console.log(this.modalidades);
+      },
+      error: (err) => {
+        console.log(err);
+      },
+    });
+
+
+
     const storage = await this.storage.create();
     this.storage = storage;
     this.categoria = await this.storage.get('categoria');
@@ -26,13 +44,8 @@ export class HomePage {
 
     this.storage.clear();
   }
-  public async carregarLogicaMatematica() {
-    await this.storage.set('categoria', 'logica-matematica');
-    this.redirecionar();
-  }
-
-  public async carregarRaciocinioLogico() {
-    await this.storage.set('categoria', 'raciocinio-logico');
+  public async carregar(modalidade: string) {
+    await this.storage.set('categoria', modalidade);
     this.redirecionar();
   }
 

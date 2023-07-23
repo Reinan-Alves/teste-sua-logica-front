@@ -7,19 +7,22 @@
   </ion-toolbar>
 </ion-header>
 <ion-content [fullscreen]="true">
-  <div id="container">
-    <h5>Escolha a modalidade e inicie o teste</h5>
-    <ion-button color="light" (click)="carregarLogicaMatematica()">Lógica matemática</ion-button>
-    <ion-button color="light" (click)="carregarRaciocinioLogico()">Raciocínio Lógico</ion-button>
+  <div class="container">
+    <h2 style="color: rgb(255, 255, 255)">RACIOCINE</h2>
     <div class="img-home"></div>
+    <p class="texto-desenvolvedor">Desenvolvedor Reinan Santos</p>
+    <h5>Sobre App:</h5>
+    <p class="texto-rodape">
+      Teste, otimize seu raciocínio e esteja preparado para provas de seleção.
+      As questões são sorteadas toda vez que um novo teste é iniciado, você
+      pode realizar varias vezes, respondendo desafios novos e anteriores.
+    </p>
+    <h5>Escolha a modalidade e inicie o teste</h5>
+    <div *ngFor="let modalidade of modalidades" class="modalidades">
+    <ion-button color="light" (click)="carregar(modalidade)">{{modalidade | uppercase}}</ion-button>
+  </div>
     <ion-footer>
-      <p class="texto-desenvolvedor">Desenvolvedor Reinan Santos</p>
-      <h5>Sobre App:</h5>
-      <p class="texto-rodape">
-        Teste, otimize seu raciocínio e esteja preparado para provas de seleção.
-        As questões são sorteadas toda vez que um novo teste é iniciado, você
-        pode realizar varias vezes, respondendo desafios novos e anteriores.
-      </p>
+
     </ion-footer>
   </div>
 </ion-content>

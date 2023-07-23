@@ -46,61 +46,32 @@ h5 {
 }
 
 
-.ranking-raciocinio {
-  //float: left;
+.ranking {
   border-right: 1px solid #3f7041;
   width: 90%;
-  //height: 300px;
-  overflow-y: scroll;
 }
-/*
-.ranking-logica {
-  float: right;
-  border-left: 1px solid #3f7041;
-  width: 50%;
-  height: 300px;
-  overflow-y: scroll;
-}
-*/
 
-.ranking-raciocinio-titulo {
-  //float: left;
 
+.ranking-titulo {
   width: 90%;
   height: 100px;
 }
-/*
-.ranking-logica-titulo {
-  float: right;
 
-  width: 50%;
-  height: 100px;
-}
-*/
 
-.ranking-raciocinio table {
+.ranking table {
   text-align: center;
   width: 90%;
+  margin-left: 10px;
 }
-/*
-.ranking-logica table {
-  text-align: center;
-  width: 90%;
-}
-*/
 
-.ranking-raciocinio-titulo table {
+
+.ranking-titulo table {
   text-align: center;
   width: 90%;
   border-top: 1px solid #3f7041;
+  margin-left: 10px;
 }
-/*
-.ranking-logica-titulo table {
-  text-align: center;
-  width: 90%;
-  border-top: 1px solid #3f7041;
-}
-*/
+
 .pos {
   text-align: left;
 }

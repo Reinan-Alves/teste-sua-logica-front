@@ -75,7 +75,6 @@ export class DesafiosComponent implements OnInit {
         next: (res) => {
         this.listaDeDesafios = res.filter((item: {categoria: string}) => item.categoria === this.categoria);
         this.statusConexao = 'sucesso';
-        console.log(this.listaDeDesafios);
         },
         error: (err) => {
           console.log(err);

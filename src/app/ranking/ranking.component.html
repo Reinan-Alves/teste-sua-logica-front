@@ -15,7 +15,7 @@
         <ion-select-option *ngFor="let categoria of listaDeCategoria" value="{{categoria}}">{{categoria}}</ion-select-option>
       </ion-select>
     </ion-item>
-    <div class="ranking-raciocinio-titulo">
+    <div class="ranking-titulo">
       <strong class="titulo">{{categoriaEscolhida | uppercase}}</strong>
       <table>
         <thead>
@@ -27,7 +27,7 @@
         </thead>
       </table>
     </div>
-    <div class="ranking-raciocinio">
+    <div class="ranking">
       <table *ngFor="let pontuacaoPessoal of rakingDaCategoria">
         <tr>
           <td class="pos">{{ pontuacaoPessoal.posicao}}</td>
