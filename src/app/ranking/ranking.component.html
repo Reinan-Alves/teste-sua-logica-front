@@ -9,48 +9,30 @@
 
 <ion-content [fullscreen]="true">
   <div *ngIf="statusConexao === 'sucesso'" class="container">
+    <ion-item>
+      <ion-label position="stacked" color="secondary">SELECIONE UMA CATEGORIA :</ion-label>
+      <ion-select [(ngModel)]="categoriaEscolhida" (ionChange)="atualizarRankingCategoria()">
+        <ion-select-option *ngFor="let categoria of listaDeCategoria" value="{{categoria}}">{{categoria}}</ion-select-option>
+      </ion-select>
+    </ion-item>
     <div class="ranking-raciocinio-titulo">
-      <strong class="titulo">Raciocínio<br />lógico</strong>
+      <strong class="titulo">{{categoriaEscolhida | uppercase}}</strong>
       <table>
         <thead>
           <tr>
-            <th class="pos">Pos.</th>
-            <th>Nome</th>
+            <th class="pos">Posição</th>
+            <th class="nome">Nome</th>
             <th class="pontos">Pontos</th>
           </tr>
         </thead>
       </table>
     </div>
-
-    <div class="ranking-logica-titulo">
-      <strong class="titulo">Lógica<br />matemática</strong>
-      <table>
-        <thead>
-          <tr>
-            <th class="pos">Pos.</th>
-            <th>Nome</th>
-            <th class="pontos">Pontos</th>
-          </tr>
-        </thead>
-      </table>
-    </div>
-
     <div class="ranking-raciocinio">
-      <table *ngFor="let pontuacaoPessoal of rankingRaciocinioLogico">
+      <table *ngFor="let pontuacaoPessoal of rakingDaCategoria">
         <tr>
-          <td>{{ pontuacaoPessoal.posicao }}</td>
-          <td>{{ pontuacaoPessoal.nome }}</td>
-          <td>{{ pontuacaoPessoal.pontos | number:'1.2-2' }}</td>
-        </tr>
-      </table>
-    </div>
-<!---->
-    <div class="ranking-logica">
-      <table *ngFor="let pontuacaoPessoal of rankingLogicaMatematica">
-        <tr>
-          <td>{{ pontuacaoPessoal.posicao }}</td>
-          <td>{{ pontuacaoPessoal.nome }}</td>
-          <td>{{ pontuacaoPessoal.pontos | number:'1.2-2' }}</td>
+          <td class="pos">{{ pontuacaoPessoal.posicao}}</td>
+          <td class="nome">{{ pontuacaoPessoal.nome.trim()}}</td>
+          <td class="pontos">{{ pontuacaoPessoal.pontos | number:'1.2-2' }}</td>
         </tr>
       </table>
     </div>
