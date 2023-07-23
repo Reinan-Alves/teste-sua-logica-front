@@ -21,7 +21,7 @@ h5 {
   position: absolute;
   left: 0;
   right: 0;
-  top: 50%;
+  top: 45%;
   margin-top: 50px;
   transform: translateY(-50%);
 }
@@ -54,33 +54,24 @@ h5 {
   height: 150px;
   border-radius: 150px;
   background-size: cover;
-  animation: changeImage 10s infinite alternate;
+  animation: changeImage 08s infinite alternate;
 }
 
 @keyframes changeImage {
   0% {
     background-image: url('/assets/cerebro1.jpg');
   }
-  10% {
+  20% {
     background-image: url('/assets/cerebro2.jpg');
   }
-  20% {
+  80% {
     background-image: url('/assets/cerebro3.jpg');
   }
-  60% {
+  90% {
     background-image: url('/assets/cerebro4.jpg');
   }
-  70% {
-    background-image: url('/assets/cerebro5.jpg');
-  }
-  80% {
-    background-image: url('/assets/cerebro6.jpg');
-  }
-  90% {
-    background-image: url('/assets/cerebro7.jpg');
-  }
   100% {
-    background-image: url('/assets/cerebro8.jpg');
+    background-image: url('/assets/cerebro3.jpg');
   }
 }
 .modalidades {
