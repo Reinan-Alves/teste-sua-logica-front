@@ -97,9 +97,9 @@ td:hover {
 
 
 
-
 .pos {
   text-align: left;
+  width:80px;
 }
 .pontos {
   text-align: right;
@@ -107,3 +107,23 @@ td:hover {
 .nome{
   text-align: center;
 }
+.primeiro{
+  height: 60px;
+  width:50px;
+  background-image: url('/assets/1lugar.gif');
+  background-size: 100% 100%;
+}
+.segundo{
+  height: 60px;
+  width:50px;
+  background-image: url('/assets/2lugar.gif');
+  background-size: 100% 100%;
+}
+.terceiro{
+  height: 60px;
+  width:50px;
+  background-image: url('/assets/3lugar.gif');
+  background-size: 100% 100%;
+}
+
+

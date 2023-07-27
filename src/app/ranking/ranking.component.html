@@ -30,7 +30,10 @@
     <div class="ranking">
       <table *ngFor="let pontuacaoPessoal of rakingDaCategoria">
         <tr>
-          <td class="pos">{{ pontuacaoPessoal.posicao}}</td>
+          <td *ngIf="pontuacaoPessoal.posicao === 1" class="pos"><div class="primeiro"></div></td>
+          <td *ngIf="pontuacaoPessoal.posicao === 2" class="pos"><div class="segundo"></div></td>
+          <td *ngIf="pontuacaoPessoal.posicao === 3" class="pos"><div class="terceiro"></div></td>
+          <td *ngIf="pontuacaoPessoal.posicao > 3" class="pos">{{ pontuacaoPessoal.posicao}}º</td>
           <td class="nome">{{ pontuacaoPessoal.nome.trim()}}</td>
           <td class="pontos">{{ pontuacaoPessoal.pontos | number:'1.2-2' }}</td>
         </tr>
