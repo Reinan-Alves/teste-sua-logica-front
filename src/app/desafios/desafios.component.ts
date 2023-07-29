@@ -174,7 +174,7 @@ export class DesafiosComponent implements OnInit {
   }
 
   public enviar(nome: string) {
-    if (this.nome.length < 3 || this.nome.length > 10) {
+    if (this.nome.length < 3 || this.nome.length > 15) {
       this.nomeValido = false;
     } else {
       this.nomeValido = true;

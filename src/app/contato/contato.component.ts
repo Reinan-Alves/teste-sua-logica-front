@@ -1,5 +1,5 @@
+import { Mensagem } from './../model/mensagem.model';
 import { Component, ElementRef, OnInit, ViewChild  } from '@angular/core';
-import { IonContent } from '@ionic/angular';
 
 @Component({
   selector: 'app-contato',
@@ -9,6 +9,13 @@ import { IonContent } from '@ionic/angular';
 export class ContatoComponent implements OnInit {
 
   @ViewChild('chatContent', { read: ElementRef }) chatContentRef: ElementRef;
+
+  nome = '';
+  nomeValido = true;
+  textoMensagem = '';
+  textoValido = true;
+  mensagem: Mensagem = new Mensagem(0,'','','');
+  listaDeMensagens: Array<Mensagem> = [];
 
   ionViewDidEnter() {
     this.scrollToBottom();
@@ -20,5 +27,35 @@ export class ContatoComponent implements OnInit {
   }
   ngOnInit() {}
 
+  enviar(nome: string,textoMensagem: string){
+    if (this.nome.length < 3 || this.nome.length > 15) {
+      this.nomeValido = false;
+    } else {
+      this.nomeValido = true;
+    }
+    if(this.textoMensagem.length < 5 || this.textoMensagem.length > 250){
+      this.textoValido = false;
+    }else {
+      this.textoValido =true;
+    }
+
+    if(this.nomeValido && this.textoValido){
+      this.mensagem.id = this.mensagem.id +1;
+      this.mensagem.nome = this.nome;
+      this.mensagem.texto = this.textoMensagem;
+      this.mensagem.dataHora = this.geraDataEHora();
+      this.listaDeMensagens.push(this.mensagem);
+      console.log(this.listaDeMensagens);
+    }
+  }
+   geraDataEHora(): string {
+    const currentDate = new Date();
+    const day = String(currentDate.getDate()).padStart(2, '0');
+    const month = String(currentDate.getMonth() + 1).padStart(2, '0'); // Os meses são indexados em zero
+    const year = String(currentDate.getFullYear());
+    const hours = String(currentDate.getHours()).padStart(2, '0');
+    const minutes = String(currentDate.getMinutes()).padStart(2, '0');
+    return `${day}/${month}/${year} ${hours}:${minutes}`;
+  }
 
 }

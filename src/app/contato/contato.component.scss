@@ -74,9 +74,13 @@ ion-textarea {
 }
 
 .chat div {
+  width: 90%;
+  height: 100%;
+  background-color: #77ba79;
+  color: #ffffff;
   margin-bottom: 10px;
   padding: 8px;
-  border-radius: 8px;
+  border-radius: 20px;
 }
 
 .chat div p:first-child {
@@ -90,9 +94,12 @@ ion-textarea {
 
 .chat div p:last-child {
   font-size: 12px;
-  color: #888;
 }
-
+.hora{
+  margin-top: 10px;
+  text-align: left;
+  font-size: small;
+}
 
 .donativos{
   border-top: #3f7041 solid 1px;
@@ -100,12 +107,10 @@ ion-textarea {
   justify-content: center;
   align-items: center;
   margin-top: 20px;
-
-
 }
 
 .sociais {
-  color: #ffffff;
+  color:#ffffff;
   background-color: #3f7041
 }
 
