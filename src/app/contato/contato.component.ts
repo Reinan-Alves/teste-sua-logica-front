@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild  } from '@angular/core';
+import { IonContent } from '@ionic/angular';
 
 @Component({
   selector: 'app-contato',
@@ -7,8 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContatoComponent implements OnInit {
 
-  constructor() { }
+  @ViewChild('chatContent', { read: ElementRef }) chatContentRef: ElementRef;
 
+  ionViewDidEnter() {
+    this.scrollToBottom();
+  }
+
+  scrollToBottom() {
+    const chatContentEl: HTMLElement = this.chatContentRef.nativeElement;
+    chatContentEl.scrollTop = chatContentEl.scrollHeight - chatContentEl.clientHeight;
+  }
   ngOnInit() {}
+
 
 }

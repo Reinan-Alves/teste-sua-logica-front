@@ -54,24 +54,21 @@ h5 {
   height: 150px;
   border-radius: 150px;
   background-size: cover;
-  animation: changeImage 08s infinite alternate;
+  animation: changeImage 05s infinite alternate;
 }
 
 @keyframes changeImage {
   0% {
     background-image: url('/assets/cerebro1.jpg');
   }
-  20% {
-    background-image: url('/assets/cerebro2.jpg');
+  40% {
+   background-image: url('/assets/cerebro2.jpg');
   }
-  80% {
+  60% {
     background-image: url('/assets/cerebro3.jpg');
-  }
-  90% {
-    background-image: url('/assets/cerebro4.jpg');
   }
   100% {
-    background-image: url('/assets/cerebro3.jpg');
+    background-image: url('/assets/cerebro4.jpg');
   }
 }
 .modalidades {
