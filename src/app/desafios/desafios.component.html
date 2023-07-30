@@ -98,7 +98,7 @@
       <p>Pontuação: {{ pontos | number:'1.2-2' }}</p>
       <p>Entrar no Ranking ?</p>
     </div>
-    <ion-input [(ngModel)]="nome" type="text" placeholder="Insira seu nome" maxlength="10"></ion-input>
+    <ion-input [(ngModel)]="nome" type="text" placeholder="Insira seu nome" maxlength="15"></ion-input>
     <div *ngIf="!nomeValido">
       <div style="color: red; font-size:small;">*O nome deve ter entre 3 e 15 caracteres.</div>
     </div>

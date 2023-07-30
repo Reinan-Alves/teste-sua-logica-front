@@ -23,18 +23,8 @@ export class ContatoComponent implements OnInit {
     private mensagemService: MensagemService
   ){}
 
-  ionViewDidEnter() {
-    this.scrollToBottom();
-  }
-
-  scrollToBottom() {
-    const chatContentEl: HTMLElement = this.chatContentRef.nativeElement;
-    chatContentEl.scrollTop = chatContentEl.scrollHeight - chatContentEl.clientHeight;
-  }
   async ngOnInit() {
     this.requisicaoMensagem();
-    this.ionViewDidEnter();
-    this.scrollToBottom();
   }
 
   async requisicaoMensagem() {
@@ -44,17 +34,26 @@ export class ContatoComponent implements OnInit {
         next: (res) => {
         this.listaDeMensagens = res;
         this.statusConexao = 'sucesso';
-        console.log(res);
         },
         error: (err) => {
           console.log(err);
           this.statusConexao = 'falha';
         },
       });
-    }, 2000);
+    }, 500);
+    setTimeout(() => {
+      this.scrollToBottom();
+      this.mensagem.nome = '';
+      this.mensagem.texto = '';
+    },1000);
   }
 
-  enviar(nome: string,textoMensagem: string){
+  scrollToBottom() {
+    const chatContentEl: HTMLElement = this.chatContentRef.nativeElement;
+    chatContentEl.scrollTop = chatContentEl.scrollHeight - chatContentEl.clientHeight;
+  }
+
+  enviar(){
     if (this.nome.length < 3 || this.nome.length > 15) {
       this.nomeValido = false;
     } else {
@@ -71,7 +70,7 @@ export class ContatoComponent implements OnInit {
       this.mensagem.texto = this.textoMensagem;
       this.mensagem.dataHora = this.geraDataEHora();
       this.inserir(this.mensagem);
-      window.location.reload();
+      this.requisicaoMensagem();
     }
   }
 

@@ -10,7 +10,7 @@ export class MensagemService {
 
   public emitEvent = new EventEmitter();
   //Ambiente procução produção
-  private url = 'http://www.reinan1971.c41.integrator.host/';
+  private url = 'https://reinan1971.c41.integrator.host/';
   //Ambiente teste
  //private url = 'http://localhost:8080/';
 
@@ -40,6 +40,7 @@ public inserirMensagem(listaDeMensagem: Mensagem): Observable<Mensagem> {
       (res) => res,
       (error) => error
     );
+
 }
 
 }

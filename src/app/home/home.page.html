@@ -17,7 +17,14 @@
       As questões são sorteadas toda vez que um novo teste é iniciado, você
       pode realizar varias vezes, respondendo desafios novos e anteriores.
     </p>
-    <h5>Escolha a modalidade e inicie o teste</h5>
+    <h5 *ngIf="statusConexao === 'sucesso'">Escolha a modalidade e inicie o teste</h5>
+    <p *ngIf="statusConexao === 'aguardando'" color="light">
+      <img src="./assets/spinner.gif" />
+    </p>
+    <p *ngIf="statusConexao === 'falha'" style="color: red">
+      Não foi possível se conectar ao servidor ou não há conexão com a
+      internet.
+    </p>
     <div *ngFor="let modalidade of modalidades" class="modalidades">
     <ion-button color="light" (click)="carregar(modalidade)">{{modalidade | uppercase}}</ion-button>
   </div>

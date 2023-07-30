@@ -81,7 +81,7 @@ export class DesafiosComponent implements OnInit {
           this.statusConexao = 'falha';
         },
       });
-    }, 2000);
+    }, 1000);
   }
 
   requisicaoRanking() {
@@ -107,7 +107,7 @@ export class DesafiosComponent implements OnInit {
       if (this.tempo < 0) {
         this.finalizar();
       }
-    }, 1000);
+    }, 500);
     return this.tempo;
   }
 

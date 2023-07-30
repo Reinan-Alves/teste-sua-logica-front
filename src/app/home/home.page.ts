@@ -13,6 +13,7 @@ import { DesafiosService } from '../service/desafios.service';
 })
 export class HomePage {
   categoria = '';
+  statusConexao = 'sucesso';
   public modalidades: Array<string>=[];
 
   constructor(private router: Router, private storage: Storage, private desafioService: DesafiosService) {
@@ -21,14 +22,16 @@ export class HomePage {
     }
 
   async init() {
+    this.statusConexao = 'aguardando';
     this.desafioService.listaDeDesafios().subscribe({
-
       next: (res) => {
         const listaDedesafiosSet = new Set(res.map((item: {categoria: string}) => item.categoria));
         this.modalidades = Array.from(listaDedesafiosSet);
+        this.statusConexao = 'sucesso';
       },
       error: (err) => {
         console.log(err);
+        this.statusConexao = 'falha';
       },
     });
 

@@ -38,7 +38,7 @@ export class RankingComponent implements OnInit {
           this.statusConexao = 'falha';
         },
       });
-    }, 2000);
+    }, 500);
   }
 
   dividirCategoria() {

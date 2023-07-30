@@ -33,13 +33,12 @@
       ></a>
     </div>
     <div id="wrapper">
-      <p style="color:red;font-size: small;">* ESTA FUNÇÃO SERÁ DISPONIBILIZADA EM BREVE...</p>
       <p>Deixe seu recado ou envie um feedback</p>
       <form action="" class="form">
         <p class="field required half">
           <ion-label class="label required" for="name">Seu Nome</ion-label>
           <ion-input
-          [(ngModel)]="nome" type="text" placeholder="Insira seu nome" maxlength="10"
+          [(ngModel)]="nome" type="text" placeholder="Insira seu nome" maxlength="15"
             class="text-input"
             id="name"
             name="name"
@@ -71,7 +70,7 @@
             type="submit"
             value="Enviar"
             color="secondary"
-            (click)="enviar(nome.toString(), textoMensagem.toString())"
+            (click)="enviar()"
             >Enviar</ion-button>
         </p>
       </form>
@@ -87,7 +86,14 @@
         </p>
       </div>
     </div>
-    <div class="chat"  #chatContent>
+    <p *ngIf="statusConexao === 'aguardando'" color="light">
+      <img src="./assets/spinner.gif" />
+    </p>
+    <p *ngIf="statusConexao === 'falha'" style="color: red">
+      Não foi possível se conectar ao servidor ou não há conexão com a
+      internet.
+    </p>
+    <div *ngIf="statusConexao === 'sucesso'" class="chat"  #chatContent>
       <div  *ngFor="let mensagem of listaDeMensagens">
         <p style="text-align: left;">{{mensagem.nome}}</p>
         <p>{{mensagem.texto}}</p>
