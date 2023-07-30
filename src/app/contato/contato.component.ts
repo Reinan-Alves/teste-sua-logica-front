@@ -1,3 +1,4 @@
+import { MensagemService } from '../service/mensagem.service';
 import { Mensagem } from './../model/mensagem.model';
 import { Component, ElementRef, OnInit, ViewChild  } from '@angular/core';
 
@@ -16,6 +17,11 @@ export class ContatoComponent implements OnInit {
   textoValido = true;
   mensagem: Mensagem = new Mensagem(0,'','','');
   listaDeMensagens: Array<Mensagem> = [];
+  statusConexao = 'sucesso';
+
+  constructor(
+    private mensagemService: MensagemService
+  ){}
 
   ionViewDidEnter() {
     this.scrollToBottom();
@@ -25,7 +31,28 @@ export class ContatoComponent implements OnInit {
     const chatContentEl: HTMLElement = this.chatContentRef.nativeElement;
     chatContentEl.scrollTop = chatContentEl.scrollHeight - chatContentEl.clientHeight;
   }
-  ngOnInit() {}
+  async ngOnInit() {
+    this.requisicaoMensagem();
+    this.ionViewDidEnter();
+    this.scrollToBottom();
+  }
+
+  async requisicaoMensagem() {
+    this.statusConexao = 'aguardando';
+    setTimeout(() => {
+      this.mensagemService.listaDeMensagem().subscribe({
+        next: (res) => {
+        this.listaDeMensagens = res;
+        this.statusConexao = 'sucesso';
+        console.log(res);
+        },
+        error: (err) => {
+          console.log(err);
+          this.statusConexao = 'falha';
+        },
+      });
+    }, 2000);
+  }
 
   enviar(nome: string,textoMensagem: string){
     if (this.nome.length < 3 || this.nome.length > 15) {
@@ -40,13 +67,19 @@ export class ContatoComponent implements OnInit {
     }
 
     if(this.nomeValido && this.textoValido){
-      this.mensagem.id = this.mensagem.id +1;
       this.mensagem.nome = this.nome;
       this.mensagem.texto = this.textoMensagem;
       this.mensagem.dataHora = this.geraDataEHora();
-      this.listaDeMensagens.push(this.mensagem);
-      console.log(this.listaDeMensagens);
+      this.inserir(this.mensagem);
+      window.location.reload();
     }
+  }
+
+  inserir(listaDeMensagens: Mensagem) {
+    return this.mensagemService.inserirMensagem(listaDeMensagens).subscribe({
+      next: (res) => res,
+      error: (err) => console.log(err),
+    });
   }
    geraDataEHora(): string {
     const currentDate = new Date();
