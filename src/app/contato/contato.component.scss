@@ -38,8 +38,8 @@ ion-textarea {
   position: absolute;
   left: 0;
   right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 20%;
+  //transform: translateY(-50%);
 }
 
 #container strong {
@@ -122,4 +122,7 @@ ion-icon {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.icones {
+  font-size: x-large;
 }
