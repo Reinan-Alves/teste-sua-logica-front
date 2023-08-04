@@ -27,6 +27,7 @@ export class HomePage {
       next: (res) => {
         const listaDedesafiosSet = new Set(res.map((item: {categoria: string}) => item.categoria));
         this.modalidades = Array.from(listaDedesafiosSet);
+        this.modalidades.sort();
         this.statusConexao = 'sucesso';
       },
       error: (err) => {

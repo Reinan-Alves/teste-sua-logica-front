@@ -46,6 +46,7 @@ export class RankingComponent implements OnInit {
     const listaDeRankingSet = new Set(this.listaDeRanking.map((e) => e.categoria));
     //motando uma lista das categorias existentes
     this.listaDeCategoria = Array.from(listaDeRankingSet);
+    this.listaDeCategoria.sort();
     this.rakingDaCategoria = this.listaDeRanking.filter(
       (e) => e.categoria === this.categoriaEscolhida
     );
