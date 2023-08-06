@@ -4,7 +4,6 @@ import { Desafio } from '../model/desafio.model';
 import { DesafiosService } from './../service/desafios.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Storage } from '@ionic/storage-angular';
 import { shuffle } from 'lodash';
 
 @Component({
@@ -47,7 +46,6 @@ export class DesafiosComponent implements OnInit {
     private rankingService: RankingService,
     private desafioService: DesafiosService,
     private router: Router,
-    private storage: Storage
   ) {}
 
   // Para utilizar o ionic storage em mais de um componente o ideal é criar um service
@@ -56,22 +54,16 @@ export class DesafiosComponent implements OnInit {
   async ngOnInit() {
     this.zerou = false;
     this.finalizado = false;
+    this.categoria = this.desafioService.categoria;
     this.requisicaoDesafio();
     this.requisicaoRanking();
-    try {
-      this.categoria = await this.storage.get('categoria');
-    } catch {
-      this.router.navigate(['']);
-      console.log('erro para ser tratado');
-    }
-    console.log(this.categoria);
   }
 
   async requisicaoDesafio() {
     this.statusConexao = 'aguardando';
     setTimeout(() => {
+      this.categoria = this.desafioService.categoria;
       this.desafioService.listaDeDesafios().subscribe({
-        //Embaralhar a lista de desafios de forma aleatória
         next: (res) => {
         this.listaDeDesafios = res.filter((item: {categoria: string}) => item.categoria === this.categoria);
         this.statusConexao = 'sucesso';
@@ -81,7 +73,7 @@ export class DesafiosComponent implements OnInit {
           this.statusConexao = 'falha';
         },
       });
-    }, 1000);
+    }, 1200);
   }
 
   requisicaoRanking() {
@@ -114,7 +106,6 @@ export class DesafiosComponent implements OnInit {
   public async iniciar() {
     this.listaDeDesafios =  shuffle( this.listaDeDesafios);
     this.restam = this.listaDeDesafios.length - 1;
-    console.log(this.listaDeDesafios);
     this.desabilitar = true;
     this.zerou = false;
     this.montarDesafio();
@@ -127,7 +118,8 @@ export class DesafiosComponent implements OnInit {
   }
 
   public templateDesafio(){
-    this.desafio.pergunta =
+    if(this.desafio){
+      this.desafio.pergunta =
       this.listaDeDesafios[this.posicao].pergunta.toString();
     this.desafio.respostaA =
       this.listaDeDesafios[this.posicao].respostaA.toString();
@@ -139,6 +131,13 @@ export class DesafiosComponent implements OnInit {
       this.listaDeDesafios[this.posicao].respostaD.toString();
     this.desafio.respostaCerta =
       this.listaDeDesafios[this.posicao].respostaCerta.toString();
+    } else{
+      alert('Não foi possivel carregar o desafio');
+      this.redirecionar();
+    }
+  }
+  public redirecionar() {
+    setTimeout(()=>{this.router.navigate(['']);},300);
   }
 
   public conferirResposta(suaResposta: string) {
@@ -170,7 +169,6 @@ export class DesafiosComponent implements OnInit {
     this.finalizado = true;
     clearInterval(this.temporizador);
     this.desabilitar = false;
-    console.log(this.finalizado);
   }
 
   public enviar(nome: string) {

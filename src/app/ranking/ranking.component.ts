@@ -1,6 +1,7 @@
 import { RankingService } from './../service/ranking.service';
 import { Pontuacao } from './../model/potuacao.model';
-import { Component, OnInit, OnChanges } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
+import { DesafiosService } from '../service/desafios.service';
 
 @Component({
   selector: 'app-ranking',
@@ -8,26 +9,25 @@ import { Component, OnInit, OnChanges } from '@angular/core';
   styleUrls: ['./ranking.component.scss'],
 })
 export class RankingComponent implements OnInit {
-  categoriaEscolhida='raciocinio-logico';
+  categoriaEscolhida= this.desafioService.categoria;
   statusConexao = 'sucesso';
   public listaDeRanking: Array<Pontuacao> = [];
   public listaDeCategoria: Array<string> = [];
   public rakingDaCategoria: Array<Pontuacao> = [];
 
-  constructor(private rankingService: RankingService) {}
-
+  constructor(private rankingService: RankingService, private desafioService: DesafiosService) {}
   async ngOnInit() {
     this.montaRanking();
   }
-
   montaRanking() {
     this.statusConexao = 'aguardando';
     setTimeout(() => {
       this.rankingService.listaDeRanking().subscribe({
         next: (res) => {
           this.listaDeRanking = res;
-          console.log(this.listaDeRanking);
-          this.categoriaEscolhida = this.listaDeRanking[this.listaDeRanking.length-1].categoria;
+          if(this.categoriaEscolhida === ''){
+            this.categoriaEscolhida = 'raciocinio-logico';
+          }
           this.dividirCategoria();
           this.ordenarRanking();
           this.enumerarPosicoes();
@@ -51,11 +51,8 @@ export class RankingComponent implements OnInit {
       (e) => e.categoria === this.categoriaEscolhida
     );
   }
-
   atualizarRankingCategoria() {
-    this.dividirCategoria();
-    this.ordenarRanking();
-    this.enumerarPosicoes();
+  this.montaRanking();
   }
 
   ordenarRanking() {
@@ -69,9 +66,7 @@ export class RankingComponent implements OnInit {
       }
     });
   }
-
   enumerarPosicoes() {
-
     this.rakingDaCategoria.forEach((e, index) => {
       e.posicao = index + 1;
     });

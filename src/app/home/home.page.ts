@@ -1,6 +1,5 @@
 import { Component, Injectable } from '@angular/core';
 import { Router } from '@angular/router';
-import { Storage } from '@ionic/storage-angular';
 import { DesafiosService } from '../service/desafios.service';
 
 @Component({
@@ -12,11 +11,12 @@ import { DesafiosService } from '../service/desafios.service';
   providedIn: 'root',
 })
 export class HomePage {
-  categoria = '';
+ // categoria = '';
+  //categoriaEscolhida ='';
   statusConexao = 'sucesso';
   public modalidades: Array<string>=[];
 
-  constructor(private router: Router, private storage: Storage, private desafioService: DesafiosService) {
+  constructor(private router: Router, private desafioService: DesafiosService) {
     this.init();
 
     }
@@ -36,23 +36,18 @@ export class HomePage {
       },
     });
 
-
-
-    const storage = await this.storage.create();
-    this.storage = storage;
-    this.categoria = await this.storage.get('categoria');
-    if (this.categoria != null) {
+    this.desafioService.categoria = '';
+    if (this.desafioService.categoria !== '') {
       location.reload();
     }
-
-    this.storage.clear();
   }
+
   public async carregar(modalidade: string) {
-    await this.storage.set('categoria', modalidade);
+    this.desafioService.categoria = modalidade;
     this.redirecionar();
   }
 
   public redirecionar() {
-    this.router.navigate(['desafios']);
+    setTimeout(()=>{this.router.navigate(['desafios']);},300);
   }
 }

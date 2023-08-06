@@ -8,6 +8,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class DesafiosService {
+  categoria = '';
   public emitEvent = new EventEmitter();
    //Ambiente procução produção
    private url = 'https://reinan1971.c41.integrator.host/';
