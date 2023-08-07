@@ -11,16 +11,13 @@ import { DesafiosService } from '../service/desafios.service';
   providedIn: 'root',
 })
 export class HomePage {
- // categoria = '';
-  //categoriaEscolhida ='';
+  audio: HTMLAudioElement;
   statusConexao = 'sucesso';
   public modalidades: Array<string>=[];
 
-  constructor(private router: Router, private desafioService: DesafiosService) {
+  constructor(private router: Router, private desafioService: DesafiosService,) {
     this.init();
-
     }
-
   async init() {
     this.statusConexao = 'aguardando';
     this.desafioService.listaDeDesafios().subscribe({
@@ -40,6 +37,17 @@ export class HomePage {
     if (this.desafioService.categoria !== '') {
       location.reload();
     }
+  }
+
+  pause(){
+    this.audio.pause();
+  }
+
+  play() {
+    this.audio = new Audio();
+    this.audio.src = 'assets/click.mp3'; // Substitua pelo caminho do seu arquivo MP3
+    this.audio.load();
+    this.audio.play();
   }
 
   public async carregar(modalidade: string) {

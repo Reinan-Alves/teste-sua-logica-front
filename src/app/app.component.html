@@ -1,7 +1,7 @@
 <ion-app>
   <ion-split-pane  contentId="main-content">
     <ion-menu contentId="main-content" type="overlay">
-      <ion-menu-button></ion-menu-button>
+      <ion-menu-button (click)="play()" ></ion-menu-button>
       <ion-content>
 
         <ion-list class="tema" id="inbox-list">
@@ -10,17 +10,17 @@
           <ion-note>Desenvolvido por<br>Reinan Santos</ion-note>
         </ion-list>
         <ion-list class="tema" id="inbox-list">
-          <a (click)="fecharMenu()" routerLink="/">Home</a>
+          <a  (click)="play()" (click)="fecharMenu()" routerLink="/">Home</a>
         </ion-list>
         <ion-list class="tema" id="inbox-list">
-          <a (click)="fecharMenu()" routerLink="/ranking">Ranking</a>
+          <a (click)="play()" (click)="fecharMenu()" routerLink="/ranking">Ranking</a>
         </ion-list>
         <ion-list class="tema" id="inbox-list">
-          <a (click)="fecharMenu()" routerLink="/contato">Contato</a>
+          <a  (click)="play()" (click)="fecharMenu()" routerLink="/contato">Contato</a>
         </ion-list>
         <div class="musica">
-          <p>OUÇA UM SOM</p>
-          <ion-button (click)="toggleAudio()" size="small" style="color:#3f7041">
+          <p>TOQUE UM SOM LOFI</p>
+          <ion-button  (click)="play()" (click)="toggleAudio()" size="small" color="light">
             {{ audioPaused ? 'Play' : 'Pause' }}
           </ion-button>
           <audio #audioPlayer>

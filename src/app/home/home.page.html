@@ -6,8 +6,8 @@
     <ion-title class="tema">Home</ion-title>
   </ion-toolbar>
 </ion-header>
-<ion-content [fullscreen]="true">
-  <div class="container">
+<ion-content  [fullscreen]="true">
+  <div class="container" (mouseleave)="this.audio.pause();">
     <h1 style="color: rgb(255, 255, 255); font-family: monospace;">R  A  C  I  O  C  I  N  E </h1>
     <div class="img-home"></div>
     <p class="texto-desenvolvedor">Desenvolvedor Reinan Santos</p>
@@ -26,10 +26,9 @@
       internet.
     </p>
     <div *ngFor="let modalidade of modalidades" class="modalidades">
-    <ion-button style="width: 80%;" color="light" (click)="carregar(modalidade)">{{modalidade | uppercase}}</ion-button>
+    <ion-button style="width: 80%;" color="light" (click)="carregar(modalidade)" (click)="play()">{{modalidade | uppercase}}</ion-button>
   </div>
     <ion-footer>
-
     </ion-footer>
   </div>
 </ion-content>

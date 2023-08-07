@@ -144,11 +144,14 @@ ion-list a {
 }
 
 .musica{
+  color: rgb(255, 255, 255);
+  display: block;
+  background-size:contain; /* Redimensiona a imagem para cobrir o elemento */
+  background-position: top center; /* Posiciona a imagem no topo e centraliza horizontalmente */
+  background-repeat: no-repeat; /* Evita que a imagem se repita */
+  background-position-y: -50px;
   text-align: center;
-  background-image:url("https://tenor.com/pt-BR/view/sinewave-wave-audio-wave-audio-waves-gif-19553841.gif");
+  background-image:url("https://tenor.com/pt-BR/view/music-wave-gif-24693977.gif");
   background-size: 100%;
 
-}
-.musica p{
-  color:#2b6814;
 }

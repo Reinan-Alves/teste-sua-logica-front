@@ -2,7 +2,7 @@ import { RankingService } from './../service/ranking.service';
 import { Pontuacao } from './../model/potuacao.model';
 import { Desafio } from '../model/desafio.model';
 import { DesafiosService } from './../service/desafios.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { shuffle } from 'lodash';
 
@@ -12,6 +12,8 @@ import { shuffle } from 'lodash';
   styleUrls: ['./desafios.component.scss'],
 })
 export class DesafiosComponent implements OnInit {
+  audio: HTMLAudioElement;
+
   listaDeDesafios: Array<Desafio> = [];
   listaDeRanking: Array<Pontuacao> = [];
   id = 0;
@@ -59,6 +61,19 @@ export class DesafiosComponent implements OnInit {
     this.requisicaoRanking();
   }
 
+  musicaInicio() {
+    this.audio = new Audio();
+    this.audio.src = 'assets/inicioTempo.mp3'; // Substitua pelo caminho do seu arquivo MP3
+    this.audio.load();
+    this.audio.play();
+  }
+  musicaDerrota(){
+    this.audio = new Audio();
+    this.audio.src = 'assets/derrota.mp3'; // Substitua pelo caminho do seu arquivo MP3
+    this.audio.load();
+    this.audio.play();
+  }
+
   async requisicaoDesafio() {
     this.statusConexao = 'aguardando';
     setTimeout(() => {
@@ -104,6 +119,7 @@ export class DesafiosComponent implements OnInit {
   }
 
   public async iniciar() {
+    this.musicaInicio();
     this.listaDeDesafios =  shuffle( this.listaDeDesafios);
     this.restam = this.listaDeDesafios.length - 1;
     this.desabilitar = true;
@@ -166,6 +182,7 @@ export class DesafiosComponent implements OnInit {
 
   }
   public finalizar() {
+    this.musicaDerrota();
     this.finalizado = true;
     clearInterval(this.temporizador);
     this.desabilitar = false;
@@ -183,6 +200,7 @@ export class DesafiosComponent implements OnInit {
   }
 
   public sair() {
+    this.audio.pause();
     this.router.navigate(['ranking']);
   }
   public dadosDaPontuacao(nome: string) {
