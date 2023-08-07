@@ -9,6 +9,7 @@ import { DesafiosService } from '../service/desafios.service';
   styleUrls: ['./ranking.component.scss'],
 })
 export class RankingComponent implements OnInit {
+  audio: HTMLAudioElement;
   categoriaEscolhida= this.desafioService.categoria;
   statusConexao = 'sucesso';
   public listaDeRanking: Array<Pontuacao> = [];
@@ -39,6 +40,13 @@ export class RankingComponent implements OnInit {
         },
       });
     }, 500);
+  }
+
+  play() {
+    this.audio = new Audio();
+    this.audio.src = 'assets/click.mp3'; // Substitua pelo caminho do seu arquivo MP3
+    this.audio.load();
+    this.audio.play();
   }
 
   dividirCategoria() {

@@ -59,11 +59,23 @@ export class DesafiosComponent implements OnInit {
     this.categoria = this.desafioService.categoria;
     this.requisicaoDesafio();
     this.requisicaoRanking();
+    if(!this.categoria || this.categoria === 'erro'){
+      console.log(this.desafioService.categoria);
+      this.desafioService.categoria = 'erro';
+      this.redirecionar();
+    }
+  }
+
+  efeitoclick() {
+    this.audio = new Audio();
+    this.audio.src = 'assets/click.mp3'; // Substitua pelo caminho do seu arquivo MP3
+    this.audio.load();
+    this.audio.play();
   }
 
   musicaInicio() {
     this.audio = new Audio();
-    this.audio.src = 'assets/inicioTempo.mp3'; // Substitua pelo caminho do seu arquivo MP3
+    this.audio.src = 'assets/proximodesafio.mp3'; // Substitua pelo caminho do seu arquivo MP3
     this.audio.load();
     this.audio.play();
   }
@@ -119,6 +131,7 @@ export class DesafiosComponent implements OnInit {
   }
 
   public async iniciar() {
+    console.log(this.desafioService.categoria);
     this.musicaInicio();
     this.listaDeDesafios =  shuffle( this.listaDeDesafios);
     this.restam = this.listaDeDesafios.length - 1;
@@ -154,9 +167,11 @@ export class DesafiosComponent implements OnInit {
   }
   public redirecionar() {
     setTimeout(()=>{this.router.navigate(['']);},300);
+   // location.reload();
   }
 
   public conferirResposta(suaResposta: string) {
+    this.efeitoclick();
     if (suaResposta === this.desafio.respostaCerta) {
       this.acertos += 1;
       this.pontos += Number((this.tempo / 100).toFixed(4));
@@ -168,6 +183,7 @@ export class DesafiosComponent implements OnInit {
   }
 
   public proximoDesafio() {
+    this.musicaInicio();
     clearInterval(this.temporizador);
     this.posicao += 1;
     this.restam -=1;
@@ -189,6 +205,7 @@ export class DesafiosComponent implements OnInit {
   }
 
   public enviar(nome: string) {
+    this.audio.pause();
     if (this.nome.length < 3 || this.nome.length > 15) {
       this.nomeValido = false;
     } else {
@@ -217,6 +234,7 @@ export class DesafiosComponent implements OnInit {
     });
   }
   jogarNovamente(){
+    this.audio.pause();
     this.acertos = 0;
     this.pontos = 0.00;
     this.finalizado = false;

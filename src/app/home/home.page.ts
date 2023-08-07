@@ -18,7 +18,14 @@ export class HomePage {
   constructor(private router: Router, private desafioService: DesafiosService,) {
     this.init();
     }
+    ionViewDidEnter(){
+      if(this.desafioService.categoria === 'erro'){
+        console.log(this.desafioService.categoria);
+        //location.reload();
+      }
+    }
   async init() {
+
     this.statusConexao = 'aguardando';
     this.desafioService.listaDeDesafios().subscribe({
       next: (res) => {
@@ -32,9 +39,8 @@ export class HomePage {
         this.statusConexao = 'falha';
       },
     });
-
-    this.desafioService.categoria = '';
     if (this.desafioService.categoria !== '') {
+      this.desafioService.categoria = '';
       location.reload();
     }
   }

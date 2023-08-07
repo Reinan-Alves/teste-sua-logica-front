@@ -56,31 +56,31 @@
         </p>
       </ion-textarea>
 
-      <div class="caixaRespostas">
+      <ion-textarea class="caixaRespostas">
         <ion-list>
           <ion-radio-group #respostaGroup value="a">
             <ion-item>
               <p>{{ desafio.respostaA }}</p>
-              <ion-radio slot="start" value="a"></ion-radio>
+              <ion-radio (click)="efeitoclick()" slot="start" value="a"></ion-radio>
             </ion-item>
 
             <ion-item>
               <p>{{ desafio.respostaB }}</p>
-              <ion-radio slot="start" value="b"></ion-radio>
+              <ion-radio (click)="efeitoclick()" slot="start" value="b"></ion-radio>
             </ion-item>
 
             <ion-item>
               <p>{{ desafio.respostaC }}</p>
-              <ion-radio slot="start" value="c"></ion-radio>
+              <ion-radio (click)="efeitoclick()" slot="start" value="c"></ion-radio>
             </ion-item>
 
             <ion-item>
               <p>{{ desafio.respostaD }}</p>
-              <ion-radio slot="start" value="d"></ion-radio>
+              <ion-radio (click)="efeitoclick()" slot="start" value="d"></ion-radio>
             </ion-item>
           </ion-radio-group>
         </ion-list>
-      </div>
+      </ion-textarea>
       <div class="enviar">
         <ion-button
           color="light"
