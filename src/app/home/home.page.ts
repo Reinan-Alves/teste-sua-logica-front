@@ -1,7 +1,9 @@
 import { Component, Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { DesafiosService } from '../service/desafios.service';
-
+//ADMOB
+import {AdmobAds, BannerPosition, BannerSize} from 'capacitor-admob-ads';
+import { ToastController } from '@ionic/angular';
 @Component({
   selector: 'app-home',
   templateUrl: './home.page.html',
@@ -15,7 +17,11 @@ export class HomePage {
   statusConexao = 'sucesso';
   public modalidades: Array<string>=[];
 
-  constructor(private router: Router, private desafioService: DesafiosService,) {
+  constructor(
+    private router: Router,
+    private desafioService: DesafiosService,
+    public toastCtrl: ToastController
+    ) {
     this.init();
     }
     ionViewDidEnter(){
@@ -25,7 +31,7 @@ export class HomePage {
       }
     }
   async init() {
-
+    this.showBannerAd();
     this.statusConexao = 'aguardando';
     this.desafioService.listaDeDesafios().subscribe({
       next: (res) => {
@@ -43,6 +49,58 @@ export class HomePage {
       this.desafioService.categoria = '';
       location.reload();
     }
+  }
+
+  //ADMOB
+  showBannerAd() {
+    AdmobAds.showBannerAd({
+      adId:'ca-app-pub-3940256099942544/6300978111',
+      isTesting:true,
+      adSize: BannerSize.BANNER,
+      adPosition: BannerPosition.TOP,
+    }).then(()=>{
+      this.presentToast('Banner Ad Shown');
+    })
+    .catch((err)=>{
+      this.presentToast(err.Mensage);
+    });
+  }
+
+  hideBannerAd(){
+    AdmobAds.hideBannerAd().then(()=>{
+      this.presentToast('Banner Ad hidden');
+    })
+    .catch((err)=>{
+      this.presentToast(err.Mensage);
+    });
+  }
+  resumeBannerAd(){
+    AdmobAds.resumeBannerAd().then(()=>{
+      this.presentToast('Banner Ad resume');
+    })
+    .catch((err)=>{
+      this.presentToast(err.Mensage);
+    });
+  }
+
+  removeBannerAd(){
+    AdmobAds.removeBannerAd().then(()=>{
+      this.presentToast('Banner Ad removed');
+    })
+    .catch((err)=>{
+      this.presentToast(err.Mensage);
+    });
+  }
+
+  async presentToast(mensagem: string){
+    const toast = await this.toastCtrl.create({
+      message: mensagem,
+      duration: 2000,
+      mode:'ios',
+      position:'top',
+      color: 'success',
+    });
+    toast.present();
   }
 
   pause(){

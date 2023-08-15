@@ -1,5 +1,5 @@
 {
-  "name": "teste-sua-logica-app",
+  "name": "raciocine",
   "version": "0.0.1",
   "author": "Ionic Framework",
   "homepage": "https://ionicframework.com/",
@@ -29,6 +29,7 @@
     "@ionic/angular": "^6.1.9",
     "@ionic/storage": "^3.0.6",
     "@ionic/storage-angular": "^3.0.6",
+    "capacitor-admob-ads": "^5.0.0",
     "ionicons": "^6.0.3",
     "lodash": "^4.17.21",
     "rxjs": "~6.6.0",

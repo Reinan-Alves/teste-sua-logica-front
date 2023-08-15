@@ -10,8 +10,10 @@ export class AppComponent implements OnInit {
   @ViewChild(IonMenu) menu: IonMenu;
   audio: HTMLAudioElement;
   audioPaused = true;
-  constructor() {}
-  ngOnInit(): void {}
+  constructor() {
+  }
+  ngOnInit(){
+  }
 
   play() {
     this.audio = new Audio();

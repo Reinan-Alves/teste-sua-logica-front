@@ -1,6 +1,22 @@
 apply plugin: 'com.android.application'
 
 android {
+
+  namespace 'io.ionic.starter'
+  signingConfigs {
+        debug {
+          storeFile file('C:\\Users\\Renan\\chaveiroapk\\chave01.jks')
+          storePassword '880216'
+          keyAlias 'chave01'
+          keyPassword '880216'
+        }
+        release {
+            storeFile file('C:\\Users\\Renan\\chaveiroapk\\chave01.jks')
+            storePassword '880216'
+            keyAlias 'chave01'
+            keyPassword '880216'
+        }
+    }
     compileSdkVersion rootProject.ext.compileSdkVersion
     defaultConfig {
         applicationId "io.ionic.starter"
@@ -17,9 +33,15 @@ android {
     }
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
+      debug {
+        minifyEnabled true
+        proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        signingConfig signingConfigs.release
+      }
     }
 }
 

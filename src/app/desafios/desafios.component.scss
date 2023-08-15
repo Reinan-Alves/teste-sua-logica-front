@@ -94,7 +94,6 @@ ion-checkbox {
 }
 
 .enviar {
-
   background-color: #3f7041;
 
 
@@ -106,5 +105,15 @@ ion-checkbox {
   padding: 20px;
   align-items: center;
   text-align: center;
-
+}
+#divbanner{
+  position: fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+  height: auto;
+  z-index: 999;
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 10px;
 }

@@ -2,7 +2,7 @@ import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
   appId: 'io.ionic.starter',
-  appName: 'teste-sua-logica-app',
+  appName: 'RACIOCINE',
   webDir: 'www',
   bundledWebRuntime: false
 };

@@ -6,6 +6,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { shuffle } from 'lodash';
 
+
 @Component({
   selector: 'app-desafios',
   templateUrl: './desafios.component.html',
@@ -47,8 +48,9 @@ export class DesafiosComponent implements OnInit {
   constructor(
     private rankingService: RankingService,
     private desafioService: DesafiosService,
-    private router: Router,
-  ) {}
+    private router: Router
+  ) {
+  }
 
   // Para utilizar o ionic storage em mais de um componente o ideal é criar um service
   // ver a documentação e implementar o service para evitar bugs
@@ -131,7 +133,6 @@ export class DesafiosComponent implements OnInit {
   }
 
   public async iniciar() {
-    console.log(this.desafioService.categoria);
     this.musicaInicio();
     this.listaDeDesafios =  shuffle( this.listaDeDesafios);
     this.restam = this.listaDeDesafios.length - 1;

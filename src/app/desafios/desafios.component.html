@@ -50,6 +50,7 @@
       <ion-textarea class="textoPergunta">
         <p *ngIf="statusConexao === 'aguardando'">Aguardando conexão...</p>
         <p *ngIf="statusConexao === 'sucesso'">{{ desafio.pergunta }}</p>
+        <div *ngIf="statusConexao === 'sucesso'" id="divbanner"></div>
         <p *ngIf="statusConexao === 'falha'" style="color: red">
           Não foi possível se conectar ao servidor ou não há conexão com a
           internet.
@@ -86,8 +87,7 @@
           color="light"
           [disabled]="!desabilitar"
           (click)="conferirResposta(respostaGroup.value)"
-          >Enviar</ion-button
-        >
+          >Enviar</ion-button>
       </div>
     </div>
   </div>
