@@ -16,7 +16,7 @@ import { AlertController, ToastController } from '@ionic/angular';
 })
 export class DesafiosComponent implements OnInit {
   audio: HTMLAudioElement;
-
+  isRewarded = false;
   listaDeDesafios: Array<Desafio> = [];
   listaDeRanking: Array<Pontuacao> = [];
   id = 0;
@@ -61,6 +61,9 @@ export class DesafiosComponent implements OnInit {
   // ver a documentação e implementar o service para evitar bugs
 
   async ngOnInit() {
+    AdmobAds.addListener('rewardedVideoAdOnRewarded', () =>{
+     this.isRewarded = true;
+    });
     this.zerou = false;
     this.finalizado = false;
     this.categoria = this.desafioService.categoria;
@@ -92,7 +95,26 @@ export class DesafiosComponent implements OnInit {
     });
   }
 
-/*
+  loadRewardedVideoAd() {
+    AdmobAds.loadRewardedVideoAd({
+      adId: 'ca-app-pub-3940256099942544/5224354917',
+      isTesting:true,
+    })
+    .then(()=>{
+      //this.presentToast('Rewarded video loaded');
+    })
+    .catch((err)=> {
+      //this.presentToast(err.message);
+    });
+  }
+
+  showRewardedVideoAd() {
+    AdmobAds.showRewardedVideoAd().then(()=>{
+      //this.presentToast('Rewarded Video Ad Showed');
+    });
+  }
+
+
     async presentToast(mensagem: string){
       const toast = await this.toastCtrl.create({
         message: mensagem,
@@ -103,7 +125,7 @@ export class DesafiosComponent implements OnInit {
       });
       toast.present();
     }
-*/
+
   efeitoclick() {
     this.audio = new Audio();
     this.audio.src = 'assets/click.mp3'; // Substitua pelo caminho do seu arquivo MP3
@@ -181,6 +203,8 @@ export class DesafiosComponent implements OnInit {
   }
 
   public montarDesafio() {
+    this.loadRewardedVideoAd();
+    this.isRewarded = false;
     this.tempo = 1000;
     this.relogio();
     this.templateDesafio();

@@ -30,7 +30,14 @@
         (click)="iniciar()"
         [disabled]="desabilitar"
         >Iniciar</ion-button
-      ><ion-button
+      >
+      <ion-button
+      *ngIf="(statusConexao === 'sucesso') && (desabilitar === true)"
+      class="dourado-button"
+      (click)="showRewardedVideoAd()"
+      [disabled]="!desabilitar"
+      >Dica<img src="./assets/iconvideo.png" style="width:30px;height:30px;" /></ion-button>
+      <ion-button
       *ngIf="(statusConexao === 'sucesso') && (desabilitar === true)"
       color="danger"
       (click)="finalizar()"
@@ -43,13 +50,14 @@
         [disabled]="true"
         >Iniciar</ion-button
       >
-      <p *ngIf="desabilitar === true" style="margin-top: 10px; margin-left:5px;">{{acertos + 1}} de {{restam}}</p>
+      <!--<p *ngIf="desabilitar === true" style="margin-top: 10px; margin-left:5px;">{{acertos + 1}} de {{restam}}</p>-->
       <p *ngIf="desabilitar === false" style="color:rgb(245, 241, 241);margin-top: 10px; margin-left:5px;">Leia as instruções e clique em iniciar.</p>
     </div>
     <div class="caixaDesafio">
       <ion-textarea class="textoPergunta">
         <p *ngIf="statusConexao === 'aguardando'">Aguardando conexão...</p>
         <p *ngIf="statusConexao === 'sucesso'">{{ desafio.pergunta }}</p>
+        <p *ngIf="isRewarded" >Resposta correta: {{desafio.respostaCerta | uppercase}}</p>
         <div *ngIf="statusConexao === 'sucesso'" id="divbanner"></div>
         <p *ngIf="statusConexao === 'falha'" style="color: red">
           Não foi possível se conectar ao servidor ou não há conexão com a
@@ -61,22 +69,22 @@
         <ion-list>
           <ion-radio-group #respostaGroup value="a">
             <ion-item>
-              <p>{{ desafio.respostaA }}</p>
+              <p>(A) {{ desafio.respostaA }}</p>
               <ion-radio (click)="efeitoclick()" slot="start" value="a"></ion-radio>
             </ion-item>
 
             <ion-item>
-              <p>{{ desafio.respostaB }}</p>
+              <p>(B) {{ desafio.respostaB }}</p>
               <ion-radio (click)="efeitoclick()" slot="start" value="b"></ion-radio>
             </ion-item>
 
             <ion-item>
-              <p>{{ desafio.respostaC }}</p>
+              <p>(B) {{ desafio.respostaC }}</p>
               <ion-radio (click)="efeitoclick()" slot="start" value="c"></ion-radio>
             </ion-item>
 
             <ion-item>
-              <p>{{ desafio.respostaD }}</p>
+              <p>(D) {{ desafio.respostaD }}</p>
               <ion-radio (click)="efeitoclick()" slot="start" value="d"></ion-radio>
             </ion-item>
           </ion-radio-group>

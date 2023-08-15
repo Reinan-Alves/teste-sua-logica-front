@@ -59,10 +59,10 @@ export class HomePage {
       adSize: BannerSize.BANNER,
       adPosition: BannerPosition.TOP,
     }).then(()=>{
-      this.presentToast('Banner Ad Shown');
+      //this.presentToast('Banner Ad Shown');
     })
     .catch((err)=>{
-      this.presentToast(err.Mensage);
+      //this.presentToast(err.Mensage);
     });
   }
 
