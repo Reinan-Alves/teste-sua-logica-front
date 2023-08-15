@@ -117,3 +117,9 @@ ion-checkbox {
   color: #333;
   padding: 10px;
 }
+
+.custom-alert {
+  --background: #3f7041; /* Cor de fundo */
+  --color: #ffffff; /* Cor do texto */
+  --border-radius: 10px; /* Raio da borda */
+}

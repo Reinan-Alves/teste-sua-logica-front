@@ -5,7 +5,9 @@ import { DesafiosService } from './../service/desafios.service';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { shuffle } from 'lodash';
-
+//ADMOB
+import {AdmobAds} from 'capacitor-admob-ads';
+import { AlertController, ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-desafios',
@@ -18,6 +20,7 @@ export class DesafiosComponent implements OnInit {
   listaDeDesafios: Array<Desafio> = [];
   listaDeRanking: Array<Pontuacao> = [];
   id = 0;
+  contador =0;
   categoria = '';
   finalizado = false;
   zerou = false;
@@ -48,7 +51,9 @@ export class DesafiosComponent implements OnInit {
   constructor(
     private rankingService: RankingService,
     private desafioService: DesafiosService,
-    private router: Router
+    private router: Router,
+    public toastCtrl: ToastController,
+    public alertController: AlertController
   ) {
   }
 
@@ -67,7 +72,38 @@ export class DesafiosComponent implements OnInit {
       this.redirecionar();
     }
   }
+  //ADMOB
+  loadInterstitialAd(){
+    AdmobAds.loadInterstitialAd({
+      adId: 'ca-app-pub-3940256099942544/1033173712',
+      isTesting: true
+    }).then(()=>{
+      //this.presentToast('Interstitial Ad Loaded');
+    }).catch((err)=>{
+      //this.presentToast(err.Mensage);
+    });
+  }
 
+  showInterstitialAd(){
+    AdmobAds.showInterstitialAd().then(()=>{
+      //this.presentToast('Interstitial Ad showed');
+    }).catch((err)=>{
+     // this.presentToast(err.Mensage);
+    });
+  }
+
+/*
+    async presentToast(mensagem: string){
+      const toast = await this.toastCtrl.create({
+        message: mensagem,
+        duration: 2000,
+        mode:'ios',
+        position:'top',
+        color: 'success',
+      });
+      toast.present();
+    }
+*/
   efeitoclick() {
     this.audio = new Audio();
     this.audio.src = 'assets/click.mp3'; // Substitua pelo caminho do seu arquivo MP3
@@ -128,12 +164,15 @@ export class DesafiosComponent implements OnInit {
       if (this.tempo < 0) {
         this.finalizar();
       }
-    }, 500);
+    }, 1000);
     return this.tempo;
   }
 
   public async iniciar() {
+
+    this.loadInterstitialAd();
     this.musicaInicio();
+    this.contador=0;
     this.listaDeDesafios =  shuffle( this.listaDeDesafios);
     this.restam = this.listaDeDesafios.length - 1;
     this.desabilitar = true;
@@ -171,12 +210,36 @@ export class DesafiosComponent implements OnInit {
    // location.reload();
   }
 
+  async presentAlert() {
+      const alert = await this.alertController.create({
+      header: 'Parabéns!',
+      message: 'Respire e vamos para mais perguntas.',
+      buttons: [{
+          text: 'OK',
+          handler: ()=>{
+            this.proximoDesafio();
+          }
+      }
+      ],
+      cssClass: 'custom-alert'
+    });
+    await alert.present();
+  }
   public conferirResposta(suaResposta: string) {
     this.efeitoclick();
     if (suaResposta === this.desafio.respostaCerta) {
       this.acertos += 1;
+      this.contador +=1;
       this.pontos += Number((this.tempo / 100).toFixed(4));
-      this.proximoDesafio();
+      if(this.contador > 4){
+        clearInterval(this.temporizador);
+        this.showInterstitialAd();
+        this.contador = 0;
+        this.presentAlert();
+        this.loadInterstitialAd();
+      }else{
+        this.proximoDesafio();
+      }
     } else {
       clearInterval(this.temporizador);
       this.finalizar();
@@ -199,6 +262,7 @@ export class DesafiosComponent implements OnInit {
 
   }
   public finalizar() {
+    this.showInterstitialAd();
     this.musicaDerrota();
     this.finalizado = true;
     clearInterval(this.temporizador);
