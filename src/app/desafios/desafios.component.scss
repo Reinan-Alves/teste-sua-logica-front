@@ -1,5 +1,5 @@
 .tema {
-  background-color: #3f7041;
+  background-color: #c1d8dc;
   color: #ffffff;
 }
 
@@ -14,7 +14,7 @@ h5 {
 }
 
 #container {
-  background-color: #3f7041;
+  background-color: #c1d8dc;
   text-align: center;
   position: absolute;
   left: 0;
@@ -43,26 +43,26 @@ h5 {
   height: 500px;
 }
 .textoPergunta {
-  color: #3f7041;
+  color: #c1d8dc;
   margin: auto;
   padding-top: 10px;
-  border-bottom:#3f7041 solid 1px;
+  border-bottom:#c1d8dc solid 1px;
   background-color: #ffffff;
-  height: 40%;
+  height: 20%;
   width: 80%;
   overflow-y: scroll;
 }
 .caixaRespostas {
   align-items: left;
   text-align: left;
-  color: #3f7041;
+  color: #c1d8dc;
   margin: auto;
-  background-color: #ffffff;
+  background-color: #c1d8dc;
   height: 40%;
   width: 80%;
   overflow-y: auto;
   overflow-x: auto;
-  border-bottom: #3f7041 solid 1px;
+  border-bottom: #c1d8dc solid 1px;
 }
 
 ion-icon {
@@ -94,7 +94,7 @@ ion-checkbox {
 }
 
 .enviar {
-  background-color: #3f7041;
+  background-color: #c1d8dc;
 
 
 }
@@ -119,7 +119,7 @@ ion-checkbox {
 }
 
 .custom-alert {
-  --background: #3f7041; /* Cor de fundo */
+  --background: #c1d8dc; /* Cor de fundo */
   --color: #ffffff; /* Cor do texto */
   --border-radius: 10px; /* Raio da borda */
 }

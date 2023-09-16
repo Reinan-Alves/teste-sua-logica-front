@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="admob_app_id">ca-app-pub-1642001525444604~1233241020</string>
+    <string name="admob_app_id">ca-app-pub-1642001525444604~9230660861</string>
     <string name="app_name">RACIOCINE</string>
     <string name="title_activity_main">RACIOCINE</string>
-    <string name="package_name">io.ionic.starter</string>
-    <string name="custom_url_scheme">io.ionic.starter</string>
+    <string name="package_name">io.raciocine.starter</string>
+    <string name="custom_url_scheme">io.raciocine.starter</string>
 </resources>

@@ -52,10 +52,14 @@ export class HomePage {
   }
 
   //ADMOB
+  //TESTE: 'ca-app-pub-3940256099942544/6300978111'
+  //PRODUÇÃO: 'ca-app-pub-1642001525444604/4814559667'
+  //EM USO teste
   showBannerAd() {
     AdmobAds.showBannerAd({
       adId:'ca-app-pub-3940256099942544/6300978111',
-      isTesting:true,
+      //ALTERAR CONFORME O USO
+      isTesting: false,
       adSize: BannerSize.BANNER,
       adPosition: BannerPosition.TOP,
     }).then(()=>{

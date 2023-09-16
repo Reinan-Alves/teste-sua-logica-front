@@ -16,7 +16,7 @@ ion-menu.md ion-content {
 }
 
 ion-menu-button {
-  color: #3f7041;
+  color: #c1d8dc;
 
 }
 
@@ -39,14 +39,17 @@ ion-menu.md ion-list#inbox-list {
 
 ion-menu.md ion-list#inbox-list ion-list-header {
   font-size: 22px;
-  font-weight: 600;
-
+  color: white;
+  font-family: monospace;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px black;
   min-height: 20px;
 }
 
 ion-menu.md ion-list#labels-list ion-list-header {
   font-size: 16px;
-
+  text-shadow: 2px 2px 4px black;
+  font-weight: bold;
   margin-bottom: 18px;
 
   color: #ffffff;
@@ -139,7 +142,7 @@ ion-list a {
 }
 
 .tema {
-  background-color: #3f7041;
+  background-color: #c1d8dc;
   color: #ffffff;
 }
 
@@ -154,4 +157,12 @@ ion-list a {
   background-image:url("https://tenor.com/pt-BR/view/music-wave-gif-24693977.gif");
   background-size: 100%;
 
+}
+
+a{
+  font-size: 25px;
+  color: white;
+  font-family: monospace;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px black;
 }

@@ -34,9 +34,9 @@
       <ion-button
       *ngIf="(statusConexao === 'sucesso') && (desabilitar === true)"
       class="dourado-button"
-      (click)="showRewardedVideoAd()"
-      [disabled]="!desabilitar"
-      >Dica<img src="./assets/iconvideo.png" style="width:30px;height:30px;" /></ion-button>
+      (click)="this.processaDica(desafio.respostaCerta)"
+      [disabled]="!habilitarBotao"
+      >Dica {{posicaoDica}}/2<img src="./assets/iconvideo.png" style="width:30px;height:30px;" /></ion-button>
       <ion-button
       *ngIf="(statusConexao === 'sucesso') && (desabilitar === true)"
       color="danger"
@@ -57,7 +57,7 @@
       <ion-textarea class="textoPergunta">
         <p *ngIf="statusConexao === 'aguardando'">Aguardando conexão...</p>
         <p *ngIf="statusConexao === 'sucesso'">{{ desafio.pergunta }}</p>
-        <p *ngIf="isRewarded" >Resposta correta: {{desafio.respostaCerta | uppercase}}</p>
+        <p style="color: #3f7041;" *ngIf="statusConexao === 'sucesso' && isRewarded">Dica: A alternativa {{this.exibirDica| uppercase}} está errada.</p>
         <div *ngIf="statusConexao === 'sucesso'" id="divbanner"></div>
         <p *ngIf="statusConexao === 'falha'" style="color: red">
           Não foi possível se conectar ao servidor ou não há conexão com a
@@ -79,7 +79,7 @@
             </ion-item>
 
             <ion-item>
-              <p>(B) {{ desafio.respostaC }}</p>
+              <p>(C) {{ desafio.respostaC }}</p>
               <ion-radio (click)="efeitoclick()" slot="start" value="c"></ion-radio>
             </ion-item>
 

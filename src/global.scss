@@ -25,8 +25,17 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 :root {
-  --ion-color-secondary: #3f7041;
+  --ion-color-secondary: #dff7fd;
 }
-ion-title{
+ion-radio-group{
   margin-top: 50px;
+}
+ion-textarea{
+  background-color: red;
+}
+h1{
+  color: white;
+  font-family: monospace;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px black;
 }

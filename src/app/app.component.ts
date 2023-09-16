@@ -25,14 +25,6 @@ export class AppComponent implements OnInit {
   fecharMenu() {
     this.menu.close();
   }
-  toggleAudio() {
-    if (this.audioPaused) {
-      this.audioPlayer.nativeElement.play();
-    } else {
-      this.audioPlayer.nativeElement.pause();
-    }
-    this.audioPaused = !this.audioPaused;
-  }
 }
 
 

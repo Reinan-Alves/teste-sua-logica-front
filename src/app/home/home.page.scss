@@ -1,5 +1,5 @@
 .tema {
-  background-color: #3f7041;
+  background-color: #c1d8dc;
   color: #ffffff;
 }
 
@@ -8,15 +8,14 @@ ion-menu-button {
 
 }
 
-
 h5 {
-  color: #ffffff;
-  background-color: #3f7041;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 .container {
   //max-height: calc(100px - 250px);/* Defina uma altura máxima para a div (ajuste conforme necessário) */
-  background-color: #3f7041;
+  background-color: #c1d8dc;
   text-align: center;
   position: absolute;
   left: 0;
@@ -39,7 +38,7 @@ h5 {
 .texto-rodape{
   font-size: 16px;
   line-height: 22px;
-  color: #ffffff;
+  color: #000000;
   margin: 0;
 }
 
@@ -72,6 +71,6 @@ h5 {
   }
 }
 .modalidades {
-  background-color: #3f7041;
+  background-color: #c1d8dc;
   overflow-y: auto; /* Adicione uma barra de rolagem vertical quando necessário */
 }

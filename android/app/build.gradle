@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
 
-  namespace 'io.ionic.starter'
+  namespace 'io.raciocine.starter'
   signingConfigs {
         debug {
           storeFile file('C:\\Users\\Renan\\chaveiroapk\\chave01.jks')
@@ -19,7 +19,7 @@ android {
     }
     compileSdkVersion rootProject.ext.compileSdkVersion
     defaultConfig {
-        applicationId "io.ionic.starter"
+        applicationId "io.raciocine.starter"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

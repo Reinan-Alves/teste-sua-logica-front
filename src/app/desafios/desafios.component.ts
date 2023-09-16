@@ -16,11 +16,17 @@ import { AlertController, ToastController } from '@ionic/angular';
 })
 export class DesafiosComponent implements OnInit {
   audio: HTMLAudioElement;
+  posicaoDica = 0;
+  alternativas = ['a','b','c','d'];
+  dica1 = '';
+  dica2 = '';
+  habilitarBotao = true;
+  exibirDica ='';
   isRewarded = false;
   listaDeDesafios: Array<Desafio> = [];
   listaDeRanking: Array<Pontuacao> = [];
   id = 0;
-  contador =0;
+  contador = 0;
   categoria = '';
   finalizado = false;
   zerou = false;
@@ -34,7 +40,7 @@ export class DesafiosComponent implements OnInit {
   temporizador: any = 0.00;
   posicao = 0;
   acertos = 0;
-  restam =0;
+  restam = 0;
   desafio: Desafio = new Desafio(
     0,
     'Ao marcar a resposta clique em enviar.\nCada questão tem valor máximo de 10 pontos e é decrementado ao decorrer do cronômetro',
@@ -63,6 +69,7 @@ export class DesafiosComponent implements OnInit {
   async ngOnInit() {
     AdmobAds.addListener('rewardedVideoAdOnRewarded', () =>{
      this.isRewarded = true;
+      this.posicaoDica +=1;
     });
     this.zerou = false;
     this.finalizado = false;
@@ -76,10 +83,14 @@ export class DesafiosComponent implements OnInit {
     }
   }
   //ADMOB
+  //TESTE: 'ca-app-pub-3940256099942544/1033173712'
+  //PRODUÇÃO: 'ca-app-pub-1642001525444604/9927285541'
+  //EM USO: teste
   loadInterstitialAd(){
     AdmobAds.loadInterstitialAd({
       adId: 'ca-app-pub-3940256099942544/1033173712',
-      isTesting: true
+      //ALTERAR CONFORME O USO
+      isTesting: false
     }).then(()=>{
       //this.presentToast('Interstitial Ad Loaded');
     }).catch((err)=>{
@@ -97,8 +108,12 @@ export class DesafiosComponent implements OnInit {
 
   loadRewardedVideoAd() {
     AdmobAds.loadRewardedVideoAd({
+      //teste: 'ca-app-pub-3940256099942544/5224354917'
+       //produção: 'ca-app-pub-1642001525444604/9068912717'
+       //EM USO: teste
       adId: 'ca-app-pub-3940256099942544/5224354917',
-      isTesting:true,
+      //ALTERAR CONFORME O USO
+      isTesting: false,
     })
     .then(()=>{
       //this.presentToast('Rewarded video loaded');
@@ -124,6 +139,46 @@ export class DesafiosComponent implements OnInit {
         color: 'success',
       });
       toast.present();
+    }
+
+    processaDica(resposta: string){
+      this.alternativas = shuffle(this.alternativas);
+      this.showRewardedVideoAd();
+      this.montaDica(resposta);
+      this.exibiDica();
+      this.habilitarBotao = false; // Desabilita o botão
+      setTimeout(() => {
+        this.zeraDica();
+        this.loadRewardedVideoAd();
+        }, 30000);
+      if(this.posicaoDica === 0){
+        setTimeout(() => {
+          this.habilitarBotao = true; // Reabilita o botão após 60 segundos
+          }, 50000);
+      }
+    }
+
+    zeraDica(){
+      if(this.posicaoDica > 1 ){
+        this.posicaoDica = 0;
+        this.dica1='';
+        this.dica2='';
+      }
+    }
+    montaDica(resposta: string){
+      if(this.posicaoDica === 0){
+        this.alternativas.forEach((e)=>{
+        if(e !== resposta && this.dica1 ===''){this.dica1 = e;}
+        if(e !== resposta && e !== this.dica1 && this.dica2 ===''){this.dica2 = e;}
+       });
+      }
+    }
+    exibiDica(){
+      if(this.posicaoDica === 0){
+        this.exibirDica = this.dica1;
+      }else{
+        this.exibirDica = this.dica2;
+      }
     }
 
   efeitoclick() {
@@ -191,7 +246,6 @@ export class DesafiosComponent implements OnInit {
   }
 
   public async iniciar() {
-
     this.loadInterstitialAd();
     this.musicaInicio();
     this.contador=0;
@@ -203,7 +257,12 @@ export class DesafiosComponent implements OnInit {
   }
 
   public montarDesafio() {
+    this.habilitarBotao = false;
     this.loadRewardedVideoAd();
+    setTimeout(() => {
+      this.zeraDica();
+      this.habilitarBotao = true; // Reabilita o botão após 30 segundos
+      }, 10000);
     this.isRewarded = false;
     this.tempo = 1000;
     this.relogio();
