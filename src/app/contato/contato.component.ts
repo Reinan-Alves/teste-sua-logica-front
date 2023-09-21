@@ -33,6 +33,7 @@ export class ContatoComponent implements OnInit {
       this.mensagemService.listaDeMensagem().subscribe({
         next: (res) => {
         this.listaDeMensagens = res;
+        this.listaDeMensagens.sort((a, b) => a.id - b.id);
         this.statusConexao = 'sucesso';
         },
         error: (err) => {

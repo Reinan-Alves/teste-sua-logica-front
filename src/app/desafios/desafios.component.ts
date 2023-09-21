@@ -8,6 +8,8 @@ import { shuffle } from 'lodash';
 //ADMOB
 import {AdmobAds} from 'capacitor-admob-ads';
 import { AlertController, ToastController } from '@ionic/angular';
+import { Mensagem } from '../model/mensagem.model';
+import { MensagemService } from '../service/mensagem.service';
 
 @Component({
   selector: 'app-desafios',
@@ -15,6 +17,8 @@ import { AlertController, ToastController } from '@ionic/angular';
   styleUrls: ['./desafios.component.scss'],
 })
 export class DesafiosComponent implements OnInit {
+  comentario ='';
+  mensagem: Mensagem = new Mensagem(0,'','','');
   audio: HTMLAudioElement;
   posicaoDica = 0;
   alternativas = ['a','b','c','d'];
@@ -59,7 +63,8 @@ export class DesafiosComponent implements OnInit {
     private desafioService: DesafiosService,
     private router: Router,
     public toastCtrl: ToastController,
-    public alertController: AlertController
+    public alertController: AlertController,
+    private mensagemService: MensagemService
   ) {
   }
 
@@ -82,6 +87,8 @@ export class DesafiosComponent implements OnInit {
       this.redirecionar();
     }
   }
+
+
   //ADMOB
   //TESTE: 'ca-app-pub-3940256099942544/1033173712'
   //PRODUÇÃO: 'ca-app-pub-1642001525444604/9927285541'
@@ -345,6 +352,7 @@ export class DesafiosComponent implements OnInit {
 
   }
   public finalizar() {
+    this.comentario = '';
     this.showInterstitialAd();
     this.musicaDerrota();
     this.finalizado = true;
@@ -387,5 +395,37 @@ export class DesafiosComponent implements OnInit {
     this.pontos = 0.00;
     this.finalizado = false;
     this.iniciar();
+  }
+  enviarParaRevisao(comentario: string){
+      this.mensagem.nome = 'REVISAR';
+      this.mensagem.texto = `
+      ${this.desafio.pergunta} \n
+     (A) ${this.desafio.respostaA} \n
+     (B) ${this.desafio.respostaB} \n
+     (C) ${this.desafio.respostaC} \n
+     (D) ${this.desafio.respostaD} \n
+     Alterantiva (${this.desafio.respostaCerta}) está mesmo certa?`;
+      this.mensagem.dataHora = this.geraDataEHora();
+      this.inserirRevisao(this.mensagem);
+      if(this.comentario.length >= 5){
+        this.mensagem.nome = 'COMENTÁRIO';
+        this.mensagem.texto = comentario;
+        this.inserirRevisao(this.mensagem);
+      }
+    }
+  inserirRevisao(listaDeMensagens: Mensagem) {
+    return this.mensagemService.inserirMensagem(listaDeMensagens).subscribe({
+      next: (res) => res,
+      error: (err) => console.log(err),
+    });
+  }
+  geraDataEHora(): string {
+    const currentDate = new Date();
+    const day = String(currentDate.getDate()).padStart(2, '0');
+    const month = String(currentDate.getMonth() + 1).padStart(2, '0'); // Os meses são indexados em zero
+    const year = String(currentDate.getFullYear());
+    const hours = String(currentDate.getHours()).padStart(2, '0');
+    const minutes = String(currentDate.getMinutes()).padStart(2, '0');
+    return `${day}/${month}/${year} ${hours}:${minutes}`;
   }
 }

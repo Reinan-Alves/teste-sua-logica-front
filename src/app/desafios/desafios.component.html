@@ -13,7 +13,6 @@
       <ion-title size="large">Desafios</ion-title>
     </ion-toolbar>
   </ion-header>
-
   <div *ngIf="!finalizado" id="container" class="tema">
     <h1>{{ gerarTitulo() }}</h1>
     <div class="timer">
@@ -58,7 +57,6 @@
         <p *ngIf="statusConexao === 'aguardando'">Aguardando conexão...</p>
         <p *ngIf="statusConexao === 'sucesso'">{{ desafio.pergunta }}</p>
         <p style="color: #3f7041;" *ngIf="statusConexao === 'sucesso' && isRewarded">Dica: A alternativa {{this.exibirDica| uppercase}} está errada.</p>
-        <div *ngIf="statusConexao === 'sucesso'" id="divbanner"></div>
         <p *ngIf="statusConexao === 'falha'" style="color: red">
           Não foi possível se conectar ao servidor ou não há conexão com a
           internet.
@@ -100,22 +98,49 @@
     </div>
   </div>
   <div *ngIf="finalizado" class="finalizacao">
-    <div class="textos">
       <h1>{{ gerarTitulo() }}</h1>
+    <div class="textos">
+      <div>
       <p>Quantidade de acertos: {{ acertos }}</p>
       <p>Pontuação: {{ pontos | number:'1.2-2' }}</p>
       <p>Entrar no Ranking ?</p>
     </div>
-    <ion-input [(ngModel)]="nome" type="text" placeholder="Insira seu nome" maxlength="15"></ion-input>
+    <label style="font-size: small;">INSIRA SEU NOME:</label>
+    <ion-input class="comentario" [(ngModel)]="nome" type="text" maxlength="15"></ion-input>
     <div *ngIf="!nomeValido">
       <div style="color: red; font-size:small;">*O nome deve ter entre 3 e 15 caracteres.</div>
     </div>
-
     <div class="botoes">
       <ion-button (click)="enviar(nome.toString())">Enviar</ion-button>
       <ion-button (click)="sair()">Sair</ion-button>
     </div>
     <ion-button (click)="jogarNovamente()">Jogar novamente</ion-button>
+    </div>
+
+    <div>
+      <h1>CONFIRA A RESPOSTA</h1>
+
+     <div class="conferirResposta">
+      <ion-textarea *ngIf="statusConexao === 'sucesso'" class="conferirResposta">
+        <p>{{ desafio.pergunta }}</p>
+        <p>(A) {{ desafio.respostaA }}</p>
+        <p>(B) {{ desafio.respostaB }}</p>
+        <p>(C) {{ desafio.respostaC }}</p>
+        <p>(D) {{ desafio.respostaD }}</p>
+        <p style="font-weight: bolder;">RESPOSTA CORRETA: {{ desafio.respostaCerta | uppercase }}</p>
+      </ion-textarea>
+      <label style="font-size: small;">ESCREVA AQUI UM COMENTÁRIO SOBRE O DESAFIO:</label>
+      <ion-input class="comentario" [(ngModel)]="comentario" type="text"></ion-input>
+      <ion-button
+      (click)="enviarParaRevisao(comentario.toString())"
+      color="light"
+      >ENVIAR PARA REVISÃO</ion-button>
+      <p>Caso não concorde ou perceba alguma falha na
+        resposta indicada como correta, pedimos que envie o desafio para
+        revisão e acompanhe o retorno através do menu <a style="text-decoration: none;" routerLink="/contato">CONTATO</a></p>
+     </div>
+    </div>
+
   </div>
   <div *ngIf="zerou">
   <p style="color:red; text-align: center;">PARABÉNS!🎉🥳🥳🎉</p>

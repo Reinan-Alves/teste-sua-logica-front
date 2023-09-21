@@ -119,9 +119,9 @@ ion-checkbox {
 }
 
 .custom-alert {
-  --background: #c1d8dc; /* Cor de fundo */
-  --color: #ffffff; /* Cor do texto */
-  --border-radius: 10px; /* Raio da borda */
+  background: #c1d8dc; /* Cor de fundo */
+  color: #ffffff; /* Cor do texto */
+  border-radius: 10px; /* Raio da borda */
 }
 
 .dourado-button {
@@ -129,3 +129,19 @@ ion-checkbox {
   --color: rgb(0, 0, 0); /* Cor do texto */
   --border-color: gold; /* Cor da borda */
 }
+
+.conferirResposta{
+  background: #c1d8dc;
+  color: #000000;
+}
+
+  .comentario{
+    text-align: left;
+    background: #f9fafa;
+    color: #000000;
+    border: #000000 solid 1px;
+  }
+  .textos{
+    background: #c1d8dc;
+    color: #000000;
+  }
