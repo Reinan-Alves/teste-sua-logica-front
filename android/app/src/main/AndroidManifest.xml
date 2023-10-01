@@ -8,12 +8,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-<!--teste "ca-app-pub-3940256099942544~3347511713" -->
-<!--produção "ca-app-pub-1642001525444604~9230660861"-->
-<!--EM USO: teste -->
+<!--DESENVOLVIMENTO "ca-app-pub-3940256099942544~3347511713" -->
+<!--PRODUÇÃO "ca-app-pub-1642001525444604~9230660861"-->
+<!--EM USO: PRODUÇÃO -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-3940256099942544~3347511713"/>
+            android:value="ca-app-pub-1642001525444604~9230660861"/>
 
 
         <activity

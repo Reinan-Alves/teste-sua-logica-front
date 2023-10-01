@@ -94,10 +94,10 @@ export class DesafiosComponent implements OnInit {
   //ADMOB
   //TESTE: 'ca-app-pub-3940256099942544/1033173712'
   //PRODUÇÃO: 'ca-app-pub-1642001525444604/9927285541'
-  //EM USO: teste
+  //EM USO: PRODUÇÃO
   loadInterstitialAd(){
     AdmobAds.loadInterstitialAd({
-      adId: 'ca-app-pub-3940256099942544/1033173712',
+      adId: 'ca-app-pub-1642001525444604/9927285541',
       //ALTERAR CONFORME O USO
       isTesting: false
     }).then(()=>{
@@ -119,8 +119,8 @@ export class DesafiosComponent implements OnInit {
     AdmobAds.loadRewardedVideoAd({
       //teste: 'ca-app-pub-3940256099942544/5224354917'
        //produção: 'ca-app-pub-1642001525444604/9068912717'
-       //EM USO: teste
-      adId: 'ca-app-pub-3940256099942544/5224354917',
+       //EM USO: produção
+      adId: 'ca-app-pub-1642001525444604/9068912717',
       //ALTERAR CONFORME O USO
       isTesting: false,
     })
