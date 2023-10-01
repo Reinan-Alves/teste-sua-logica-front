@@ -105,13 +105,14 @@
       <p>Pontuação: {{ pontos | number:'1.2-2' }}</p>
       <p>Entrar no Ranking ?</p>
     </div>
-    <label style="font-size: small;">INSIRA SEU NOME:</label>
-    <ion-input class="comentario" [(ngModel)]="nome" type="text" maxlength="15"></ion-input>
+    <label *ngIf="!desabilitanome" style="font-size: small;">INSIRA SEU NOME:</label>
+    <label *ngIf="desabilitanome" style="font-size: small;">ENVIADO! ACOMPANHE NA SEÇÃO RANKING</label>
+    <ion-input [readonly]="desabilitanome" class="comentario" [(ngModel)]="nome" type="text" maxlength="15"></ion-input>
     <div *ngIf="!nomeValido">
       <div style="color: red; font-size:small;">*O nome deve ter entre 3 e 15 caracteres.</div>
     </div>
     <div class="botoes">
-      <ion-button (click)="enviar(nome.toString())">Enviar</ion-button>
+      <ion-button [disabled]="desabilitanome" (click)="enviar(nome.toString())">Enviar</ion-button>
       <ion-button (click)="sair()">Sair</ion-button>
     </div>
     <ion-button (click)="jogarNovamente()">Jogar novamente</ion-button>
@@ -129,9 +130,11 @@
         <p>(D) {{ desafio.respostaD }}</p>
         <p style="font-weight: bolder;">RESPOSTA CORRETA: {{ desafio.respostaCerta | uppercase }}</p>
       </ion-textarea>
-      <label style="font-size: small;">ESCREVA AQUI UM COMENTÁRIO SOBRE O DESAFIO:</label>
-      <ion-input class="comentario" [(ngModel)]="comentario" type="text"></ion-input>
+      <label *ngIf="!desabilitacomentario" style="font-size: small;">ESCREVA AQUI UM COMENTÁRIO SOBRE O DESAFIO:</label>
+      <label *ngIf="desabilitacomentario" style="font-size: small;">ENVIADO! ACOMPANHE NA SEÇÃO CONTATO:</label>
+      <ion-input [readonly]="desabilitacomentario" class="comentario" [(ngModel)]="comentario" type="text"></ion-input>
       <ion-button
+      [disabled]="desabilitacomentario"
       (click)="enviarParaRevisao(comentario.toString())"
       color="light"
       >ENVIAR PARA REVISÃO</ion-button>

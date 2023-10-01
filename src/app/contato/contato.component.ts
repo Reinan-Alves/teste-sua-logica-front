@@ -72,6 +72,7 @@ export class ContatoComponent implements OnInit {
       this.mensagem.dataHora = this.geraDataEHora();
       this.inserir(this.mensagem);
       this.requisicaoMensagem();
+      setTimeout(()=>{location.reload();},300);
     }
   }
 

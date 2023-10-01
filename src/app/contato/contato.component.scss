@@ -1,7 +1,7 @@
 #wrapper {
   margin-top: 10px;
   color: #c1d8dc;
-  width: 50%;
+  width: 45%;
   height: 400px;
   text-align: left;
   align-items: center;
@@ -13,8 +13,8 @@
   background-color: #ffffff;
 }
 
-ion-menu-button {
-  color: #c1d8dc;
+ion-button {
+width: 100%;
 }
 
 h5 {
@@ -62,7 +62,7 @@ ion-textarea {
 .chat {
   margin-top: 10px;
   color: #c1d8dc;
-  width: 50%;
+  width: 55%;
   height: 400px;
   text-align: center;
   align-items: center;
@@ -76,7 +76,6 @@ ion-textarea {
 
 .chat div {
   width: 90%;
-  height: 100%;
   background-color: #c1d8dc;
   color: #ffffff;
   margin-bottom: 10px;
@@ -126,4 +125,7 @@ ion-icon {
 }
 .icones {
   font-size: x-large;
+}
+ion-menu-button {
+  color: #c1d8dc;
 }

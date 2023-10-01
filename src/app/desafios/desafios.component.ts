@@ -17,6 +17,8 @@ import { MensagemService } from '../service/mensagem.service';
   styleUrls: ['./desafios.component.scss'],
 })
 export class DesafiosComponent implements OnInit {
+  desabilitanome =true;
+  desabilitacomentario = true;
   comentario ='';
   mensagem: Mensagem = new Mensagem(0,'','','');
   audio: HTMLAudioElement;
@@ -352,6 +354,8 @@ export class DesafiosComponent implements OnInit {
 
   }
   public finalizar() {
+    this.desabilitanome =false;
+    this.desabilitacomentario = false;
     this.comentario = '';
     this.showInterstitialAd();
     this.musicaDerrota();
@@ -368,7 +372,8 @@ export class DesafiosComponent implements OnInit {
       this.nomeValido = true;
       this.dadosDaPontuacao(nome);
       this.inserir(this.pontuacao);
-      this.router.navigate(['ranking']);
+      //this.router.navigate(['ranking']);
+      this.desabilitanome =true;
     }
   }
 
@@ -412,6 +417,7 @@ export class DesafiosComponent implements OnInit {
         this.mensagem.texto = comentario;
         this.inserirRevisao(this.mensagem);
       }
+      this.desabilitacomentario = true;
     }
   inserirRevisao(listaDeMensagens: Mensagem) {
     return this.mensagemService.inserirMensagem(listaDeMensagens).subscribe({
