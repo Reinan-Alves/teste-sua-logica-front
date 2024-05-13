@@ -54,10 +54,10 @@ export class HomePage {
   //ADMOB
   //DESENVOLVIMENTO: 'ca-app-pub-3940256099942544/6300978111'
   //PRODUÇÃO: 'ca-app-pub-1642001525444604/4814559667'
-  //EM USO PRODUÇÃO
+  //EM USO DESENVOLVIMENTO
   showBannerAd() {
     AdmobAds.showBannerAd({
-      adId:'ca-app-pub-1642001525444604/4814559667',
+      adId:'ca-app-pub-3940256099942544/6300978111',
       //ALTERAR CONFORME O USO
       isTesting: false,
       adSize: BannerSize.BANNER,

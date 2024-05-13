@@ -1,6 +1,8 @@
 import { MensagemService } from '../service/mensagem.service';
 import { Mensagem } from './../model/mensagem.model';
 import { Component, ElementRef, OnInit, ViewChild  } from '@angular/core';
+import { AngularFireDatabase } from '@angular/fire/compat/database';
+
 
 @Component({
   selector: 'app-contato',
@@ -20,7 +22,8 @@ export class ContatoComponent implements OnInit {
   statusConexao = 'sucesso';
 
   constructor(
-    private mensagemService: MensagemService
+    private mensagemService: MensagemService,
+    private db: AngularFireDatabase
   ){}
 
   async ngOnInit() {
@@ -72,16 +75,18 @@ export class ContatoComponent implements OnInit {
       this.mensagem.dataHora = this.geraDataEHora();
       this.inserir(this.mensagem);
       this.requisicaoMensagem();
-      setTimeout(()=>{location.reload();},300);
+      //setTimeout(()=>{location.reload();},300);
     }
   }
 
-  inserir(listaDeMensagens: Mensagem) {
-    return this.mensagemService.inserirMensagem(listaDeMensagens).subscribe({
-      next: (res) => res,
-      error: (err) => console.log(err),
-    });
+  inserir(mensagem: Mensagem) {
+    this.mensagemService.inserirMensagem(mensagem)
+    .then(()=>{
+      console.log('Mensagem inserida com sucesso!');
+    })
+    .catch(error => console.error('Erro ao inserir mensagem:', error));
   }
+
    geraDataEHora(): string {
     const currentDate = new Date();
     const day = String(currentDate.getDate()).padStart(2, '0');

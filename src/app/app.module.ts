@@ -7,6 +7,9 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
 import{HttpClientModule} from'@angular/common/http';
+import { File } from '@ionic-native/file/ngx';
+
+
 
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { IonicStorageModule } from '@ionic/storage-angular';
@@ -18,6 +21,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { DesafiosComponent } from './desafios/desafios.component';
+import { environment } from '../environments/environment.prod';
+import { AngularFireModule } from '@angular/fire/compat';
 
 
 //importação do scroll
@@ -42,8 +47,9 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
     ScrollingModule,
     IonicStorageModule.forRoot(),
     HttpClientModule,
+    AngularFireModule.initializeApp(environment.firebase)
   ],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy},DesafiosService, HomePage, RankingService],
+  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy},DesafiosService, HomePage, RankingService, File],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -92,12 +92,12 @@ export class DesafiosComponent implements OnInit {
 
 
   //ADMOB
-  //TESTE: 'ca-app-pub-3940256099942544/1033173712'
+  //DESENVOLVIMENTO: 'ca-app-pub-3940256099942544/1033173712'
   //PRODUÇÃO: 'ca-app-pub-1642001525444604/9927285541'
-  //EM USO: PRODUÇÃO
+  //EM USO: DESENVOLVIMENTO
   loadInterstitialAd(){
     AdmobAds.loadInterstitialAd({
-      adId: 'ca-app-pub-1642001525444604/9927285541',
+      adId: 'ca-app-pub-3940256099942544/1033173712',
       //ALTERAR CONFORME O USO
       isTesting: false
     }).then(()=>{
@@ -117,10 +117,10 @@ export class DesafiosComponent implements OnInit {
 
   loadRewardedVideoAd() {
     AdmobAds.loadRewardedVideoAd({
-      //teste: 'ca-app-pub-3940256099942544/5224354917'
+      //DESENVOLVIMENTO: 'ca-app-pub-3940256099942544/5224354917'
        //produção: 'ca-app-pub-1642001525444604/9068912717'
        //EM USO: produção
-      adId: 'ca-app-pub-1642001525444604/9068912717',
+      adId: 'ca-app-pub-3940256099942544/5224354917',
       //ALTERAR CONFORME O USO
       isTesting: false,
     })
@@ -299,7 +299,7 @@ export class DesafiosComponent implements OnInit {
   }
   public redirecionar() {
     setTimeout(()=>{this.router.navigate(['']);},300);
-   // location.reload();
+    location.reload();
   }
 
   async presentAlert() {
@@ -388,11 +388,14 @@ export class DesafiosComponent implements OnInit {
     this.pontuacao.pontos = this.pontos;
     this.pontuacao.categoria = this.categoria;
   }
-  inserir(listaDePontuacao: Pontuacao) {
-    return this.desafioService.inserirPontuacao(listaDePontuacao).subscribe({
-      next: (res) => res,
-      error: (err) => console.log(err),
-    });
+
+  async inserir(pontuacao: Pontuacao) {
+    try {
+      await this.desafioService.inserirPontuacao(pontuacao);
+      console.log('Pontuacao inserida com sucesso!');
+    } catch (error) {
+      return console.error('Erro ao inserir pontuacao:', error);
+    }
   }
   jogarNovamente(){
     this.audio.pause();
@@ -420,10 +423,7 @@ export class DesafiosComponent implements OnInit {
       this.desabilitacomentario = true;
     }
   inserirRevisao(listaDeMensagens: Mensagem) {
-    return this.mensagemService.inserirMensagem(listaDeMensagens).subscribe({
-      next: (res) => res,
-      error: (err) => console.log(err),
-    });
+    return this.mensagemService.inserirMensagem(listaDeMensagens);
   }
   geraDataEHora(): string {
     const currentDate = new Date();

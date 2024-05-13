@@ -1,0 +1,34 @@
+{
+  "listaDeDesafio": [
+    {
+      "id": 1,
+      "pergunta": "Se uma borboleta vive cinco dias e a cada dia ela voa quatro metros, quantos metros ela terá percorrido em uma semana?",
+      "respostaA": "20 metros",
+      "respostaB": "25 metros",
+      "respostaC": "35 metros",
+      "respostaD": "40 metros",
+      "respostaCerta": "a",
+      "categoria": "raciocinio-logico"
+    },
+    {
+      "id": 2,
+      "pergunta": "Alguns meses têm 30 dias, outros 31. Quantos têm 28 dias?",
+      "respostaA": "apenas 1 mês",
+      "respostaB": "apenas 3 meses",
+      "respostaC": "Todos os meses",
+      "respostaD": "Nenhum mes",
+      "respostaCerta": "c",
+      "categoria": "raciocinio-logico"
+    },
+    {
+      "id": 3,
+      "pergunta": "Uma mãe tem 40 anos e o filho 10. Quantos anos devem se passar para que a idade da mãe seja três vezes maior que a do filho?",
+      "respostaA": "30 anos",
+      "respostaB": "5 anos",
+      "respostaC": "3 anos",
+      "respostaD": "120 anos",
+      "respostaCerta": "b",
+      "categoria": "raciocinio-logico"
+    }
+  ]
+}

@@ -3,6 +3,9 @@ import { Desafio } from '../model/desafio.model';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { EventEmitter, Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
+import { AngularFireDatabase } from '@angular/fire/compat/database';
+
 
 @Injectable({
   providedIn: 'root',
@@ -11,11 +14,11 @@ export class DesafiosService {
   categoria = '';
   public emitEvent = new EventEmitter();
    //Ambiente procução produção
-   private url = 'https://reinan1971.c41.integrator.host/';
+  // private url = 'https://reinan1971.c41.integrator.host/';
    //Ambiente teste
   //private url = 'http://localhost:8080/';
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private db: AngularFireDatabase) {}
 
   // eslint-disable-next-line @typescript-eslint/member-ordering
   httpOptions = {
@@ -23,23 +26,13 @@ export class DesafiosService {
     headers: new HttpHeaders({ 'Content-Type': 'application/json'})
   };
 
-  public listaDeDesafios(): Observable<Array<Desafio>> {
-    return this.http.get<Array<Desafio>>(`${this.url}desafio`).pipe(
-      (res) => res,
-      (error) => error
-    );
+  public listaDeDesafios(): Observable<Desafio[]> {
+    return this.http.get<{listaDeDesafio: Desafio[]}>('assets/desafio.json').pipe(
+      map(res => res.listaDeDesafio)
+      );
   }
 
-  public inserirPontuacao(listaDePontuacao: Pontuacao): Observable<Pontuacao> {
-    return this.http
-      .post<Pontuacao>(
-        `${this.url}pontuacao`,
-        JSON.stringify(listaDePontuacao),
-        this.httpOptions
-      )
-      .pipe(
-        (res) => res,
-        (error) => error
-      );
+  public inserirPontuacao(pontuacao: Pontuacao) {
+    return this.db.list('pontuacao').push(pontuacao);
   }
 }

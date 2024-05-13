@@ -50,7 +50,7 @@
         <p class="field">
           <ion-label class="label" for="message">Sua Mensagem</ion-label>
           <ion-textarea
-          [(ngModel)]="textoMensagem" type="text" placeholder="Insira seu nome" maxlength="250"
+          [(ngModel)]="textoMensagem" type="text" placeholder="Insira sua mensagem" maxlength="250"
             class="textarea"
             cols="50"
             id="message"
@@ -69,7 +69,7 @@
             value="Enviar"
             color="secondary"
             (click)="enviar()"
-            >Enviar</ion-button>
+            ><strong style="text-align: center; color: #4d5759;">Enviar</strong></ion-button>
         </p>
 
           <ion-button
@@ -78,7 +78,7 @@
             value="Enviar"
             color="secondary"
             (click)="requisicaoMensagem()"
-            >Atualizar</ion-button>
+            ><strong style="text-align: center; color: #4d5759;">Atualizar</strong></ion-button>
       </form>
       <div class="donativos">
         <p class="field">
@@ -87,7 +87,7 @@
               <ion-img src="assets/cifrao1.jpg" alt="" style="width: 100px; height: 30px;">
               </ion-img>
             </div>
-            <p style="text-align: center; color: #c1d8dc;"><strong>CONTRIBUIÇÃO</strong></p>
+            <p style="text-align: center; color: #4d5759;"><strong>CONTRIBUIÇÃO</strong></p>
         </a>
         </p>
       </div>
