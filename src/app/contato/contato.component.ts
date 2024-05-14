@@ -20,6 +20,7 @@ export class ContatoComponent implements OnInit {
   mensagem: Mensagem = new Mensagem(0,'','','');
   listaDeMensagens: Array<Mensagem> = [];
   statusConexao = 'sucesso';
+  idMensagem = 0;
 
   constructor(
     private mensagemService: MensagemService,
@@ -36,6 +37,7 @@ export class ContatoComponent implements OnInit {
       this.mensagemService.listaDeMensagem().subscribe({
         next: (res) => {
         this.listaDeMensagens = res;
+        this.idMensagem = this.listaDeMensagens[this.listaDeMensagens.length - 1].id + 1;
         this.listaDeMensagens.sort((a, b) => a.id - b.id);
         this.statusConexao = 'sucesso';
         },
@@ -70,12 +72,13 @@ export class ContatoComponent implements OnInit {
     }
 
     if(this.nomeValido && this.textoValido){
+      this.mensagem.id = this.idMensagem;
       this.mensagem.nome = this.nome;
       this.mensagem.texto = this.textoMensagem;
       this.mensagem.dataHora = this.geraDataEHora();
       this.inserir(this.mensagem);
       this.requisicaoMensagem();
-      //setTimeout(()=>{location.reload();},300);
+      setTimeout(()=>{location.reload();},300);
     }
   }
 

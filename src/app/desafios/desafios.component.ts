@@ -17,6 +17,7 @@ import { MensagemService } from '../service/mensagem.service';
   styleUrls: ['./desafios.component.scss'],
 })
 export class DesafiosComponent implements OnInit {
+  listaDeMensagens: Array<Mensagem> = [];
   desabilitanome =true;
   desabilitacomentario = true;
   comentario ='';
@@ -31,7 +32,8 @@ export class DesafiosComponent implements OnInit {
   isRewarded = false;
   listaDeDesafios: Array<Desafio> = [];
   listaDeRanking: Array<Pontuacao> = [];
-  id = 0;
+  idPontuacao = 0;
+  idMensagem = 0;
   contador = 0;
   categoria = '';
   finalizado = false;
@@ -231,13 +233,28 @@ export class DesafiosComponent implements OnInit {
     this.rankingService.listaDeRanking().subscribe({
       next: (res) => {
         this.listaDeRanking = res;
-        this.id = this.listaDeRanking[this.listaDeRanking.length - 1].id + 1;
+        this.idPontuacao = this.listaDeRanking[this.listaDeRanking.length - 1].id + 1;
       },
       error: (err) => {
         console.log(err);
       },
     });
   }
+
+   requisicaoMensagem() {
+    setTimeout(() => {
+      this.mensagemService.listaDeMensagem().subscribe({
+        next: (res) => {
+        this.listaDeMensagens = res;
+        this.idMensagem = this.listaDeMensagens[this.listaDeMensagens.length - 1].id + 1;
+        },
+        error: (err) => {
+          console.log(err);
+        },
+      });
+    }, 500);
+  }
+
 
   public gerarTitulo() {
     this.titulo = this.categoria.toUpperCase().replace('-',' ');
@@ -383,7 +400,7 @@ export class DesafiosComponent implements OnInit {
   }
   public dadosDaPontuacao(nome: string) {
     this.nome = nome;
-    this.pontuacao.id = this.id;
+    this.pontuacao.id = this.idPontuacao;
     this.pontuacao.nome = this.nome;
     this.pontuacao.pontos = this.pontos;
     this.pontuacao.categoria = this.categoria;
@@ -405,6 +422,7 @@ export class DesafiosComponent implements OnInit {
     this.iniciar();
   }
   enviarParaRevisao(comentario: string){
+      this.mensagem.id = this.idMensagem;
       this.mensagem.nome = 'REVISAR';
       this.mensagem.texto = `
       ${this.desafio.pergunta} \n
