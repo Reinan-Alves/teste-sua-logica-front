@@ -1,34 +1,2805 @@
 {
   "listaDeDesafio": [
     {
+      "id": 0,
+      "pergunta": "Leia a frase a seguir e responda à pergunta: \n\n'Mary is reading a book in the garden. She enjoys reading there because it is very peaceful and quiet.' Why does Mary enjoy reading in the garden?",
+      "respostaA": "Because it is noisy and crowded",
+      "respostaB": "Because it is peaceful and quiet",
+      "respostaC": "Because it is dark and cold",
+      "respostaD": "Because it is full of people",
+      "respostaCerta": "b",
+      "categoria": "inglês"
+    },
+    {
       "id": 1,
-      "pergunta": "Se uma borboleta vive cinco dias e a cada dia ela voa quatro metros, quantos metros ela terá percorrido em uma semana?",
-      "respostaA": "20 metros",
-      "respostaB": "25 metros",
-      "respostaC": "35 metros",
-      "respostaD": "40 metros",
+      "pergunta": "Qual é o significado da palavra 'benevolent'?",
+      "respostaA": "Benevolente",
+      "respostaB": "Bonito",
+      "respostaC": "Brilhante",
+      "respostaD": "Bilhete",
       "respostaCerta": "a",
-      "categoria": "raciocinio-logico"
+      "categoria": "inglês"
     },
     {
       "id": 2,
-      "pergunta": "Alguns meses têm 30 dias, outros 31. Quantos têm 28 dias?",
-      "respostaA": "apenas 1 mês",
-      "respostaB": "apenas 3 meses",
-      "respostaC": "Todos os meses",
-      "respostaD": "Nenhum mes",
-      "respostaCerta": "c",
-      "categoria": "raciocinio-logico"
+      "pergunta": "Qual é o antônimo da palavra 'ancient'?",
+      "respostaA": "Old",
+      "respostaB": "Modern",
+      "respostaC": "New",
+      "respostaD": "Vintage",
+      "respostaCerta": "b",
+      "categoria": "inglês"
     },
     {
       "id": 3,
-      "pergunta": "Uma mãe tem 40 anos e o filho 10. Quantos anos devem se passar para que a idade da mãe seja três vezes maior que a do filho?",
-      "respostaA": "30 anos",
-      "respostaB": "5 anos",
-      "respostaC": "3 anos",
-      "respostaD": "120 anos",
+      "pergunta": "Qual é o significado da expressão idiomática 'hit the nail on the head'?",
+      "respostaA": "Acertar o alvo",
+      "respostaB": "Bater a porta com força",
+      "respostaC": "Cortar o cabelo",
+      "respostaD": "Acertar a hora",
+      "respostaCerta": "a",
+      "categoria": "inglês"
+    },
+    {
+      "id": 4,
+      "pergunta": "Qual é o significado da expressão idiomática 'break a leg'?",
+      "respostaA": "Quebrar uma perna",
+      "respostaB": "Boa sorte",
+      "respostaC": "Ficar em pé",
+      "respostaD": "Correr rápido",
       "respostaCerta": "b",
-      "categoria": "raciocinio-logico"
+      "categoria": "inglês"
+    },
+    {
+      "id": 5,
+      "pergunta": "Qual é o significado da expressão idiomática 'piece of cake'?",
+      "respostaA": "Um pedaço de bolo",
+      "respostaB": "Uma fatia de pizza",
+      "respostaC": "Algo fácil de fazer",
+      "respostaD": "Um tipo de doce",
+      "respostaCerta": "c",
+      "categoria": "inglês"
+    },
+    {
+      "id": 6,
+      "pergunta": "Qual é o significado da expressão idiomática 'call it a day'?",
+      "respostaA": "Chamar alguém para o dia",
+      "respostaB": "Terminar o dia de trabalho",
+      "respostaC": "Realizar uma ligação",
+      "respostaD": "Fazer um convite",
+      "respostaCerta": "b",
+      "categoria": "inglês"
+    },
+    {
+      "id": 7,
+      "pergunta": "Qual é o tempo verbal correto para a seguinte frase: 'I have been living here for two years.'?",
+      "respostaA": "Present Perfect",
+      "respostaB": "Past Perfect",
+      "respostaC": "Present Perfect Continuous",
+      "respostaD": "Past Perfect Continuous",
+      "respostaCerta": "c",
+      "categoria": "inglês"
+    },
+    {
+      "id": 8,
+      "pergunta": "Qual é o discurso indireto da seguinte afirmação direta: 'She said, 'I will call you later.''?",
+      "respostaA": "She said she will call you later.",
+      "respostaB": "She said she calls you later.",
+      "respostaC": "She said she called you later.",
+      "respostaD": "She said she is calling you later.",
+      "respostaCerta": "a",
+      "categoria": "inglês"
+    },
+    {
+      "id": 9,
+      "pergunta": "Qual é a voz passiva correta da seguinte frase: 'They built a new house.'?",
+      "respostaA": "A new house was being built by them.",
+      "respostaB": "A new house was built by them.",
+      "respostaC": "A new house is being built by them.",
+      "respostaD": "A new house is built by them.",
+      "respostaCerta": "b",
+      "categoria": "inglês"
+    },
+    {
+      "id": 10,
+      "pergunta": "Qual é o phrasal verb correto para completar a frase: 'You should __________ the noise and focus on your studies.'?",
+      "respostaA": "make up",
+      "respostaB": "put up",
+      "respostaC": "take up",
+      "respostaD": "turn up",
+      "respostaCerta": "b",
+      "categoria": "inglês"
+    },
+    {
+      "id": 11,
+      "pergunta": "Complete a seguinte estrutura condicional avançada: 'If I had studied harder, __________.'?",
+      "respostaA": "I will pass the exam.",
+      "respostaB": "I would pass the exam.",
+      "respostaC": "I would have passed the exam.",
+      "respostaD": "I will have passed the exam.",
+      "respostaCerta": "c",
+      "categoria": "inglês"
+    },
+    {
+      "id": 12,
+      "pergunta": "Qual é o particípio passado irregular do verbo 'drink'?",
+      "respostaA": "drank",
+      "respostaB": "drunk",
+      "respostaC": "drinked",
+      "respostaD": "drunken",
+      "respostaCerta": "b",
+      "categoria": "inglês"
+    },
+    {
+      "id": 13,
+      "pergunta": "Qual é o significado da palavra 'entrepreneur'?",
+      "respostaA": "Engenheiro",
+      "respostaB": "Empreendedor",
+      "respostaC": "Professor",
+      "respostaD": "Empregado",
+      "respostaCerta": "b",
+      "categoria": "inglês"
+    },
+    {
+      "id": 14,
+      "pergunta": "O que a sigla 'CEO' significa em inglês?",
+      "respostaA": "Chief Executive Officer",
+      "respostaB": "Computer Engineering Organization",
+      "respostaC": "Central Executive Officer",
+      "respostaD": "Certified Engineering Officer",
+      "respostaCerta": "a",
+      "categoria": "inglês"
+    },
+    {
+      "id": 15,
+      "pergunta": "Qual é o significado da palavra 'perseverance'?",
+      "respostaA": "Perseverança",
+      "respostaB": "Perspectiva",
+      "respostaC": "Perplexidade",
+      "respostaD": "Perda",
+      "respostaCerta": "a",
+      "categoria": "inglês"
+    },
+    {
+      "id": 16,
+      "pergunta": "Como se diz 'Eu te amo' em inglês?",
+      "respostaA": "I love you",
+      "respostaB": "You love I",
+      "respostaC": "You love me",
+      "respostaD": "I you love",
+      "respostaCerta": "a",
+      "categoria": "inglês"
+    },
+    {
+      "id": 17,
+      "pergunta": "Qual é o oposto de 'happy'?",
+      "respostaA": "Sad",
+      "respostaB": "Joyful",
+      "respostaC": "Excited",
+      "respostaD": "Angry",
+      "respostaCerta": "a",
+      "categoria": "inglês"
+    },
+    {
+      "id": 18,
+      "pergunta": "O que significa 'goodbye'?",
+      "respostaA": "Olá",
+      "respostaB": "Adeus",
+      "respostaC": "Por favor",
+      "respostaD": "Obrigado",
+      "respostaCerta": "b",
+      "categoria": "inglês"
+    },
+    {
+      "id": 19,
+      "pergunta": "Qual é o plural de 'child'?",
+      "respostaA": "Children",
+      "respostaB": "Childs",
+      "respostaC": "Childes",
+      "respostaD": "Childe",
+      "respostaCerta": "a",
+      "categoria": "inglês"
+    },
+    {
+      "id": 20,
+      "pergunta": "Como se pronuncia a palavra 'schedule' em inglês?",
+      "respostaA": "Skedule",
+      "respostaB": "Shedule",
+      "respostaC": "Escadule",
+      "respostaD": "Esquedule",
+      "respostaCerta": "b",
+      "categoria": "inglês"
+    },
+    {
+      "id": 21,
+      "pergunta": "Qual é o plural de 'mouse'?",
+      "respostaA": "Mouses",
+      "respostaB": "Mice",
+      "respostaC": "Micees",
+      "respostaD": "Mouse",
+      "respostaCerta": "b",
+      "categoria": "inglês"
+    },
+    {
+      "id": 22,
+      "pergunta": "O que significa 'thank you'?",
+      "respostaA": "Obrigado",
+      "respostaB": "Por favor",
+      "respostaC": "Desculpe",
+      "respostaD": "Sim",
+      "respostaCerta": "a",
+      "categoria": "inglês"
+    },
+    {
+      "id": 23,
+      "pergunta": "Qual é o antônimo de 'big'?",
+      "respostaA": "Large",
+      "respostaB": "Small",
+      "respostaC": "Great",
+      "respostaD": "Huge",
+      "respostaCerta": "b",
+      "categoria": "inglês"
+    },
+    {
+      "id": 24,
+      "pergunta": "Como se diz 'bom dia' em inglês?",
+      "respostaA": "Good night",
+      "respostaB": "Good morning",
+      "respostaC": "Good afternoon",
+      "respostaD": "Hello",
+      "respostaCerta": "b",
+      "categoria": "inglês"
+    },
+    {
+      "id": 25,
+      "pergunta": "Qual é a tradução de 'house'?",
+      "respostaA": "Casa",
+      "respostaB": "Apartamento",
+      "respostaC": "Condomínio",
+      "respostaD": "Edifício",
+      "respostaCerta": "a",
+      "categoria": "inglês"
+    },
+    {
+      "id": 26,
+      "pergunta": "O que significa 'good night'?",
+      "respostaA": "Bom dia",
+      "respostaB": "Boa noite",
+      "respostaC": "Boa tarde",
+      "respostaD": "Olá",
+      "respostaCerta": "b",
+      "categoria": "inglês"
+    },
+    {
+      "id": 27,
+      "pergunta": "Qual é o antônimo de 'fast'?",
+      "respostaA": "Quick",
+      "respostaB": "Slow",
+      "respostaC": "Rapid",
+      "respostaD": "Speedy",
+      "respostaCerta": "b",
+      "categoria": "inglês"
+    },
+    {
+      "id": 28,
+      "pergunta": "Como se diz 'amigo' em inglês?",
+      "respostaA": "Friend",
+      "respostaB": "Companion",
+      "respostaC": "Mate",
+      "respostaD": "Brother",
+      "respostaCerta": "a",
+      "categoria": "inglês"
+    },
+    {
+      "id": 29,
+      "pergunta": "Qual é a tradução de 'cat'?",
+      "respostaA": "Cão",
+      "respostaB": "Gato",
+      "respostaC": "Pássaro",
+      "respostaD": "Peixe",
+      "respostaCerta": "b",
+      "categoria": "inglês"
+    },
+    {
+      "id": 30,
+      "pergunta": "O que significa 'hello'?",
+      "respostaA": "Adeus",
+      "respostaB": "Olá",
+      "respostaC": "Bom dia",
+      "respostaD": "Boa noite",
+      "respostaCerta": "b",
+      "categoria": "inglês"
+    },
+    {
+      "id": 31,
+      "pergunta": "Qual é a tradução de 'school'?",
+      "respostaA": "Escola",
+      "respostaB": "Universidade",
+      "respostaC": "Colégio",
+      "respostaD": "Faculdade",
+      "respostaCerta": "a",
+      "categoria": "inglês"
+    },
+    {
+      "id": 32,
+      "pergunta": "Como se pronuncia 'water' em inglês?",
+      "respostaA": "Uater",
+      "respostaB": "Vater",
+      "respostaC": "Woter",
+      "respostaD": "Watter",
+      "respostaCerta": "c",
+      "categoria": "inglês"
+    },
+    {
+      "id": 33,
+      "pergunta": "O que significa 'thank you'?",
+      "respostaA": "Por favor",
+      "respostaB": "Desculpe",
+      "respostaC": "Obrigado",
+      "respostaD": "Sim",
+      "respostaCerta": "c",
+      "categoria": "inglês"
+    },
+    {
+      "id": 34,
+      "pergunta": "Qual é o plural de 'man'?",
+      "respostaA": "Men",
+      "respostaB": "Mans",
+      "respostaC": "Mens",
+      "respostaD": "Manes",
+      "respostaCerta": "a",
+      "categoria": "inglês"
+    },
+    {
+      "id": 35,
+      "pergunta": "Qual é a tradução de 'dog'?",
+      "respostaA": "Gato",
+      "respostaB": "Cachorro",
+      "respostaC": "Pássaro",
+      "respostaD": "Peixe",
+      "respostaCerta": "b",
+      "categoria": "inglês"
+    },
+    {
+      "id": 36,
+      "pergunta": "Como se diz 'thank you' em português?",
+      "respostaA": "Olá",
+      "respostaB": "Obrigado",
+      "respostaC": "Por favor",
+      "respostaD": "Desculpe",
+      "respostaCerta": "b",
+      "categoria": "inglês"
+    },
+    {
+      "id": 37,
+      "pergunta": "Qual é o oposto de 'happy'?",
+      "respostaA": "Sad",
+      "respostaB": "Angry",
+      "respostaC": "Excited",
+      "respostaD": "Tired",
+      "respostaCerta": "a",
+      "categoria": "inglês"
+    },
+    {
+      "id": 38,
+      "pergunta": "Como se pronuncia 'book' em inglês?",
+      "respostaA": "Buk",
+      "respostaB": "Bukk",
+      "respostaC": "Buk",
+      "respostaD": "Bok",
+      "respostaCerta": "a",
+      "categoria": "inglês"
+    },
+    {
+      "id": 39,
+      "pergunta": "Qual é a tradução de 'friend'?",
+      "respostaA": "Irmão",
+      "respostaB": "Amigo",
+      "respostaC": "Companheiro",
+      "respostaD": "Colega",
+      "respostaCerta": "b",
+      "categoria": "inglês"
+    },
+    {
+      "id": 40,
+      "pergunta": "O que significa 'bye'?",
+      "respostaA": "Olá",
+      "respostaB": "Adeus",
+      "respostaC": "Bom dia",
+      "respostaD": "Boa noite",
+      "respostaCerta": "b",
+      "categoria": "inglês"
+    },
+    {
+      "id": 41,
+      "pergunta": "Qual é a tradução de 'yellow'?",
+      "respostaA": "Amarelo",
+      "respostaB": "Azul",
+      "respostaC": "Vermelho",
+      "respostaD": "Verde",
+      "respostaCerta": "a",
+      "categoria": "inglês"
+    },
+    {
+      "id": 42,
+      "pergunta": "Como se diz 'apple' em português?",
+      "respostaA": "Banana",
+      "respostaB": "Laranja",
+      "respostaC": "Maçã",
+      "respostaD": "Morango",
+      "respostaCerta": "c",
+      "categoria": "inglês"
+    },
+    {
+      "id": 43,
+      "pergunta": "Qual é a tradução de 'car'?",
+      "respostaA": "Casa",
+      "respostaB": "Carro",
+      "respostaC": "Avião",
+      "respostaD": "Bicicleta",
+      "respostaCerta": "b",
+      "categoria": "inglês"
+    },
+    {
+      "id": 44,
+      "pergunta": "O que significa 'thank you'?",
+      "respostaA": "Por favor",
+      "respostaB": "Desculpe",
+      "respostaC": "Obrigado",
+      "respostaD": "Sim",
+      "respostaCerta": "c",
+      "categoria": "inglês"
+    },
+    {
+      "id": 45,
+      "pergunta": "Qual é a tradução de 'cat'?",
+      "respostaA": "Cachorro",
+      "respostaB": "Gato",
+      "respostaC": "Pássaro",
+      "respostaD": "Peixe",
+      "respostaCerta": "b",
+      "categoria": "inglês"
+    },
+    {
+      "id": 46,
+      "pergunta": "O que significa 'good morning'?",
+      "respostaA": "Boa noite",
+      "respostaB": "Bom dia",
+      "respostaC": "Boa tarde",
+      "respostaD": "Olá",
+      "respostaCerta": "b",
+      "categoria": "inglês"
+    },
+    {
+      "id": 47,
+      "pergunta": "Qual é o antônimo de 'big'?",
+      "respostaA": "Large",
+      "respostaB": "Small",
+      "respostaC": "Huge",
+      "respostaD": "Great",
+      "respostaCerta": "b",
+      "categoria": "inglês"
+    },
+    {
+      "id": 48,
+      "pergunta": "Como se diz 'chair' em português?",
+      "respostaA": "Mesa",
+      "respostaB": "Sofá",
+      "respostaC": "Cadeira",
+      "respostaD": "Cama",
+      "respostaCerta": "c",
+      "categoria": "inglês"
+    },
+    {
+      "id": 49,
+      "pergunta": "Qual é a tradução de 'bird'?",
+      "respostaA": "Cão",
+      "respostaB": "Gato",
+      "respostaC": "Pássaro",
+      "respostaD": "Peixe",
+      "respostaCerta": "c",
+      "categoria": "inglês"
+    },
+    {
+      "id": 50,
+      "pergunta": "O que significa 'goodbye'?",
+      "respostaA": "Adeus",
+      "respostaB": "Olá",
+      "respostaC": "Bom dia",
+      "respostaD": "Boa noite",
+      "respostaCerta": "a",
+      "categoria": "inglês"
+    },
+    {
+      "id": 51,
+      "pergunta": "Qual é a tradução de 'table'?",
+      "respostaA": "Mesa",
+      "respostaB": "Sofá",
+      "respostaC": "Cadeira",
+      "respostaD": "Cama",
+      "respostaCerta": "a",
+      "categoria": "inglês"
+    },
+    {
+      "id": 52,
+      "pergunta": "Como se pronuncia 'home' em inglês?",
+      "respostaA": "Houm",
+      "respostaB": "Homi",
+      "respostaC": "Hom",
+      "respostaD": "Homme",
+      "respostaCerta": "c",
+      "categoria": "inglês"
+    },
+    {
+      "id": 53,
+      "pergunta": "O que significa 'please'?",
+      "respostaA": "Desculpe",
+      "respostaB": "Obrigado",
+      "respostaC": "Por favor",
+      "respostaD": "Sim",
+      "respostaCerta": "c",
+      "categoria": "inglês"
+    },
+    {
+      "id": 54,
+      "pergunta": "Qual é o plural de 'woman'?",
+      "respostaA": "Womans",
+      "respostaB": "Womens",
+      "respostaC": "Womanes",
+      "respostaD": "Women",
+      "respostaCerta": "d",
+      "categoria": "inglês"
+    },
+    {
+      "id": 55,
+      "pergunta": "Quais são as partes básicas de um computador?",
+      "respostaA": "CPU, teclado e mouse",
+      "respostaB": "Monitor, disco rígido e placa-mãe",
+      "respostaC": "Mouse, impressora e alto-falantes",
+      "respostaD": "Teclado, CPU e monitor",
+      "respostaCerta": "b",
+      "categoria": "informática"
+    },
+    {
+      "id": 56,
+      "pergunta": "Qual é a função principal da CPU?",
+      "respostaA": "Armazenar dados permanentemente",
+      "respostaB": "Exibir imagens na tela",
+      "respostaC": "Processar dados e executar instruções",
+      "respostaD": "Imprimir documentos",
+      "respostaCerta": "c",
+      "categoria": "informática"
+    },
+    {
+      "id": 57,
+      "pergunta": "O que significa CPU?",
+      "respostaA": "Central Processing Unit",
+      "respostaB": "Computer Personal Unit",
+      "respostaC": "Central Program Unit",
+      "respostaD": "Control Processing Unit",
+      "respostaCerta": "a",
+      "categoria": "informática"
+    },
+    {
+      "id": 58,
+      "pergunta": "Qual é a função da placa-mãe em um computador?",
+      "respostaA": "Processar dados",
+      "respostaB": "Exibir imagens na tela",
+      "respostaC": "Conectar todos os componentes do computador",
+      "respostaD": "Armazenar dados permanentemente",
+      "respostaCerta": "c",
+      "categoria": "informática"
+    },
+    {
+      "id": 59,
+      "pergunta": "O que é um disco rígido (HD)?",
+      "respostaA": "Um dispositivo de entrada",
+      "respostaB": "Um dispositivo de saída",
+      "respostaC": "Um dispositivo de armazenamento permanente",
+      "respostaD": "Um dispositivo de armazenamento temporário",
+      "respostaCerta": "c",
+      "categoria": "informática"
+    },
+    {
+      "id": 60,
+      "pergunta": "O que é RAM?",
+      "respostaA": "Um tipo de impressora",
+      "respostaB": "Um tipo de mouse",
+      "respostaC": "Memória de acesso aleatório",
+      "respostaD": "Armazenamento de longo prazo",
+      "respostaCerta": "c",
+      "categoria": "informática"
+    },
+    {
+      "id": 61,
+      "pergunta": "Qual é a função do sistema operacional?",
+      "respostaA": "Gerenciar recursos de hardware e software",
+      "respostaB": "Armazenar dados permanentemente",
+      "respostaC": "Exibir imagens na tela",
+      "respostaD": "Imprimir documentos",
+      "respostaCerta": "a",
+      "categoria": "informática"
+    },
+    {
+      "id": 62,
+      "pergunta": "O que é um arquivo?",
+      "respostaA": "Um dispositivo de entrada",
+      "respostaB": "Um documento impresso",
+      "respostaC": "Um conjunto de dados armazenados",
+      "respostaD": "Um dispositivo de saída",
+      "respostaCerta": "c",
+      "categoria": "informática"
+    },
+    {
+      "id": 63,
+      "pergunta": "Qual é a função de um mouse?",
+      "respostaA": "Exibir imagens na tela",
+      "respostaB": "Imprimir documentos",
+      "respostaC": "Controlar o cursor na tela",
+      "respostaD": "Gerenciar arquivos",
+      "respostaCerta": "c",
+      "categoria": "informática"
+    },
+    {
+      "id": 64,
+      "pergunta": "O que é um endereço IP?",
+      "respostaA": "Um código de barras",
+      "respostaB": "Um identificador único para dispositivos em uma rede",
+      "respostaC": "Um arquivo de texto",
+      "respostaD": "Um tipo de processador",
+      "respostaCerta": "b",
+      "categoria": "informática"
+    },
+    {
+      "id": 65,
+      "pergunta": "O que é um firewall?",
+      "respostaA": "Um tipo de teclado",
+      "respostaB": "Um dispositivo de armazenamento",
+      "respostaC": "Um sistema operacional",
+      "respostaD": "Um software que monitora e controla o tráfego de rede",
+      "respostaCerta": "d",
+      "categoria": "informática"
+    },
+    {
+      "id": 66,
+      "pergunta": "O que é um backup?",
+      "respostaA": "Um tipo de mouse",
+      "respostaB": "Uma cópia de segurança dos dados",
+      "respostaC": "Um dispositivo de entrada",
+      "respostaD": "Um arquivo de texto",
+      "respostaCerta": "b",
+      "categoria": "informática"
+    },
+    {
+      "id": 67,
+      "pergunta": "O que é um URL?",
+      "respostaA": "Um tipo de impressora",
+      "respostaB": "Um identificador único para dispositivos em uma rede",
+      "respostaC": "Um endereço de internet",
+      "respostaD": "Um programa de edição de texto",
+      "respostaCerta": "c",
+      "categoria": "informática"
+    },
+    {
+      "id": 68,
+      "pergunta": "O que é um servidor de rede?",
+      "respostaA": "Um dispositivo de armazenamento",
+      "respostaB": "Um tipo de mouse",
+      "respostaC": "Um computador que fornece recursos ou serviços a outros dispositivos em uma rede",
+      "respostaD": "Um arquivo de texto",
+      "respostaCerta": "c",
+      "categoria": "informática"
+    },
+    {
+      "id": 69,
+      "pergunta": "O que é um modem?",
+      "respostaA": "Um dispositivo de armazenamento",
+      "respostaB": "Um programa de edição de texto",
+      "respostaC": "Um dispositivo que converte sinais digitais em sinais analógicos e vice-versa",
+      "respostaD": "Um tipo de impressora",
+      "respostaCerta": "c",
+      "categoria": "informática"
+    },
+    {
+      "id": 70,
+      "pergunta": "O que é um arquivo PDF?",
+      "respostaA": "Um tipo de impressora",
+      "respostaB": "Um formato de arquivo usado para documentos eletrônicos",
+      "respostaC": "Um dispositivo de armazenamento",
+      "respostaD": "Um programa de edição de texto",
+      "respostaCerta": "b",
+      "categoria": "informática"
+    },
+    {
+      "id": 71,
+      "pergunta": "O que é um e-mail?",
+      "respostaA": "Um dispositivo de entrada",
+      "respostaB": "Um programa de edição de texto",
+      "respostaC": "Uma mensagem eletrônica enviada pela internet",
+      "respostaD": "Um tipo de mouse",
+      "respostaCerta": "c",
+      "categoria": "informática"
+    },
+    {
+      "id": 72,
+      "pergunta": "O que é um arquivo de imagem?",
+      "respostaA": "Um documento de texto",
+      "respostaB": "Um tipo de impressora",
+      "respostaC": "Um arquivo que contém dados de imagem",
+      "respostaD": "Um programa de edição de texto",
+      "respostaCerta": "c",
+      "categoria": "informática"
+    },
+    {
+      "id": 73,
+      "pergunta": "O que é um banco de dados?",
+      "respostaA": "Um arquivo de áudio",
+      "respostaB": "Um conjunto organizado de dados",
+      "respostaC": "Um tipo de teclado",
+      "respostaD": "Um dispositivo de armazenamento",
+      "respostaCerta": "b",
+      "categoria": "informática"
+    },
+    {
+      "id": 74,
+      "pergunta": "O que é um software antivírus?",
+      "respostaA": "Um programa de edição de texto",
+      "respostaB": "Um tipo de mouse",
+      "respostaC": "Um software projetado para detectar, prevenir e remover vírus de computador",
+      "respostaD": "Um dispositivo de armazenamento",
+      "respostaCerta": "c",
+      "categoria": "informática"
+    },
+    {
+      "id": 75,
+      "pergunta": "O que é uma CPU?",
+      "respostaA": "Um arquivo de texto",
+      "respostaB": "Um componente de hardware que executa as instruções de um programa",
+      "respostaC": "Um tipo de mouse",
+      "respostaD": "Um programa de edição de texto",
+      "respostaCerta": "b",
+      "categoria": "informática"
+    },
+    {
+      "id": 76,
+      "pergunta": "O que é uma memória RAM?",
+      "respostaA": "Um arquivo de áudio",
+      "respostaB": "Um dispositivo de armazenamento",
+      "respostaC": "Um tipo de memória temporária que armazena dados e programas em uso atualmente",
+      "respostaD": "Um programa de edição de texto",
+      "respostaCerta": "c",
+      "categoria": "informática"
+    },
+    {
+      "id": 83,
+      "pergunta": "O que é um programa de edição de texto?",
+      "respostaA": "Um software que permite criar e editar documentos de texto",
+      "respostaB": "Um componente de hardware",
+      "respostaC": "Um tipo de impressora",
+      "respostaD": "Um dispositivo de entrada",
+      "respostaCerta": "a",
+      "categoria": "informática"
+    },
+    {
+      "id": 77,
+      "pergunta": "O que é um arquivo PDF?",
+      "respostaA": "Um tipo de documento de texto",
+      "respostaB": "Um arquivo de áudio",
+      "respostaC": "Um programa de edição de texto",
+      "respostaD": "Um tipo de impressora",
+      "respostaCerta": "a",
+      "categoria": "informática"
+    },
+    {
+      "id": 78,
+      "pergunta": "O que é uma rede de computadores?",
+      "respostaA": "Um conjunto de hardware de computadores",
+      "respostaB": "Um tipo de mouse",
+      "respostaC": "Um programa de edição de texto",
+      "respostaD": "Um conjunto de dispositivos interconectados que compartilham recursos e informações",
+      "respostaCerta": "d",
+      "categoria": "informática"
+    },
+    {
+      "id": 79,
+      "pergunta": "O que é um endereço IP?",
+      "respostaA": "Um arquivo de imagem",
+      "respostaB": "Um número exclusivo atribuído a um dispositivo em uma rede",
+      "respostaC": "Um tipo de mouse",
+      "respostaD": "Um dispositivo de armazenamento",
+      "respostaCerta": "b",
+      "categoria": "informática"
+    },
+    {
+      "id": 80,
+      "pergunta": "O que é um firewall?",
+      "respostaA": "Um tipo de software antivírus",
+      "respostaB": "Um programa de edição de texto",
+      "respostaC": "Um componente de hardware que protege uma rede de ameaças externas",
+      "respostaD": "Um arquivo de áudio",
+      "respostaCerta": "c",
+      "categoria": "informática"
+    },
+    {
+      "id": 81,
+      "pergunta": "O que é um software de código aberto?",
+      "respostaA": "Um programa de edição de texto",
+      "respostaB": "Um software cujo código-fonte é disponibilizado ao público",
+      "respostaC": "Um tipo de mouse",
+      "respostaD": "Um arquivo de áudio",
+      "respostaCerta": "b",
+      "categoria": "informática"
+    },
+    {
+      "id": 82,
+      "pergunta": "O que é a nuvem (cloud computing)?",
+      "respostaA": "Um conjunto de hardware de computadores",
+      "respostaB": "Um tipo de armazenamento físico de dados",
+      "respostaC": "Um modelo de computação que permite acesso a dados e recursos pela internet",
+      "respostaD": "Um programa de edição de texto",
+      "respostaCerta": "c",
+      "categoria": "informática"
+    },
+    {
+      "id": 83,
+      "pergunta": "O que é um banco de dados relacional?",
+      "respostaA": "Um arquivo de imagem",
+      "respostaB": "Um tipo de mouse",
+      "respostaC": "Um conjunto de dados organizados em tabelas inter-relacionadas",
+      "respostaD": "Um dispositivo de armazenamento",
+      "respostaCerta": "c",
+      "categoria": "informática"
+    },
+    {
+      "id": 84,
+      "pergunta": "O que é uma VPN?",
+      "respostaA": "Um tipo de software antivírus",
+      "respostaB": "Um tipo de teclado",
+      "respostaC": "Uma rede privada virtual usada para criar uma conexão segura pela internet",
+      "respostaD": "Um dispositivo de armazenamento",
+      "respostaCerta": "c",
+      "categoria": "informática"
+    },
+    {
+      "id": 85,
+      "pergunta": "O que é um servidor de e-mail?",
+      "respostaA": "Um programa de edição de texto",
+      "respostaB": "Um tipo de mouse",
+      "respostaC": "Um servidor que envia e recebe e-mails",
+      "respostaD": "Um arquivo de áudio",
+      "respostaCerta": "c",
+      "categoria": "informática"
+    },
+    {
+      "id": 86,
+      "pergunta": "O que é um navegador da web?",
+      "respostaA": "Um tipo de teclado",
+      "respostaB": "Um programa de edição de texto",
+      "respostaC": "Um software que permite acessar páginas da web",
+      "respostaD": "Um dispositivo de armazenamento",
+      "respostaCerta": "c",
+      "categoria": "informática"
+    },
+    {
+      "id": 87,
+      "pergunta": "O que é um hardware?",
+      "respostaA": "Um conjunto de dados organizados em tabelas inter-relacionadas",
+      "respostaB": "Um arquivo de imagem",
+      "respostaC": "Os componentes físicos de um computador",
+      "respostaD": "Um dispositivo de armazenamento",
+      "respostaCerta": "c",
+      "categoria": "informática"
+    },
+    {
+      "id": 88,
+      "pergunta": "O que é um software?",
+      "respostaA": "Um arquivo de imagem",
+      "respostaB": "Um conjunto de dados organizados em tabelas inter-relacionadas",
+      "respostaC": "Os componentes físicos de um computador",
+      "respostaD": "Os programas e aplicativos que são executados em um computador",
+      "respostaCerta": "d",
+      "categoria": "informática"
+    },
+    {
+      "id": 89,
+      "pergunta": "O que é um teclado?",
+      "respostaA": "Um dispositivo de entrada usado para digitar informações em um computador",
+      "respostaB": "Um arquivo de áudio",
+      "respostaC": "Um tipo de mouse",
+      "respostaD": "Um programa de edição de texto",
+      "respostaCerta": "a",
+      "categoria": "informática"
+    },
+    {
+      "id": 100,
+      "pergunta": "O que é um vírus de computador?",
+      "respostaA": "Um arquivo de imagem",
+      "respostaB": "Um tipo de mouse",
+      "respostaC": "Um programa de software malicioso projetado para se espalhar e causar danos",
+      "respostaD": "Um dispositivo de armazenamento",
+      "respostaCerta": "c",
+      "categoria": "informática"
+    },
+    {
+      "id": 101,
+      "pergunta": "O que é um servidor?",
+      "respostaA": "Um arquivo de imagem",
+      "respostaB": "Um tipo de mouse",
+      "respostaC": "Um computador ou sistema que fornece recursos, serviços ou dados a outros computadores",
+      "respostaD": "Um dispositivo de armazenamento",
+      "respostaCerta": "c",
+      "categoria": "informática"
+    },
+    {
+      "id": 102,
+      "pergunta": "Qual é o animal terrestre mais rápido do mundo?",
+      "respostaA": "Guepardo",
+      "respostaB": "Leão",
+      "respostaC": "Antílope",
+      "respostaD": "Leopardo",
+      "respostaCerta": "a",
+      "categoria": "curiosidades"
+    },
+    {
+      "id": 103,
+      "pergunta": "Qual é o país com a maior área territorial do mundo?",
+      "respostaA": "Estados Unidos",
+      "respostaB": "Rússia",
+      "respostaC": "China",
+      "respostaD": "Canadá",
+      "respostaCerta": "b",
+      "categoria": "curiosidades"
+    },
+    {
+      "id": 104,
+      "pergunta": "Quantos planetas existem no sistema solar?",
+      "respostaA": "8",
+      "respostaB": "7",
+      "respostaC": "9",
+      "respostaD": "10",
+      "respostaCerta": "a",
+      "categoria": "curiosidades"
+    },
+    {
+      "id": 105,
+      "pergunta": "Qual é o maior animal do mundo?",
+      "respostaA": "Elefante",
+      "respostaB": "Baleia Azul",
+      "respostaC": "Girafa",
+      "respostaD": "Hipopótamo",
+      "respostaCerta": "b",
+      "categoria": "curiosidades"
+    },
+    {
+      "id": 106,
+      "pergunta": "Qual é o metal mais precioso?",
+      "respostaA": "Prata",
+      "respostaB": "Ouro",
+      "respostaC": "Platina",
+      "respostaD": "Ferro",
+      "respostaCerta": "b",
+      "categoria": "curiosidades"
+    },
+    {
+      "id": 107,
+      "pergunta": "Qual é o país com a maior população do mundo?",
+      "respostaA": "Brasil",
+      "respostaB": "Índia",
+      "respostaC": "Estados Unidos",
+      "respostaD": "China",
+      "respostaCerta": "d",
+      "categoria": "curiosidades"
+    },
+    {
+      "id": 108,
+      "pergunta": "Qual é o maior oceano do mundo?",
+      "respostaA": "Oceano Índico",
+      "respostaB": "Oceano Atlântico",
+      "respostaC": "Oceano Pacífico",
+      "respostaD": "Oceano Ártico",
+      "respostaCerta": "c",
+      "categoria": "curiosidades"
+    },
+    {
+      "id": 109,
+      "pergunta": "Quantos ossos tem o corpo humano?",
+      "respostaA": "206",
+      "respostaB": "200",
+      "respostaC": "220",
+      "respostaD": "180",
+      "respostaCerta": "a",
+      "categoria": "curiosidades"
+    },
+    {
+      "id": 110,
+      "pergunta": "Qual é o maior deserto do mundo?",
+      "respostaA": "Deserto do Saara",
+      "respostaB": "Deserto da Arábia",
+      "respostaC": "Deserto do Atacama",
+      "respostaD": "Deserto da Patagônia",
+      "respostaCerta": "a",
+      "categoria": "curiosidades"
+    },
+    {
+      "id": 111,
+      "pergunta": "Quem pintou a Mona Lisa?",
+      "respostaA": "Pablo Picasso",
+      "respostaB": "Vincent van Gogh",
+      "respostaC": "Leonardo da Vinci",
+      "respostaD": "Michelangelo",
+      "respostaCerta": "c",
+      "categoria": "curiosidades"
+    },
+    {
+      "id": 112,
+      "pergunta": "Qual é a montanha mais alta do mundo?",
+      "respostaA": "Monte Everest",
+      "respostaB": "Monte Kilimanjaro",
+      "respostaC": "Monte Fuji",
+      "respostaD": "Monte McKinley",
+      "respostaCerta": "a",
+      "categoria": "curiosidades"
+    },
+    {
+      "id": 113,
+      "pergunta": "Qual é a cor mais quente do espectro?",
+      "respostaA": "Vermelho",
+      "respostaB": "Amarelo",
+      "respostaC": "Laranja",
+      "respostaD": "Roxo",
+      "respostaCerta": "a",
+      "categoria": "curiosidades"
+    },
+    {
+      "id": 114,
+      "pergunta": "Quem escreveu 'A Odisséia'?",
+      "respostaA": "Homero",
+      "respostaB": "Platão",
+      "respostaC": "Sófocles",
+      "respostaD": "Aristóteles",
+      "respostaCerta": "a",
+      "categoria": "curiosidades"
+    },
+    {
+      "id": 115,
+      "pergunta": "Qual é a cidade mais populosa do mundo?",
+      "respostaA": "Tóquio",
+      "respostaB": "Xangai",
+      "respostaC": "Cidade do México",
+      "respostaD": "Mumbai",
+      "respostaCerta": "a",
+      "categoria": "curiosidades"
+    },
+    {
+      "id": 116,
+      "pergunta": "Qual é o maior animal terrestre?",
+      "respostaA": "Elefante africano",
+      "respostaB": "Búfalo africano",
+      "respostaC": "Girafa",
+      "respostaD": "Hipopótamo",
+      "respostaCerta": "a",
+      "categoria": "curiosidades"
+    },
+    {
+      "id": 117,
+      "pergunta": "Qual é a cidade mais antiga do mundo?",
+      "respostaA": "Damasco",
+      "respostaB": "Jerusalém",
+      "respostaC": "Roma",
+      "respostaD": "Atenas",
+      "respostaCerta": "a",
+      "categoria": "curiosidades"
+    },
+    {
+      "id": 118,
+      "pergunta": "Qual é a maior ilha do mundo?",
+      "respostaA": "Groenlândia",
+      "respostaB": "Austrália",
+      "respostaC": "Ilha de Baffin",
+      "respostaD": "Nova Guiné",
+      "respostaCerta": "a",
+      "categoria": "curiosidades"
+    },
+    {
+      "id": 119,
+      "pergunta": "Qual é o metal mais denso?",
+      "respostaA": "Osmio",
+      "respostaB": "Ouro",
+      "respostaC": "Ferro",
+      "respostaD": "Chumbo",
+      "respostaCerta": "a",
+      "categoria": "curiosidades"
+    },
+    {
+      "id": 120,
+      "pergunta": "Quem escreveu 'Dom Quixote'?",
+      "respostaA": "William Shakespeare",
+      "respostaB": "Miguel de Cervantes",
+      "respostaC": "Garcia Marquez",
+      "respostaD": "Franz Kafka",
+      "respostaCerta": "b",
+      "categoria": "curiosidades"
+    },
+    {
+      "id": 121,
+      "pergunta": "Qual é a velocidade da luz?",
+      "respostaA": "300.000 km/s",
+      "respostaB": "200.000 km/s",
+      "respostaC": "400.000 km/s",
+      "respostaD": "500.000 km/s",
+      "respostaCerta": "a",
+      "categoria": "curiosidades"
+    },
+    {
+      "id": 122,
+      "pergunta": "Qual é o elemento químico mais abundante no universo?",
+      "respostaA": "Hidrogênio",
+      "respostaB": "Oxigênio",
+      "respostaC": "Carbono",
+      "respostaD": "Ferro",
+      "respostaCerta": "a",
+      "categoria": "curiosidades"
+    },
+    {
+      "id": 123,
+      "pergunta": "Qual é o maior órgão do corpo humano?",
+      "respostaA": "Pele",
+      "respostaB": "Cérebro",
+      "respostaC": "Fígado",
+      "respostaD": "Pulmões",
+      "respostaCerta": "a",
+      "categoria": "curiosidades"
+    },
+    {
+      "id": 124,
+      "pergunta": "Quem foi o primeiro homem a pisar na lua?",
+      "respostaA": "Neil Armstrong",
+      "respostaB": "Buzz Aldrin",
+      "respostaC": "Michael Collins",
+      "respostaD": "Yuri Gagarin",
+      "respostaCerta": "a",
+      "categoria": "curiosidades"
+    },
+    {
+      "id": 125,
+      "pergunta": "Qual é a capital do Brasil?",
+      "respostaA": "São Paulo",
+      "respostaB": "Rio de Janeiro",
+      "respostaC": "Brasília",
+      "respostaD": "Salvador",
+      "respostaCerta": "c",
+      "categoria": "curiosidades"
+    },
+    {
+      "id": 126,
+      "pergunta": "Qual é o rio mais longo do mundo?",
+      "respostaA": "Rio Nilo",
+      "respostaB": "Rio Amazonas",
+      "respostaC": "Rio Yangtze",
+      "respostaD": "Rio Mississipi",
+      "respostaCerta": "a",
+      "categoria": "curiosidades"
+    },
+    {
+      "id": 127,
+      "pergunta": "Qual é a capital da França?",
+      "respostaA": "Londres",
+      "respostaB": "Madri",
+      "respostaC": "Paris",
+      "respostaD": "Berlim",
+      "respostaCerta": "c",
+      "categoria": "curiosidades"
+    },
+    {
+      "id": 128,
+      "pergunta": "Qual é a capital do Japão?",
+      "respostaA": "Pequim",
+      "respostaB": "Seul",
+      "respostaC": "Tóquio",
+      "respostaD": "Bangkok",
+      "respostaCerta": "c",
+      "categoria": "curiosidades"
+    },
+    {
+      "id": 129,
+      "pergunta": "Qual é a montanha mais alta do Brasil?",
+      "respostaA": "Pico da Neblina",
+      "respostaB": "Pico da Bandeira",
+      "respostaC": "Pico do Jaraguá",
+      "respostaD": "Pico dos Marins",
+      "respostaCerta": "a",
+      "categoria": "curiosidades"
+    },
+    {
+      "id": 130,
+      "pergunta": "Qual é a capital da Austrália?",
+      "respostaA": "Sydney",
+      "respostaB": "Melbourne",
+      "respostaC": "Canberra",
+      "respostaD": "Brisbane",
+      "respostaCerta": "c",
+      "categoria": "curiosidades"
+    },
+    {
+      "id": 131,
+      "pergunta": "Qual é o país mais populoso da África?",
+      "respostaA": "África do Sul",
+      "respostaB": "Egito",
+      "respostaC": "Nigéria",
+      "respostaD": "Etiópia",
+      "respostaCerta": "c",
+      "categoria": "curiosidades"
+    },
+    {
+      "id": 132,
+      "pergunta": "Qual é o menor país do mundo?",
+      "respostaA": "Mônaco",
+      "respostaB": "Nauru",
+      "respostaC": "Vaticano",
+      "respostaD": "San Marino",
+      "respostaCerta": "c",
+      "categoria": "curiosidades"
+    },
+    {
+      "id": 133,
+      "pergunta": "Qual é a maior floresta tropical do mundo?",
+      "respostaA": "Floresta do Congo",
+      "respostaB": "Floresta Amazônica",
+      "respostaC": "Floresta da Nova Guiné",
+      "respostaD": "Floresta de Bornéu",
+      "respostaCerta": "b",
+      "categoria": "curiosidades"
+    },
+    {
+      "id": 134,
+      "pergunta": "Qual é a moeda oficial do Japão?",
+      "respostaA": "Won",
+      "respostaB": "Iene",
+      "respostaC": "Yuan",
+      "respostaD": "Dólar",
+      "respostaCerta": "b",
+      "categoria": "curiosidades"
+    },
+    {
+      "id": 135,
+      "pergunta": "Qual é a capital do Canadá?",
+      "respostaA": "Toronto",
+      "respostaB": "Vancouver",
+      "respostaC": "Montreal",
+      "respostaD": "Ottawa",
+      "respostaCerta": "d",
+      "categoria": "curiosidades"
+    },
+    {
+      "id": 136,
+      "pergunta": "Qual é o maior país da América do Sul?",
+      "respostaA": "Argentina",
+      "respostaB": "Brasil",
+      "respostaC": "Colômbia",
+      "respostaD": "Venezuela",
+      "respostaCerta": "b",
+      "categoria": "curiosidades"
+    },
+    {
+      "id": 137,
+      "pergunta": "Qual é a capital da Espanha?",
+      "respostaA": "Barcelona",
+      "respostaB": "Sevilha",
+      "respostaC": "Madrid",
+      "respostaD": "Valência",
+      "respostaCerta": "c",
+      "categoria": "curiosidades"
+    },
+    {
+      "id": 138,
+      "pergunta": "Qual é o continente com mais países?",
+      "respostaA": "Ásia",
+      "respostaB": "África",
+      "respostaC": "Europa",
+      "respostaD": "América do Sul",
+      "respostaCerta": "b",
+      "categoria": "curiosidades"
+    },
+    {
+      "id": 139,
+      "pergunta": "Qual é a capital da Argentina?",
+      "respostaA": "Lima",
+      "respostaB": "Buenos Aires",
+      "respostaC": "Santiago",
+      "respostaD": "Montevidéu",
+      "respostaCerta": "b",
+      "categoria": "curiosidades"
+    },
+    {
+      "id": 140,
+      "pergunta": "Qual é a montanha mais alta da Europa?",
+      "respostaA": "Monte Branco",
+      "respostaB": "Monte Elbrus",
+      "respostaC": "Monte Matterhorn",
+      "respostaD": "Monte Rosa",
+      "respostaCerta": "b",
+      "categoria": "curiosidades"
+    },
+    {
+      "id": 141,
+      "pergunta": "Qual é o rio que atravessa Londres?",
+      "respostaA": "Rio Sena",
+      "respostaB": "Rio Danúbio",
+      "respostaC": "Rio Tâmisa",
+      "respostaD": "Rio Tibre",
+      "respostaCerta": "c",
+      "categoria": "curiosidades"
+    },
+    {
+      "id": 142,
+      "pergunta": "Qual é a capital da Alemanha?",
+      "respostaA": "Berlim",
+      "respostaB": "Munique",
+      "respostaC": "Hamburgo",
+      "respostaD": "Frankfurt",
+      "respostaCerta": "a",
+      "categoria": "curiosidades"
+    },
+    {
+      "id": 143,
+      "pergunta": "Qual é a capital da Rússia?",
+      "respostaA": "São Petersburgo",
+      "respostaB": "Kiev",
+      "respostaC": "Moscou",
+      "respostaD": "Varsóvia",
+      "respostaCerta": "c",
+      "categoria": "curiosidades"
+    },
+    {
+      "id": 144,
+      "pergunta": "Qual é o rio mais longo da América do Sul?",
+      "respostaA": "Rio Amazonas",
+      "respostaB": "Rio Paraná",
+      "respostaC": "Rio Orinoco",
+      "respostaD": "Rio São Francisco",
+      "respostaCerta": "a",
+      "categoria": "curiosidades"
+    },
+    {
+      "id": 145,
+      "pergunta": "Qual é o maior mamífero terrestre do mundo?",
+      "respostaA": "Elefante",
+      "respostaB": "Girafa",
+      "respostaC": "Rinoceronte",
+      "respostaD": "Hipopótamo",
+      "respostaCerta": "a",
+      "categoria": "curiosidades"
+    },
+    {
+      "id": 148,
+      "pergunta": "Qual é o nome completo da cidade de São Paulo?",
+      "respostaA": "São Paulo do Brasil",
+      "respostaB": "São Paulo de Loanda",
+      "respostaC": "São Paulo da Assunção",
+      "respostaD": "São Paulo de Piratininga",
+      "respostaCerta": "d",
+      "categoria": "curiosidades"
+    },
+    {
+      "id": 149,
+      "pergunta": "Qual é o instrumento musical mais antigo do mundo?",
+      "respostaA": "Flauta",
+      "respostaB": "Tambor",
+      "respostaC": "Harpa",
+      "respostaD": "Lira",
+      "respostaCerta": "a",
+      "categoria": "curiosidades"
+    },
+    {
+      "id": 150,
+      "pergunta": "Qual é o metal mais raro na crosta terrestre?",
+      "respostaA": "Ouro",
+      "respostaB": "Platina",
+      "respostaC": "Ródio",
+      "respostaD": "Iridium",
+      "respostaCerta": "d",
+      "categoria": "curiosidades"
+    },
+    {
+      "id": 151,
+      "pergunta": "Qual é o animal mais venenoso do mundo?",
+      "respostaA": "Água-viva",
+      "respostaB": "Cobra",
+      "respostaC": "Aranha",
+      "respostaD": "Medusa",
+      "respostaCerta": "d",
+      "categoria": "curiosidades"
+    },
+    {
+      "id": 152,
+      "pergunta": "Qual é a flor mais vendida no mundo?",
+      "respostaA": "Rosa",
+      "respostaB": "Orquídea",
+      "respostaC": "Crisântemo",
+      "respostaD": "Girassol",
+      "respostaCerta": "a",
+      "categoria": "curiosidades"
+    },
+    {
+      "id": 153,
+      "pergunta": "Qual cidade nunca foi capital do Brasil?",
+      "respostaA": "São Paulo",
+      "respostaB": "Rio de Janeiro",
+      "respostaC": "Brasília",
+      "respostaD": "Salvador",
+      "respostaCerta": "a",
+      "categoria": "curiosidades"
+    },
+    {
+      "id": 154,
+      "pergunta": "Qual é o resultado de 2 + 2 * 2?",
+      "respostaA": "4",
+      "respostaB": "6",
+      "respostaC": "8",
+      "respostaD": "10",
+      "respostaCerta": "b",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 155,
+      "pergunta": "Qual é o próximo número na sequência: 1, 1, 2, 3, 5, ...?",
+      "respostaA": "7",
+      "respostaB": "8",
+      "respostaC": "9",
+      "respostaD": "10",
+      "respostaCerta": "c",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 156,
+      "pergunta": "Quantos dias tem um ano bissexto?",
+      "respostaA": "365",
+      "respostaB": "366",
+      "respostaC": "364",
+      "respostaD": "367",
+      "respostaCerta": "b",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 157,
+      "pergunta": "Se um gato tem quatro patas, quantas patas têm três gatos?",
+      "respostaA": "8",
+      "respostaB": "10",
+      "respostaC": "12",
+      "respostaD": "14",
+      "respostaCerta": "c",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 158,
+      "pergunta": "Se ontem foi quinta-feira, que dia será depois de amanhã?",
+      "respostaA": "Sábado",
+      "respostaB": "Segunda-feira",
+      "respostaC": "Domingo",
+      "respostaD": "Terça-feira",
+      "respostaCerta": "c",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 159,
+      "pergunta": "Qual é o próximo número na sequência: 2, 4, 8, 16, ...?",
+      "respostaA": "24",
+      "respostaB": "32",
+      "respostaC": "48",
+      "respostaD": "64",
+      "respostaCerta": "b",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 160,
+      "pergunta": "Quantos lados tem um hexágono?",
+      "respostaA": "4",
+      "respostaB": "5",
+      "respostaC": "6",
+      "respostaD": "7",
+      "respostaCerta": "c",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 161,
+      "pergunta": "Quantos lados tem um pentágono?",
+      "respostaA": "4",
+      "respostaB": "5",
+      "respostaC": "6",
+      "respostaD": "7",
+      "respostaCerta": "b",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 162,
+      "pergunta": "Se 3 maçãs custam R$ 9, quanto custam 6 maçãs?",
+      "respostaA": "R$ 9",
+      "respostaB": "R$ 12",
+      "respostaC": "R$ 15",
+      "respostaD": "R$ 18",
+      "respostaCerta": "c",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 163,
+      "pergunta": "Qual é o próximo número na sequência: 2, 4, 6, 8, ...?",
+      "respostaA": "10",
+      "respostaB": "11",
+      "respostaC": "12",
+      "respostaD": "14",
+      "respostaCerta": "d",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 164,
+      "pergunta": "Se um avião voa a uma velocidade de 600 km/h, quanto tempo levará para percorrer 1200 km?",
+      "respostaA": "1 hora",
+      "respostaB": "2 horas",
+      "respostaC": "3 horas",
+      "respostaD": "4 horas",
+      "respostaCerta": "b",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 165,
+      "pergunta": "Qual é o oposto de 'frio'?",
+      "respostaA": "Quente",
+      "respostaB": "Não Gelado",
+      "respostaC": "AGelado",
+      "respostaD": "Gelado",
+      "respostaCerta": "a",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 166,
+      "pergunta": "Quantos lados tem um octógono?",
+      "respostaA": "6",
+      "respostaB": "7",
+      "respostaC": "8",
+      "respostaD": "9",
+      "respostaCerta": "c",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 167,
+      "pergunta": "Se 5 pessoas podem pintar uma casa em 8 horas, quantas pessoas são necessárias para fazer o mesmo trabalho em 4 horas?",
+      "respostaA": "10",
+      "respostaB": "12",
+      "respostaC": "15",
+      "respostaD": "20",
+      "respostaCerta": "b",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 168,
+      "pergunta": "Qual é o resultado de 3 × (4 + 2)?",
+      "respostaA": "10",
+      "respostaB": "12",
+      "respostaC": "14",
+      "respostaD": "16",
+      "respostaCerta": "d",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 169,
+      "pergunta": "Se hoje é segunda-feira, que dia será daqui a 3 dias?",
+      "respostaA": "Quinta-feira",
+      "respostaB": "Sexta-feira",
+      "respostaC": "Sábado",
+      "respostaD": "Domingo",
+      "respostaCerta": "a",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 170,
+      "pergunta": "Qual é o próximo número na sequência: 1, 4, 9, 16, ...?",
+      "respostaA": "20",
+      "respostaB": "25",
+      "respostaC": "30",
+      "respostaD": "36",
+      "respostaCerta": "b",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 171,
+      "pergunta": "Se hoje é terça-feira, que dia será daqui a 2 dias?",
+      "respostaA": "Quinta-feira",
+      "respostaB": "Sexta-feira",
+      "respostaC": "Sábado",
+      "respostaD": "Domingo",
+      "respostaCerta": "b",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 172,
+      "pergunta": "Qual é o dobro de 7?",
+      "respostaA": "10",
+      "respostaB": "12",
+      "respostaC": "14",
+      "respostaD": "16",
+      "respostaCerta": "c",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 173,
+      "pergunta": "Se uma dúzia de ovos custa R$ 24, quanto custa meia dúzia?",
+      "respostaA": "R$ 2",
+      "respostaB": "R$ 3",
+      "respostaC": "R$ 4",
+      "respostaD": "R$ 12",
+      "respostaCerta": "d",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 174,
+      "pergunta": "Qual é o resultado de 12 ÷ 3?",
+      "respostaA": "2",
+      "respostaB": "3",
+      "respostaC": "4",
+      "respostaD": "6",
+      "respostaCerta": "c",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 175,
+      "pergunta": "Quantos meses têm 28 dias?",
+      "respostaA": "1",
+      "respostaB": "6",
+      "respostaC": "8",
+      "respostaD": "12",
+      "respostaCerta": "d",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 176,
+      "pergunta": "Se hoje é quinta-feira, que dia será daqui a 5 dias?",
+      "respostaA": "Segunda-feira",
+      "respostaB": "Terça-feira",
+      "respostaC": "Quarta-feira",
+      "respostaD": "Sexta-feira",
+      "respostaCerta": "d",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 177,
+      "pergunta": "Quantos segundos há em um minuto e meio?",
+      "respostaA": "30",
+      "respostaB": "45",
+      "respostaC": "60",
+      "respostaD": "90",
+      "respostaCerta": "d",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 178,
+      "pergunta": "Se 8 + 3 = 11, quanto é 9 + 4?",
+      "respostaA": "11",
+      "respostaB": "12",
+      "respostaC": "13",
+      "respostaD": "14",
+      "respostaCerta": "c",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 179,
+      "pergunta": "Qual é o resultado de 5 × 5 / 5?",
+      "respostaA": "5",
+      "respostaB": "15",
+      "respostaC": "20",
+      "respostaD": "25",
+      "respostaCerta": "a",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 180,
+      "pergunta": "Se 3 = 9, 6 = 18, 9 = 27, então 12 = ?",
+      "respostaA": "36",
+      "respostaB": "30",
+      "respostaC": "24",
+      "respostaD": "21",
+      "respostaCerta": "a",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 181,
+      "pergunta": "Qual é o próximo número na sequência: 2, 4, 6, 8, ...?",
+      "respostaA": "10",
+      "respostaB": "12",
+      "respostaC": "14",
+      "respostaD": "16",
+      "respostaCerta": "b",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 182,
+      "pergunta": "Qual é o antecessor de 30 + 1?",
+      "respostaA": "29",
+      "respostaB": "30",
+      "respostaC": "31",
+      "respostaD": "32",
+      "respostaCerta": "b",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 183,
+      "pergunta": "Qual é a metade de 20 * 2?",
+      "respostaA": "5",
+      "respostaB": "10",
+      "respostaC": "15",
+      "respostaD": "20",
+      "respostaCerta": "d",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 184,
+      "pergunta": "Se 5 × 4 = 20, quanto é 20 ÷ 4?",
+      "respostaA": "5",
+      "respostaB": "10",
+      "respostaC": "15",
+      "respostaD": "20",
+      "respostaCerta": "a",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 185,
+      "pergunta": "Quantos lados tem um quadrado de cabeça para baixo?",
+      "respostaA": "2",
+      "respostaB": "3",
+      "respostaC": "4",
+      "respostaD": "5",
+      "respostaCerta": "c",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 186,
+      "pergunta": "Qual é a soma de 9 + 6 - 9?",
+      "respostaA": "13",
+      "respostaB": "14",
+      "respostaC": "15",
+      "respostaD": "6",
+      "respostaCerta": "d",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 187,
+      "pergunta": "Quantos dedos têm duas mãos e 8 pés?",
+      "respostaA": "10",
+      "respostaB": "15",
+      "respostaC": "50",
+      "respostaD": "25",
+      "respostaCerta": "c",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 188,
+      "pergunta": "Qual é o resultado de 8 - 3?",
+      "respostaA": "3 - 8",
+      "respostaB": "4 - 1,5",
+      "respostaC": "15 - 10",
+      "respostaD": "6",
+      "respostaCerta": "c",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 189,
+      "pergunta": "Se 2 = 6, 3 = 12, 4 = 20, então 5 = ?",
+      "respostaA": "30",
+      "respostaB": "25",
+      "respostaC": "24",
+      "respostaD": "22",
+      "respostaCerta": "a",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 190,
+      "pergunta": "Quantos triângulos existem na figura abaixo?\n  /\n /__\\",
+      "respostaA": "1",
+      "respostaB": "2",
+      "respostaC": "3",
+      "respostaD": "4",
+      "respostaCerta": "c",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 191,
+      "pergunta": "Quantas letras 'A' existem na frase 'O rato roeu a roupa'?",
+      "respostaA": "2",
+      "respostaB": "3",
+      "respostaC": "4",
+      "respostaD": "5",
+      "respostaCerta": "b",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 192,
+      "pergunta": "Se um gato tem 4 pernas, quantas pernas têm 6 gatos?",
+      "respostaA": "20",
+      "respostaB": "24",
+      "respostaC": "26",
+      "respostaD": "30",
+      "respostaCerta": "b",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 193,
+      "pergunta": "Quantas vezes podemos subtrair 10 de 100?",
+      "respostaA": "9",
+      "respostaB": "10",
+      "respostaC": "11",
+      "respostaD": "12",
+      "respostaCerta": "c",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 194,
+      "pergunta": "Qual é o próximo número na sequência: 3, 6, 9, 12, ...?",
+      "respostaA": "15",
+      "respostaB": "16",
+      "respostaC": "18",
+      "respostaD": "20",
+      "respostaCerta": "c",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 195,
+      "pergunta": "Qual é o antecessor de 50/25?",
+      "respostaA": "48",
+      "respostaB": "49",
+      "respostaC": "50",
+      "respostaD": "1",
+      "respostaCerta": "d",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 196,
+      "pergunta": "Qual é a metade de 31?",
+      "respostaA": "15,5",
+      "respostaB": "12,2",
+      "respostaC": "15,2",
+      "respostaD": "13,3",
+      "respostaCerta": "a",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 197,
+      "pergunta": "Se 4 × 3 = 12, quanto é 12 ÷ 3?",
+      "respostaA": "2",
+      "respostaB": "3",
+      "respostaC": "4",
+      "respostaD": "6",
+      "respostaCerta": "b",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 198,
+      "pergunta": "Qual é o próximo número na sequência: 2, 4, 6, 8, ...?",
+      "respostaA": "10",
+      "respostaB": "11",
+      "respostaC": "12",
+      "respostaD": "14",
+      "respostaCerta": "d",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 199,
+      "pergunta": "Qual é o resultado de 5 × 5?",
+      "respostaA": "10",
+      "respostaB": "15",
+      "respostaC": "20",
+      "respostaD": "25",
+      "respostaCerta": "d",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 200,
+      "pergunta": "Qual é o dobro de 7?",
+      "respostaA": "10",
+      "respostaB": "12",
+      "respostaC": "14",
+      "respostaD": "16",
+      "respostaCerta": "c",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 201,
+      "pergunta": "Qual é o número que vem antes de 20?",
+      "respostaA": "18",
+      "respostaB": "19",
+      "respostaC": "20",
+      "respostaD": "21",
+      "respostaCerta": "a",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 202,
+      "pergunta": "Quantos dedos tem uma mão?",
+      "respostaA": "4",
+      "respostaB": "5",
+      "respostaC": "6",
+      "respostaD": "7",
+      "respostaCerta": "b",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 203,
+      "pergunta": "Quantos minutos existem em uma hora?",
+      "respostaA": "20",
+      "respostaB": "40",
+      "respostaC": "60",
+      "respostaD": "80",
+      "respostaCerta": "c",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 204,
+      "pergunta": "Quanto é 1 mais 1?",
+      "respostaA": "1",
+      "respostaB": "2",
+      "respostaC": "3",
+      "respostaD": "4",
+      "respostaCerta": "b",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 205,
+      "pergunta": "Se um avião cai na fronteira entre Estados Unidos e Canadá, onde são enterrados os sobreviventes?",
+      "respostaA": "Estados Unidos",
+      "respostaB": "Canadá",
+      "respostaC": "Não são enterrados",
+      "respostaD": "Em ambos os países",
+      "respostaCerta": "c",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 206,
+      "pergunta": "Quantos animais de cada espécie Moisés levou na arca?",
+      "respostaA": "Nenhum",
+      "respostaB": "Dois de cada espécie",
+      "respostaC": "Um de cada espécie",
+      "respostaD": "Mais de dois de cada espécie",
+      "respostaCerta": "a",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 207,
+      "pergunta": "Se há um telhado triangular e quatro janelas triangulares, quantas arestas tem a casa?",
+      "respostaA": "5",
+      "respostaB": "6",
+      "respostaC": "7",
+      "respostaD": "8",
+      "respostaCerta": "d",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 208,
+      "pergunta": "Se um médico te dá três comprimidos e te diz para tomar um a cada meia hora, quanto tempo levará para tomar todos os comprimidos?",
+      "respostaA": "1 hora",
+      "respostaB": "1 hora e meia",
+      "respostaC": "2 horas",
+      "respostaD": "3 horas",
+      "respostaCerta": "a",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 209,
+      "pergunta": "Se você tem apenas um fósforo e entra em um quarto escuro onde há uma lâmpada a óleo, um jornal e um graveto, o que você acende primeiro?",
+      "respostaA": "A lâmpada",
+      "respostaB": "O jornal",
+      "respostaC": "O graveto",
+      "respostaD": "O fósforo",
+      "respostaCerta": "d",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 210,
+      "pergunta": "Quantos animais de cada espécie Moisés levou na arca?",
+      "respostaA": "Nenhum",
+      "respostaB": "Dois de cada espécie",
+      "respostaC": "Um de cada espécie",
+      "respostaD": "Mais de dois de cada espécie",
+      "respostaCerta": "a",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 211,
+      "pergunta": "Se 5 máquinas fazem 5 produtos em 5 minutos, quanto tempo levará 100 máquinas para fazer 100 produtos?",
+      "respostaA": "100 minutos",
+      "respostaB": "5 minutos",
+      "respostaC": "1 minuto",
+      "respostaD": "500 minutos",
+      "respostaCerta": "c",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 212,
+      "pergunta": "Quantas vezes é possível subtrair o número 5 de 25?",
+      "respostaA": "1",
+      "respostaB": "4",
+      "respostaC": "5",
+      "respostaD": "Infinitas vezes",
+      "respostaCerta": "a",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 213,
+      "pergunta": "Se uma escada tem seis degraus e a cada degrau sobe-se 5 metros, qual é a altura total que a escada sobe?",
+      "respostaA": "30 metros",
+      "respostaB": "5 metros",
+      "respostaC": "6 metros",
+      "respostaD": "Não é possível determinar",
+      "respostaCerta": "d",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 214,
+      "pergunta": "Quantos triângulos existem na imagem abaixo?\n\n    *\n   ***\n  *****\n *******\n*********",
+      "respostaA": "8",
+      "respostaB": "9",
+      "respostaC": "10",
+      "respostaD": "11",
+      "respostaCerta": "c",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 215,
+      "pergunta": "Se voce tem três maçãs e você pega duas, quantas maçãs você tem?",
+      "respostaA": "2",
+      "respostaB": "3",
+      "respostaC": "5",
+      "respostaD": "Nenhuma",
+      "respostaCerta": "d",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 216,
+      "pergunta": "Quantas vezes você pode subtrair 10 de 100?",
+      "respostaA": "9",
+      "respostaB": "10",
+      "respostaC": "11",
+      "respostaD": "Infinitas vezes",
+      "respostaCerta": "a",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 217,
+      "pergunta": "Se uma pessoa tem 10 reais e gasta 4 reais, quanto dinheiro ela ainda tem?",
+      "respostaA": "6 reais",
+      "respostaB": "4 reais",
+      "respostaC": "14 reais",
+      "respostaD": "Nenhum dinheiro",
+      "respostaCerta": "b",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 218,
+      "pergunta": "Qual é o próximo número na sequência: 2, 4, 8, 16, ...?",
+      "respostaA": "32",
+      "respostaB": "24",
+      "respostaC": "64",
+      "respostaD": "20",
+      "respostaCerta": "a",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 219,
+      "pergunta": "Se você está correndo uma maratona e ultrapassa o segundo colocado, qual é a sua posição?",
+      "respostaA": "Primeiro colocado",
+      "respostaB": "Segundo colocado",
+      "respostaC": "Terceiro colocado",
+      "respostaD": "Quarto colocado",
+      "respostaCerta": "b",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 220,
+      "pergunta": "Quantas vezes o ponteiro pequeno do relógio faz uma volta completa no mostrador em um dia?",
+      "respostaA": "12",
+      "respostaB": "24",
+      "respostaC": "48",
+      "respostaD": "60",
+      "respostaCerta": "b",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 221,
+      "pergunta": "Se cinco máquinas levam cinco minutos para fazer cinco widgets, quanto tempo levarão 100 máquinas para fazer 100 widgets?",
+      "respostaA": "5 minutos",
+      "respostaB": "10 minutos",
+      "respostaC": "100 minutos",
+      "respostaD": "Não é possível determinar",
+      "respostaCerta": "a",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 222,
+      "pergunta": "Quantos meses têm 28 dias?",
+      "respostaA": "1",
+      "respostaB": "12",
+      "respostaC": "Todos",
+      "respostaD": "Não é possível determinar",
+      "respostaCerta": "c",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 223,
+      "pergunta": "Se uma maçã custa 20 centavos, e você tem 2, quanto você tem?",
+      "respostaA": "20 centavos",
+      "respostaB": "2 maçãs",
+      "respostaC": "40 centavos",
+      "respostaD": "Nenhuma das opções",
+      "respostaCerta": "c",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 224,
+      "pergunta": "Quanto é 2+2?",
+      "respostaA": "4",
+      "respostaB": "22",
+      "respostaC": "2",
+      "respostaD": "Nenhuma das opções",
+      "respostaCerta": "a",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 225,
+      "pergunta": "Qual é o próximo número na sequência: 1, 4, 9, 16, ...?",
+      "respostaA": "25",
+      "respostaB": "36",
+      "respostaC": "49",
+      "respostaD": "64",
+      "respostaCerta": "d",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 226,
+      "pergunta": "Você tem três caixas etiquetadas incorretamente: uma contém apenas maçãs, outra contém apenas laranjas, e a terceira contém uma mistura de maçãs e laranjas. Você pode retirar uma única fruta de uma das caixas. Ao fazer isso, como você pode identificar corretamente o conteúdo de cada caixa?",
+      "respostaA": "Retirar uma fruta da caixa etiquetada como 'mistura' e observar a fruta retirada.",
+      "respostaB": "Retirar uma fruta da caixa etiquetada como 'maçãs' e observar a fruta retirada.",
+      "respostaC": "Retirar uma fruta da caixa etiquetada como 'laranjas' e observar a fruta retirada.",
+      "respostaD": "Retirar uma fruta de qualquer caixa e observar a fruta retirada.",
+      "respostaCerta": "a",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 227,
+      "pergunta": "Uma cidade tem apenas duas barbearias. Em uma, o barbeiro tem um corte de cabelo excelente e na outra, o barbeiro tem um corte de cabelo terrível. Qual barbearia você deve escolher para cortar o cabelo e por quê?",
+      "respostaA": "A barbearia com o barbeiro de corte terrível, pois ele corta o cabelo do barbeiro com corte excelente.",
+      "respostaB": "A barbearia com o barbeiro de corte excelente, pois ele é o melhor barbeiro.",
+      "respostaC": "Qualquer uma das barbearias, pois o corte de cabelo dos barbeiros não importa.",
+      "respostaD": "Nenhuma das barbearias, é melhor não arriscar.",
+      "respostaCerta": "a",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 228,
+      "pergunta": "Você tem três caixas, cada uma contendo dois anéis. Um par de anéis em cada caixa é de ouro puro, enquanto o outro par é de ouro falso. Os anéis de ouro puro pesam 10g cada, enquanto os anéis de ouro falso pesam 9g cada. Você tem uma balança que pode medir com precisão até 1g. Como você pode determinar quais caixas contêm os anéis de ouro puro usando apenas uma pesagem?",
+      "respostaA": "Pese um anel de uma caixa e outro anel da mesma caixa.",
+      "respostaB": "Pese um anel de uma caixa e outro anel de outra caixa.",
+      "respostaC": "Pese um anel de uma caixa e um anel de outra caixa.",
+      "respostaD": "Pese os dois anéis de uma caixa.",
+      "respostaCerta": "a",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 229,
+      "pergunta": "Um barbeiro em uma cidade pequena barbeia todas as pessoas que não se barbeiam a si mesmas e apenas essas pessoas. Quem barbeia o barbeiro?",
+      "respostaA": "Ele se barbeia a si mesmo.",
+      "respostaB": "Ele não se barbeia.",
+      "respostaC": "Um cliente barbeia o barbeiro.",
+      "respostaD": "O barbeiro não precisa ser barbeado.",
+      "respostaCerta": "b",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 230,
+      "pergunta": "Você tem um cubo sólido de madeira pintado de branco. Você o corta em 27 cubos menores. Quantos desses cubos terão pintura branca em todas as suas faces?",
+      "respostaA": "6",
+      "respostaB": "9",
+      "respostaC": "12",
+      "respostaD": "27",
+      "respostaCerta": "b",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 231,
+      "pergunta": "Em um grupo de pessoas, 70% dos homens são casados, enquanto 40% das mulheres são casadas. Se 60% das pessoas são mulheres, qual é a proporção de homens para mulheres que são solteiros?",
+      "respostaA": "3:5",
+      "respostaB": "3:4",
+      "respostaC": "2:3",
+      "respostaD": "5:3",
+      "respostaCerta": "a",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 232,
+      "pergunta": "Você tem um relógio que está funcionando corretamente. Você o coloca de cabeça para baixo. Que horas o relógio mostrará?",
+      "respostaA": "As mesmas horas",
+      "respostaB": "Horas invertidas",
+      "respostaC": "Horas invertidas e minutos invertidos",
+      "respostaD": "Não mostrará nenhuma hora",
+      "respostaCerta": "a",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 233,
+      "pergunta": "Em uma sala, há três interruptores, cada um controla uma lâmpada em outra sala. Você pode ligar e desligar os interruptores quantas vezes quiser, mas só pode entrar na sala das lâmpadas uma vez. Como você pode determinar qual interruptor controla cada lâmpada?",
+      "respostaA": "Ligue o primeiro interruptor por 5 minutos, depois desligue e ligue o segundo interruptor antes de entrar na sala das lâmpadas.",
+      "respostaB": "Ligue o primeiro interruptor, espere 10 minutos, depois ligue o segundo interruptor e entre na sala das lâmpadas.",
+      "respostaC": "Ligue o primeiro interruptor por 5 minutos, depois ligue o segundo interruptor e entre na sala das lâmpadas.",
+      "respostaD": "Ligue todos os interruptores antes de entrar na sala das lâmpadas.",
+      "respostaCerta": "a",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 234,
+      "pergunta": "Você tem dois jarros de água, um com capacidade de 5 litros e outro com capacidade de 3 litros. Como você pode medir exatamente 4 litros de água usando apenas esses dois jarros?",
+      "respostaA": "Encha o jarro de 3 litros e despeje no jarro de 5 litros. Repita até o jarro de 5 litros estar cheio. Esvazie o jarro de 5 litros e transfira o restante do jarro de 3 litros para o jarro de 5 litros.",
+      "respostaB": "Encha o jarro de 5 litros e despeje no jarro de 3 litros até o jarro de 3 litros estar cheio. Repita o processo.",
+      "respostaC": "Encha o jarro de 5 litros completamente, depois encha o jarro de 3 litros com água do jarro de 5 litros. Despeje a água do jarro de 3 litros e repita o processo.",
+      "respostaD": "Encha o jarro de 5 litros e despeje no jarro de 3 litros até o jarro de 3 litros estar cheio. Esvazie o jarro de 3 litros e despeje o restante do jarro de 5 litros para o jarro de 3 litros.",
+      "respostaCerta": "d",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 235,
+      "pergunta": "Você está em um quarto com duas portas. Uma leva à liberdade e a outra leva a uma morte certa. Cada porta é guardada por um guardião. Um dos guardiões sempre diz a verdade, e o outro sempre mente. Você pode fazer uma pergunta a apenas um dos guardiões. O que você deve perguntar para descobrir qual porta leva à liberdade?",
+      "respostaA": "Perguntar a qualquer um dos guardiões: 'Se eu perguntasse ao outro guardião qual porta leva à liberdade, o que ele diria?'",
+      "respostaB": "Perguntar a qualquer um dos guardiões: 'Qual porta leva à morte certa?'",
+      "respostaC": "Perguntar ao guardião da porta da direita: 'Você está mentindo?'",
+      "respostaD": "Perguntar ao guardião da porta da esquerda: 'Você está dizendo a verdade?'",
+      "respostaCerta": "a",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 236,
+      "pergunta": "Você tem 12 bolas aparentemente idênticas, mas uma delas tem um peso diferente (mais pesada ou mais leve). Você possui uma balança de dois pratos e pode fazer apenas três pesagens. Como você pode identificar a bola que tem o peso diferente?",
+      "respostaA": "Dividir as bolas em dois grupos de seis e pesá-los um contra o outro.",
+      "respostaB": "Dividir as bolas em três grupos de quatro e realizar duas pesagens.",
+      "respostaC": "Dividir as bolas em três grupos de quatro, pesar dois grupos. Depois, pesar novamente o grupo suspeito.",
+      "respostaD": "Dividir as bolas em quatro grupos de três e pesar dois grupos contra os outros dois.",
+      "respostaCerta": "c",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 237,
+      "pergunta": "Três amigos, Ana, Bia e Carla, estão usando chapéus. Cada uma delas pode ver os chapéus das outras, mas não o seu próprio. Os chapéus podem ser vermelhos ou azuis. Ana diz: 'Eu não sei a cor do meu chapéu.' Bia diz: 'Eu também não sei a cor do meu chapéu.' Carla então diz: 'Eu sei a cor do meu chapéu.' Considerando que todas são lógicas e sabem que todas são lógicas, qual a cor do chapéu de Carla?",
+      "respostaA": "Vermelho",
+      "respostaB": "Azul",
+      "respostaC": "Não é possível determinar",
+      "respostaD": "Um chapéu de cada cor",
+      "respostaCerta": "a",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 238,
+      "pergunta": "Você está em uma ilha e há três cofres. Cada cofre tem um botão que pode ser pressionado para abri-lo. Apenas um dos cofres contém um tesouro, e os outros dois são vazios. Cada cofre tem uma placa: \nCofre 1: 'O tesouro não está aqui.'\nCofre 2: 'O tesouro está no Cofre 1.'\nCofre 3: 'O tesouro não está no Cofre 2.'\nVocê sabe que apenas uma das placas está correta. Qual cofre contém o tesouro?",
+      "respostaA": "Cofre 1",
+      "respostaB": "Cofre 2",
+      "respostaC": "Cofre 3",
+      "respostaD": "Nenhum dos cofres",
+      "respostaCerta": "a",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 239,
+      "pergunta": "Um homem tem que atravessar um rio com um lobo, uma cabra e um cesto de repolhos. Ele tem um barco, mas só pode levar um item de cada vez. Se deixar o lobo com a cabra, o lobo come a cabra. Se deixar a cabra com os repolhos, a cabra come os repolhos. Como ele pode atravessar todos em segurança?",
+      "respostaA": "Levar a cabra primeiro, depois o lobo, retornar com a cabra, levar os repolhos e, finalmente, voltar para buscar a cabra.",
+      "respostaB": "Levar o lobo primeiro, depois os repolhos, retornar com o lobo, levar a cabra e, finalmente, voltar para buscar o lobo.",
+      "respostaC": "Levar os repolhos primeiro, depois a cabra, retornar com os repolhos, levar o lobo e, finalmente, voltar para buscar os repolhos.",
+      "respostaD": "Levar a cabra primeiro, depois os repolhos, retornar com a cabra, levar o lobo e, finalmente, voltar para buscar a cabra.",
+      "respostaCerta": "a",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 240,
+      "pergunta": "Em uma competição de lógica, três competidores, Alice, Bob e Charlie, devem adivinhar a cor do chapéu que estão usando. Eles sabem que os chapéus podem ser vermelhos ou azuis. Cada competidor pode ver os chapéus dos outros dois, mas não o seu próprio. Alice vê que Bob e Charlie estão usando chapéus vermelhos. Bob diz: 'Eu sei a cor do meu chapéu.' Qual é a cor do chapéu de Bob?",
+      "respostaA": "Vermelho",
+      "respostaB": "Azul",
+      "respostaC": "Não é possível determinar",
+      "respostaD": "Bob está mentindo",
+      "respostaCerta": "b",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 241,
+      "pergunta": "Em um certo país, há apenas duas tribos: os cavaleiros, que sempre dizem a verdade, e os escudeiros, que sempre mentem. Você encontra dois habitantes desse país. O primeiro diz: 'Nós dois somos cavaleiros.' O segundo diz: 'Apenas um de nós é cavaleiro.' Quem são eles?",
+      "respostaA": "Ambos são cavaleiros.",
+      "respostaB": "O primeiro é cavaleiro, e o segundo é escudeiro.",
+      "respostaC": "O primeiro é escudeiro, e o segundo é cavaleiro.",
+      "respostaD": "Ambos são escudeiros.",
+      "respostaCerta": "c",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 242,
+      "pergunta": "Você tem 8 bolas de bilhar e uma balança de dois pratos. Uma das bolas é ligeiramente mais pesada que as outras. Como você pode identificar a bola mais pesada com apenas duas pesagens?",
+      "respostaA": "Divida as bolas em dois grupos de quatro e pese-os um contra o outro.",
+      "respostaB": "Divida as bolas em três grupos, pese dois grupos de três. Depois pese dois grupos de dois.",
+      "respostaC": "Divida as bolas em três grupos de três, pese dois grupos de três. Depois pese dois grupos de um.",
+      "respostaD": "Divida as bolas em três grupos de dois e pese-os.",
+      "respostaCerta": "b",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 243,
+      "pergunta": "Você tem duas cordas de comprimentos diferentes. Cada uma leva exatamente uma hora para queimar de uma ponta à outra, mas elas não queimam de maneira uniforme (ou seja, não é possível cortar uma corda ao meio e supor que cada metade queime em meia hora). Como você pode medir exatamente 45 minutos usando apenas essas duas cordas e um isqueiro?",
+      "respostaA": "Acender uma ponta de uma corda e as duas pontas da outra ao mesmo tempo.",
+      "respostaB": "Acender as duas pontas de uma corda ao mesmo tempo e depois a outra ponta da segunda corda.",
+      "respostaC": "Acender as duas pontas de cada corda ao mesmo tempo.",
+      "respostaD": "Acender uma ponta de cada corda e observar quando a primeira corda queimar completamente.",
+      "respostaCerta": "a",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 244,
+      "pergunta": "Cinco casas estão em uma fileira e são pintadas de cinco cores diferentes. Em cada casa vive uma pessoa com uma nacionalidade diferente. Os cinco proprietários bebem diferentes bebidas, fumam diferentes marcas de cigarros e têm diferentes animais de estimação. Considerando as seguintes pistas, quem tem o peixe?\n1. O britânico vive na casa vermelha.\n2. O sueco tem cães como animais de estimação.\n3. O dinamarquês bebe chá.\n4. A casa verde está imediatamente à esquerda da casa branca.\n5. O proprietário da casa verde bebe café.\n6. A pessoa que fuma Pall Mall cria pássaros.\n7. O proprietário da casa amarela fuma Dunhill.\n8. O homem que vive na casa do meio bebe leite.\n9. O norueguês vive na primeira casa.\n10. O homem que fuma Blends vive ao lado daquele que tem gatos.\n11. O homem que cria cavalos vive ao lado do homem que fuma Dunhill.\n12. O homem que fuma Blue Master bebe cerveja.\n13. O alemão fuma Prince.\n14. O norueguês vive ao lado da casa azul.\n15. O homem que fuma Blends tem um vizinho que bebe água.",
+      "respostaA": "Britânico",
+      "respostaB": "Sueco",
+      "respostaC": "Dinamarquês",
+      "respostaD": "Alemão",
+      "respostaCerta": "d",
+      "categoria": "raciocínio lógico"
+    },
+    {
+      "id": 245,
+      "pergunta": "Leia o texto abaixo e responda à pergunta: 'As vantagens da tecnologia na educação'. Qual é o tema principal abordado no texto?",
+      "respostaA": "As inovações na medicina",
+      "respostaB": "Os benefícios da inteligência artificial",
+      "respostaC": "O papel da tecnologia na sala de aula",
+      "respostaD": "O impacto da tecnologia na economia",
+      "respostaCerta": "c",
+      "categoria": "interpretação de texto"
+    },
+    {
+      "id": 246,
+      "pergunta": "Leia o trecho a seguir e responda: 'Os desafios da saúde pública'. Qual é o tema principal abordado no texto?",
+      "respostaA": "O acesso a medicamentos",
+      "respostaB": "A importância da atividade física",
+      "respostaC": "Os problemas nos sistemas de saúde",
+      "respostaD": "Os avanços na pesquisa médica",
+      "respostaCerta": "c",
+      "categoria": "interpretação de texto"
+    },
+    {
+      "id": 247,
+      "pergunta": "Leia o texto a seguir e responda à pergunta: 'A diversidade cultural em diferentes países'. Qual é o tema principal abordado no texto?",
+      "respostaA": "As tradições culinárias ao redor do mundo",
+      "respostaB": "A história das artes visuais",
+      "respostaC": "A diversidade linguística e cultural",
+      "respostaD": "A influência da globalização na cultura",
+      "respostaCerta": "c",
+      "categoria": "interpretação de texto"
+    },
+    {
+      "id": 248,
+      "pergunta": "Leia o texto abaixo e responda à pergunta: \n\n'Nos últimos anos, a questão do aquecimento global tem sido amplamente discutida. Com o aumento das temperaturas em todo o mundo, surgem preocupações crescentes sobre os impactos ambientais e sociais dessa tendência. Os cientistas alertam para o derretimento das calotas polares, o aumento do nível do mar e a ocorrência de eventos climáticos extremos. Nesse contexto, qual é o principal desafio enfrentado pela comunidade global?'",
+      "respostaA": "A escassez de recursos naturais",
+      "respostaB": "A poluição do ar e da água",
+      "respostaC": "A destruição da biodiversidade",
+      "respostaD": "As mudanças climáticas",
+      "respostaCerta": "d",
+      "categoria": "interpretação de texto"
+    },
+    {
+      "id": 249,
+      "pergunta": "Leia o seguinte trecho e responda: \n\n'Na obra '1984', o autor George Orwell retrata uma sociedade distópica governada por um regime totalitário. O protagonista, Winston Smith, vive em um mundo onde a vigilância do Estado é onipresente e a liberdade individual é suprimida. Em um regime onde o pensamento é controlado e a história é constantemente reescrita, a manipulação da informação é uma ferramenta poderosa de controle. Qual é o tema central abordado no texto?'",
+      "respostaA": "A luta pela liberdade",
+      "respostaB": "O impacto da tecnologia na sociedade",
+      "respostaC": "A crítica ao autoritarismo",
+      "respostaD": "O controle da informação",
+      "respostaCerta": "d",
+      "categoria": "interpretação de texto"
+    },
+    {
+      "id": 250,
+      "pergunta": "Leia o texto a seguir e responda à pergunta: \n\n'A Revolução Industrial foi um marco na história da humanidade, transformando radicalmente a forma como as pessoas trabalhavam e viviam. O surgimento das fábricas e a mecanização dos processos produtivos geraram grandes mudanças sociais e econômicas. Com o crescimento das cidades industriais, surgiram novos problemas, como a exploração da mão de obra e as condições insalubres de trabalho. Qual é o principal impacto da Revolução Industrial mencionado no texto?'",
+      "respostaA": "A urbanização",
+      "respostaB": "A desigualdade social",
+      "respostaC": "O desenvolvimento tecnológico",
+      "respostaD": "A industrialização",
+      "respostaCerta": "b",
+      "categoria": "interpretação de texto"
+    },
+    {
+      "id": 251,
+      "pergunta": "Leia o trecho a seguir e responda à pergunta: \n\n'A globalização é um fenômeno complexo que envolve a integração econômica, cultural e política entre países e regiões do mundo. Com o avanço da tecnologia e a expansão do comércio internacional, as fronteiras tornaram-se mais permeáveis e as trocas culturais mais intensas. No entanto, a globalização também suscita debates sobre questões como a homogeneização cultural e a desigualdade econômica. Qual é o principal aspecto abordado no texto?'",
+      "respostaA": "O impacto da tecnologia na sociedade",
+      "respostaB": "A diversidade cultural",
+      "respostaC": "A integração econômica",
+      "respostaD": "A influência da globalização na política",
+      "respostaCerta": "b",
+      "categoria": "interpretação de texto"
+    },
+    {
+      "id": 252,
+      "pergunta": "Leia o texto abaixo e responda à pergunta: \n\n'Na última década, a tecnologia tem desempenhado um papel cada vez mais significativo na educação. Com o advento de dispositivos móveis e plataformas online, o acesso ao conhecimento tornou-se mais democrático e flexível. No entanto, surgem questões sobre o impacto dessas mudanças no ambiente educacional tradicional. Qual é o principal ponto abordado no texto?'",
+      "respostaA": "A evolução da tecnologia",
+      "respostaB": "O acesso ao conhecimento",
+      "respostaC": "O futuro da educação",
+      "respostaD": "Os desafios da educação tradicional",
+      "respostaCerta": "d",
+      "categoria": "interpretação de texto"
+    },
+    {
+      "id": 253,
+      "pergunta": "Leia o seguinte trecho e responda: \n\n'O Romantismo foi um movimento cultural que marcou o século XIX, valorizando a emoção, a imaginação e a natureza. Os escritores românticos buscavam retratar os sentimentos mais profundos do ser humano e explorar os aspectos mais sombrios da alma humana. No entanto, o Romantismo também foi criticado por sua idealização do passado e sua fuga da realidade. Qual é o tema central abordado no texto?'",
+      "respostaA": "A valorização da natureza",
+      "respostaB": "A crítica à sociedade",
+      "respostaC": "A busca pela emoção",
+      "respostaD": "O conflito entre idealismo e realidade",
+      "respostaCerta": "d",
+      "categoria": "interpretação de texto"
+    },
+    {
+      "id": 254,
+      "pergunta": "Leia o texto a seguir e responda à pergunta: \n\n'A democracia é um dos pilares fundamentais da sociedade moderna, garantindo a participação dos cidadãos na tomada de decisões políticas. No entanto, em muitos países, a democracia enfrenta desafios significativos, como a corrupção, a desigualdade social e a polarização política. Nesse contexto, é fundamental promover o debate público e fortalecer as instituições democráticas. Qual é a principal mensagem transmitida pelo texto?'",
+      "respostaA": "A importância da participação política",
+      "respostaB": "Os desafios enfrentados pela democracia",
+      "respostaC": "A necessidade de reformas políticas",
+      "respostaD": "O papel das instituições democráticas",
+      "respostaCerta": "b",
+      "categoria": "interpretação de texto"
+    },
+    {
+      "id": 255,
+      "pergunta": "Leia o trecho a seguir e responda à pergunta: \n\n'O Renascimento foi um período de intensa atividade artística, científica e cultural na Europa, marcado pelo resgate dos valores da Antiguidade Clássica. Artistas como Leonardo da Vinci e Michelangelo produziram obras-primas que ainda hoje são admiradas pelo mundo inteiro. No entanto, o Renascimento também foi um período de grandes transformações sociais e políticas, com o surgimento de novas ideias e concepções sobre o homem e o mundo. Qual é o principal tema abordado no texto?'",
+      "respostaA": "A arte renascentista",
+      "respostaB": "As transformações sociais",
+      "respostaC": "O resgate da Antiguidade Clássica",
+      "respostaD": "O impacto do Renascimento na cultura europeia",
+      "respostaCerta": "c",
+      "categoria": "interpretação de texto"
+    },
+    {
+      "id": 256,
+      "pergunta": "Leia o texto a seguir e responda à pergunta: \n\n'A revolução industrial foi um marco na história da humanidade, transformando a economia e a sociedade de maneira profunda. Com o surgimento das máquinas a vapor e a mecanização da produção, houve um aumento significativo na capacidade produtiva e na eficiência. No entanto, esse período também trouxe desafios, como a exploração dos trabalhadores, a poluição ambiental e as desigualdades sociais. Qual é o principal tema abordado no texto?'",
+      "respostaA": "A evolução das máquinas a vapor",
+      "respostaB": "Os desafios da revolução industrial",
+      "respostaC": "O aumento da capacidade produtiva",
+      "respostaD": "As transformações econômicas",
+      "respostaCerta": "b",
+      "categoria": "interpretação de texto"
+    },
+    {
+      "id": 257,
+      "pergunta": "Leia o trecho a seguir e responda à pergunta: \n\n'O conceito de sustentabilidade tem ganhado cada vez mais relevância no mundo contemporâneo. Sustentabilidade refere-se à capacidade de atender às necessidades do presente sem comprometer a capacidade das futuras gerações de atender às suas próprias necessidades. Esse conceito engloba aspectos ambientais, sociais e econômicos, buscando um equilíbrio entre o desenvolvimento e a preservação do planeta. Qual é a definição de sustentabilidade apresentada no texto?'",
+      "respostaA": "Desenvolvimento econômico sem danos ambientais",
+      "respostaB": "Equilíbrio entre desenvolvimento e preservação",
+      "respostaC": "Atenção às necessidades das futuras gerações",
+      "respostaD": "Preservação ambiental a qualquer custo",
+      "respostaCerta": "b",
+      "categoria": "interpretação de texto"
+    },
+    {
+      "id": 258,
+      "pergunta": "Leia o texto a seguir e responda à pergunta: \n\n'A Declaração Universal dos Direitos Humanos, adotada pela ONU em 1948, estabelece que todos os seres humanos nascem livres e iguais em dignidade e direitos. Esses direitos são universais, inalienáveis e indivisíveis, e devem ser garantidos a todos, independentemente de raça, religião, gênero ou qualquer outra condição. Qual é o princípio fundamental destacado no texto?'",
+      "respostaA": "Direitos específicos para cada grupo",
+      "respostaB": "Igualdade e dignidade para todos",
+      "respostaC": "Direitos variáveis conforme a cultura",
+      "respostaD": "Garantia de direitos econômicos",
+      "respostaCerta": "b",
+      "categoria": "interpretação de texto"
+    },
+    {
+      "id": 259,
+      "pergunta": "Leia o trecho a seguir e responda à pergunta: \n\n'O conceito de globalização refere-se ao processo de intensificação das relações econômicas, sociais e culturais entre os países do mundo. Esse fenômeno é impulsionado pelo avanço da tecnologia e dos meios de comunicação, que facilitam a troca de informações e mercadorias em escala global. No entanto, a globalização também traz desafios, como a perda de identidade cultural e o aumento das desigualdades. Qual é a principal característica da globalização apresentada no texto?'",
+      "respostaA": "A troca de informações e mercadorias",
+      "respostaB": "A perda de identidade cultural",
+      "respostaC": "O aumento das desigualdades",
+      "respostaD": "A intensificação das relações internacionais",
+      "respostaCerta": "d",
+      "categoria": "interpretação de texto"
+    },
+    {
+      "id": 260,
+      "pergunta": "Leia o texto a seguir e responda à pergunta: \n\n'A Segunda Guerra Mundial, ocorrida entre 1939 e 1945, foi um dos conflitos mais devastadores da história. Envolvendo as principais potências mundiais, o conflito teve um impacto profundo na geopolítica global, resultando na criação da ONU e no início da Guerra Fria. Além disso, trouxe consequências terríveis, como a destruição em massa, a perda de milhões de vidas e o Holocausto. Qual é o principal impacto da Segunda Guerra Mundial destacado no texto?'",
+      "respostaA": "A criação da ONU",
+      "respostaB": "O início da Guerra Fria",
+      "respostaC": "A destruição em massa",
+      "respostaD": "A perda de milhões de vidas",
+      "respostaCerta": "a",
+      "categoria": "interpretação de texto"
+    },
+    {
+      "id": 261,
+      "pergunta": "Leia o trecho a seguir e responda à pergunta: \n\n'A Revolução Francesa, que começou em 1789, marcou o fim do Antigo Regime e o início de uma nova era na história europeia. Caracterizada por eventos como a Queda da Bastilha e o Reinado do Terror, a revolução trouxe mudanças significativas na estrutura política e social da França. Entre seus legados estão a Declaração dos Direitos do Homem e do Cidadão e a ascensão do sentimento de nacionalismo. Qual é o principal evento da Revolução Francesa mencionado no texto?'",
+      "respostaA": "A Queda da Bastilha",
+      "respostaB": "O Reinado do Terror",
+      "respostaC": "A Declaração dos Direitos do Homem",
+      "respostaD": "A ascensão do nacionalismo",
+      "respostaCerta": "a",
+      "categoria": "interpretação de texto"
+    },
+    {
+      "id": 262,
+      "pergunta": "Leia o texto a seguir e responda à pergunta: \n\n'A água é um recurso natural essencial para a vida na Terra. Apesar de sua abundância, a água potável é limitada e distribuída de forma desigual pelo planeta. Em muitas regiões, a escassez de água é uma realidade que afeta milhões de pessoas, agravada pelo crescimento populacional e pelas mudanças climáticas. Qual é o problema principal abordado no texto?'",
+      "respostaA": "A distribuição desigual de água potável",
+      "respostaB": "O crescimento populacional",
+      "respostaC": "As mudanças climáticas",
+      "respostaD": "A abundância de água na Terra",
+      "respostaCerta": "a",
+      "categoria": "interpretação de texto"
+    },
+    {
+      "id": 263,
+      "pergunta": "Leia o trecho a seguir e responda à pergunta: \n\n'O Iluminismo foi um movimento intelectual do século XVIII que promoveu a razão, a ciência e o progresso como fundamentos para o desenvolvimento humano. Pensadores como Voltaire, Rousseau e Montesquieu defenderam a liberdade de expressão, a separação dos poderes e a igualdade perante a lei. Essas ideias influenciaram profundamente as revoluções e reformas políticas da época. Qual é o principal objetivo do Iluminismo conforme descrito no texto?'",
+      "respostaA": "Promover a ciência e a razão",
+      "respostaB": "Defender a liberdade de expressão",
+      "respostaC": "Estabelecer a separação dos poderes",
+      "respostaD": "Influenciar revoluções políticas",
+      "respostaCerta": "a",
+      "categoria": "interpretação de texto"
+    },
+    {
+      "id": 264,
+      "pergunta": "Leia o texto a seguir e responda à pergunta: \n\n'A Amazônia é a maior floresta tropical do mundo, abrigando uma biodiversidade incomparável e desempenhando um papel crucial no equilíbrio climático global. No entanto, a região enfrenta ameaças significativas, como o desmatamento, a exploração ilegal de recursos naturais e as mudanças climáticas. Proteger a Amazônia é essencial para garantir a sustentabilidade do planeta. Qual é o principal problema enfrentado pela Amazônia mencionado no texto?'",
+      "respostaA": "A biodiversidade incomparável",
+      "respostaB": "O equilíbrio climático",
+      "respostaC": "O desmatamento",
+      "respostaD": "A exploração ilegal de recursos naturais",
+      "respostaCerta": "c",
+      "categoria": "interpretação de texto"
+    },
+    {
+      "id": 265,
+      "pergunta": "Leia o trecho a seguir e responda à pergunta: \n\n'A mudança climática é um dos maiores desafios enfrentados pela humanidade no século XXI. Ela é causada principalmente pelas atividades humanas, como a queima de combustíveis fósseis e o desmatamento, que aumentam a concentração de gases de efeito estufa na atmosfera. Essas mudanças têm impactos significativos no clima, na biodiversidade e na saúde humana. Qual é a principal causa da mudança climática apontada no texto?'",
+      "respostaA": "A concentração de gases de efeito estufa",
+      "respostaB": "O desmatamento",
+      "respostaC": "A queima de combustíveis fósseis",
+      "respostaD": "As atividades humanas",
+      "respostaCerta": "d",
+      "categoria": "interpretação de texto"
+    },
+    {
+      "id": 266,
+      "pergunta": "Leia o texto a seguir e responda à pergunta: \n\n'A revolução digital transformou a forma como vivemos, trabalhamos e nos comunicamos. Com o advento da internet e das tecnologias móveis, as barreiras geográficas foram quebradas, permitindo uma conectividade sem precedentes. Contudo, essa transformação também trouxe desafios, como a proteção da privacidade e a segurança digital. Qual é a principal transformação mencionada no texto?'",
+      "respostaA": "A proteção da privacidade",
+      "respostaB": "A conectividade sem precedentes",
+      "respostaC": "As barreiras geográficas",
+      "respostaD": "A segurança digital",
+      "respostaCerta": "b",
+      "categoria": "interpretação de texto"
+    },
+    {
+      "id": 267,
+      "pergunta": "Leia o trecho a seguir e responda à pergunta: \n\n'A Grécia Antiga é considerada o berço da civilização ocidental. Suas contribuições incluem a filosofia, a democracia, o teatro e a literatura. Filósofos como Sócrates, Platão e Aristóteles estabeleceram as bases do pensamento crítico e científico. Qual é a principal contribuição da Grécia Antiga mencionada no texto?'",
+      "respostaA": "A democracia",
+      "respostaB": "A filosofia",
+      "respostaC": "O teatro",
+      "respostaD": "A literatura",
+      "respostaCerta": "b",
+      "categoria": "interpretação de texto"
+    },
+    {
+      "id": 268,
+      "pergunta": "Leia o texto a seguir e responda à pergunta: \n\n'A Revolução Industrial não só mudou a economia, mas também alterou profundamente a estrutura social. A urbanização acelerada levou milhões de pessoas das áreas rurais para as cidades, onde surgiram novas classes sociais e se intensificaram as desigualdades. Como a Revolução Industrial afetou a estrutura social, segundo o texto?'",
+      "respostaA": "Aumentou a economia",
+      "respostaB": "Desacelerou a urbanização",
+      "respostaC": "Criou novas classes sociais",
+      "respostaD": "Reduziu as desigualdades",
+      "respostaCerta": "c",
+      "categoria": "interpretação de texto"
+    },
+    {
+      "id": 269,
+      "pergunta": "Leia o trecho a seguir e responda à pergunta: \n\n'A teoria da evolução, proposta por Charles Darwin, revolucionou a biologia ao explicar a diversidade da vida através da seleção natural. Segundo Darwin, os organismos mais adaptados ao seu ambiente têm mais chances de sobreviver e se reproduzir. Essa teoria desafiou as crenças estabelecidas da época e teve um impacto duradouro na ciência. Qual é o mecanismo central da teoria da evolução de Darwin mencionado no texto?'",
+      "respostaA": "A diversidade da vida",
+      "respostaB": "A seleção natural",
+      "respostaC": "A adaptação ao ambiente",
+      "respostaD": "A sobrevivência dos mais fortes",
+      "respostaCerta": "b",
+      "categoria": "interpretação de texto"
+    },
+    {
+      "id": 270,
+      "pergunta": "Leia o trecho a seguir e responda à pergunta: \n\n'A Guerra Fria foi um período de tensão geopolítica entre os Estados Unidos e a União Soviética, que durou do final da Segunda Guerra Mundial até o início dos anos 1990. Esse conflito foi marcado por uma corrida armamentista, espionagem, propaganda e competições tecnológicas, como a corrida espacial. Qual foi uma das características da Guerra Fria destacada no texto?'",
+      "respostaA": "O confronto militar direto",
+      "respostaB": "A corrida espacial",
+      "respostaC": "A cooperação econômica",
+      "respostaD": "A reunificação da Alemanha",
+      "respostaCerta": "b",
+      "categoria": "interpretação de texto"
+    },
+    {
+      "id": 271,
+      "pergunta": "Leia o trecho a seguir e responda à pergunta: \n\n'O Renascimento foi um movimento cultural que floresceu na Europa entre os séculos XIV e XVII, marcado por um renascimento do interesse pelas artes, ciências e pela filosofia da Antiguidade Clássica. Artistas como Leonardo da Vinci e Michelangelo produziram obras que até hoje são consideradas tesouros da humanidade. Qual é a principal característica do Renascimento mencionada no texto?'",
+      "respostaA": "O avanço da tecnologia",
+      "respostaB": "O renascimento do interesse pelas artes e ciências",
+      "respostaC": "A filosofia moderna",
+      "respostaD": "As obras de arte contemporâneas",
+      "respostaCerta": "b",
+      "categoria": "interpretação de texto"
+    },
+    {
+      "id": 272,
+      "pergunta": "Leia o texto a seguir e responda à pergunta: \n\n'A teoria do Big Bang é a explicação mais aceita para a origem do universo. Segundo essa teoria, o universo começou a partir de um ponto extremamente denso e quente há cerca de 13,8 bilhões de anos e tem se expandido desde então. Essa teoria é apoiada por várias evidências observacionais, como a radiação cósmica de fundo e a expansão das galáxias. Qual é a origem do universo segundo a teoria do Big Bang, conforme descrito no texto?'",
+      "respostaA": "Um ponto frio e denso",
+      "respostaB": "Um ponto extremamente denso e quente",
+      "respostaC": "A colisão de galáxias",
+      "respostaD": "A formação das estrelas",
+      "respostaCerta": "b",
+      "categoria": "interpretação de texto"
+    },
+    {
+      "id": 273,
+      "pergunta": "Leia o trecho a seguir e responda à pergunta: \n\n'O movimento sufragista foi uma luta histórica das mulheres pelo direito ao voto. No final do século XIX e início do século XX, mulheres em diversos países organizaram campanhas, manifestações e petições para reivindicar sua participação política. Esse movimento culminou na conquista do direito ao voto feminino em muitas nações. Qual foi o objetivo principal do movimento sufragista, conforme descrito no texto?'",
+      "respostaA": "Direito ao trabalho",
+      "respostaB": "Direito à educação",
+      "respostaC": "Direito ao voto",
+      "respostaD": "Direito à propriedade",
+      "respostaCerta": "c",
+      "categoria": "interpretação de texto"
+    },
+    {
+      "id": 274,
+      "pergunta": "Leia o texto a seguir e responda à pergunta: \n\n'O aquecimento global é um fenômeno caracterizado pelo aumento da temperatura média da Terra, principalmente devido à emissão de gases de efeito estufa provenientes de atividades humanas, como a queima de combustíveis fósseis e o desmatamento. Esse aquecimento tem efeitos significativos no clima, nos ecossistemas e na saúde humana. Qual é a principal causa do aquecimento global mencionada no texto?'",
+      "respostaA": "As atividades humanas",
+      "respostaB": "A mudança natural do clima",
+      "respostaC": "A preservação dos ecossistemas",
+      "respostaD": "A saúde humana",
+      "respostaCerta": "a",
+      "categoria": "interpretação de texto"
+    },
+    {
+      "id": 275,
+      "pergunta": "Leia o trecho a seguir e responda à pergunta: \n\n'O termo biodiversidade refere-se à variedade de vida na Terra, englobando a diversidade de espécies, genes e ecossistemas. A biodiversidade é fundamental para o equilíbrio dos ecossistemas e para o bem-estar humano, fornecendo serviços essenciais como polinização, purificação da água e regulação do clima. No entanto, a perda de biodiversidade, causada principalmente pela ação humana, ameaça esses serviços vitais. Qual é a definição de biodiversidade apresentada no texto?'",
+      "respostaA": "A variedade de espécies em um ecossistema",
+      "respostaB": "A diversidade genética entre os seres humanos",
+      "respostaC": "A variedade de vida na Terra",
+      "respostaD": "A quantidade de espécies em extinção",
+      "respostaCerta": "c",
+      "categoria": "interpretação de texto"
+    },
+    {
+      "id": 276,
+      "pergunta": "Leia o trecho a seguir e responda à pergunta: \n\n'O Renascimento foi um período de grande florescimento cultural, artístico e científico na Europa, entre os séculos XIV e XVII. Esse movimento se caracterizou pela redescoberta e valorização das obras da Antiguidade clássica e pelo desenvolvimento de novas técnicas e perspectivas, especialmente nas artes e nas ciências. Qual é a principal característica do Renascimento, conforme descrito no texto?'",
+      "respostaA": "O declínio da arte e ciência",
+      "respostaB": "A valorização das obras da Antiguidade clássica",
+      "respostaC": "O surgimento do romantismo",
+      "respostaD": "A expansão territorial da Europa",
+      "respostaCerta": "b",
+      "categoria": "interpretação de texto"
+    },
+    {
+      "id": 277,
+      "pergunta": "Leia o texto a seguir e responda à pergunta: \n\n'A fotossíntese é um processo pelo qual as plantas, algas e algumas bactérias transformam energia solar em energia química, produzindo oxigênio e glicose a partir de dióxido de carbono e água. Esse processo é fundamental para a vida na Terra, pois fornece alimento e oxigênio para quase todos os seres vivos. Qual é o produto da fotossíntese que é essencial para a vida, conforme descrito no texto?'",
+      "respostaA": "Dióxido de carbono",
+      "respostaB": "Energia solar",
+      "respostaC": "Glicose e oxigênio",
+      "respostaD": "Água",
+      "respostaCerta": "c",
+      "categoria": "interpretação de texto"
+    },
+    {
+      "id": 278,
+      "pergunta": "Leia o trecho a seguir e responda à pergunta: \n\n'A Revolução Industrial, que começou na Inglaterra no final do século XVIII, trouxe mudanças profundas na economia e na sociedade. A introdução de máquinas e a mecanização da produção aumentaram significativamente a produtividade, mas também resultaram em condições de trabalho difíceis para muitos operários. Qual foi uma das principais consequências da Revolução Industrial, conforme descrito no texto?'",
+      "respostaA": "Redução da produtividade",
+      "respostaB": "Melhoria imediata das condições de trabalho",
+      "respostaC": "Aumento da mecanização da produção",
+      "respostaD": "Diminuição do uso de máquinas",
+      "respostaCerta": "c",
+      "categoria": "interpretação de texto"
+    },
+    {
+      "id": 279,
+      "pergunta": "Leia o texto a seguir e responda à pergunta: \n\n'A teoria da evolução, proposta por Charles Darwin, sugere que as espécies evoluem ao longo do tempo através de um processo de seleção natural, onde os indivíduos com características mais adaptadas ao ambiente têm maior probabilidade de sobreviver e se reproduzir. Essa teoria é apoiada por um vasto corpo de evidências fósseis e genéticas. O que a teoria da evolução propõe sobre o desenvolvimento das espécies, conforme descrito no texto?'",
+      "respostaA": "Que as espécies são imutáveis",
+      "respostaB": "Que as espécies evoluem através da seleção natural",
+      "respostaC": "Que as espécies surgem por geração espontânea",
+      "respostaD": "Que as espécies não estão relacionadas geneticamente",
+      "respostaCerta": "b",
+      "categoria": "interpretação de texto"
+    },
+    {
+      "id": 280,
+      "pergunta": "Leia o trecho a seguir e responda à pergunta: \n\n'A Revolução Francesa, ocorrida no final do século XVIII, foi um marco na história mundial, caracterizada pela queda da monarquia e pelo estabelecimento de uma república. Motivada por profundas desigualdades sociais e econômicas, a Revolução Francesa buscou liberdade, igualdade e fraternidade para todos os cidadãos. Qual foi um dos principais objetivos da Revolução Francesa, conforme descrito no texto?'",
+      "respostaA": "Manter a monarquia",
+      "respostaB": "Estabelecer uma república",
+      "respostaC": "Aumentar as desigualdades sociais",
+      "respostaD": "Fortalecer o poder aristocrático",
+      "respostaCerta": "b",
+      "categoria": "interpretação de texto"
+    },
+
+    {
+      "id": 281,
+      "pergunta": "Leia o texto a seguir e responda à pergunta: \n\n'A Declaração Universal dos Direitos Humanos, adotada pela Assembleia Geral das Nações Unidas em 1948, estabelece um padrão comum de direitos humanos a ser alcançado por todos os povos e nações. Este documento histórico afirma a igualdade e dignidade de todos os seres humanos e inclui direitos como a liberdade de expressão, o direito à educação e o direito ao trabalho. Qual é o principal objetivo da Declaração Universal dos Direitos Humanos, conforme descrito no texto?'",
+      "respostaA": "Estabelecer padrões de comércio internacional",
+      "respostaB": "Definir um padrão comum de direitos humanos",
+      "respostaC": "Promover acordos de defesa militar",
+      "respostaD": "Regulamentar as políticas econômicas dos países",
+      "respostaCerta": "b",
+      "categoria": "interpretação de texto"
+    },
+    {
+      "id": 282,
+      "pergunta": "Leia o trecho a seguir e responda à pergunta: \n\n'O fenômeno El Niño é caracterizado pelo aquecimento anômalo das águas do Oceano Pacífico Equatorial, que pode influenciar o clima global. Esse fenômeno pode causar secas severas em algumas regiões e chuvas excessivas em outras, afetando a agricultura, a pesca e os recursos hídricos. Qual é uma das consequências do fenômeno El Niño, conforme descrito no texto?'",
+      "respostaA": "Resfriamento das águas do Oceano Pacífico",
+      "respostaB": "Aquecimento das águas do Oceano Pacífico Equatorial",
+      "respostaC": "Aumento da biodiversidade marinha",
+      "respostaD": "Estabilidade climática global",
+      "respostaCerta": "b",
+      "categoria": "interpretação de texto"
+    },
+    {
+      "id": 283,
+      "pergunta": "Leia o texto a seguir e responda à pergunta: \n\n'A Antártida é o continente mais frio e seco da Terra, e é coberto por uma camada espessa de gelo. Apesar de suas condições extremas, a Antártida possui uma fauna adaptada, incluindo pinguins, focas e várias espécies de aves marinhas. Este continente desempenha um papel crucial na regulação do clima global e no nível dos oceanos. Qual é uma característica importante da Antártida mencionada no texto?'",
+      "respostaA": "É o continente mais quente e úmido",
+      "respostaB": "Possui uma fauna rica e diversificada",
+      "respostaC": "Não influencia o clima global",
+      "respostaD": "É coberto por florestas densas",
+      "respostaCerta": "b",
+      "categoria": "interpretação de texto"
+    },
+    {
+      "id": 284,
+      "pergunta": "Leia o trecho a seguir e responda à pergunta: \n\n'O conceito de cidadania digital refere-se ao uso responsável e ético das tecnologias de informação e comunicação. Envolve habilidades como a navegação segura na internet, a proteção de dados pessoais, a participação ativa em comunidades online e o respeito às normas e aos direitos dos outros usuários. Qual é um aspecto do conceito de cidadania digital, conforme descrito no texto?'",
+      "respostaA": "Uso irresponsável das tecnologias",
+      "respostaB": "Proteção de dados pessoais",
+      "respostaC": "Desconhecimento das normas online",
+      "respostaD": "Isolamento das comunidades online",
+      "respostaCerta": "b",
+      "categoria": "interpretação de texto"
+    },
+    {
+      "id": 285,
+      "pergunta": "Leia o texto a seguir e responda à pergunta: \n\n'A literatura clássica abrange obras de autores cujas contribuições têm sido reconhecidas ao longo do tempo por seu valor artístico e cultural. Essas obras, como as de Homero, Shakespeare e Cervantes, exploram temas universais e oferecem insights profundos sobre a condição humana. O que caracteriza a literatura clássica, conforme descrito no texto?'",
+      "respostaA": "Foco exclusivo em temas contemporâneos",
+      "respostaB": "Exploração de temas universais e valor duradouro",
+      "respostaC": "Desconsideração da condição humana",
+      "respostaD": "Produção em um único gênero literário",
+      "respostaCerta": "b",
+      "categoria": "interpretação de texto"
+    },
+    {
+      "id": 286,
+      "pergunta": "Leia o trecho a seguir e responda à pergunta: \n\n'A internet das coisas (IoT) refere-se à interconexão de dispositivos e objetos cotidianos à internet, permitindo-lhes coletar e compartilhar dados. Exemplos incluem desde eletrodomésticos inteligentes até sistemas de monitoramento de saúde. Essa tecnologia visa melhorar a eficiência e a conveniência em várias áreas da vida cotidiana. O que é a internet das coisas, conforme descrito no texto?'",
+      "respostaA": "Um novo tipo de navegador de internet",
+      "respostaB": "A interconexão de dispositivos cotidianos à internet",
+      "respostaC": "Um sistema exclusivo para empresas de tecnologia",
+      "respostaD": "Um tipo de rede social",
+      "respostaCerta": "b",
+      "categoria": "interpretação de texto"
+    },
+    {
+      "id": 287,
+      "pergunta": "Leia o texto a seguir e responda à pergunta: \n\n'A Segunda Guerra Mundial foi um conflito global que ocorreu entre 1939 e 1945, envolvendo a maioria das nações do mundo, incluindo todas as grandes potências. O conflito resultou na morte de milhões de pessoas e na destruição de vastas áreas. Foi também um período de significativas inovações tecnológicas e militares. Quando ocorreu a Segunda Guerra Mundial, conforme descrito no texto?'",
+      "respostaA": "Entre 1914 e 1918",
+      "respostaB": "Entre 1939 e 1945",
+      "respostaC": "Entre 1950 e 1953",
+      "respostaD": "Entre 1960 e 1970",
+      "respostaCerta": "b",
+      "categoria": "interpretação de texto"
+    },
+    {
+      "id": 288,
+      "pergunta": "Leia o trecho a seguir e responda à pergunta: \n\n'A fotossíntese é o processo pelo qual as plantas utilizam a luz solar para converter água e dióxido de carbono em oxigênio e glicose. Esse processo não só fornece alimento para as plantas, mas também produz oxigênio, que é essencial para a respiração de quase todos os seres vivos na Terra. Qual é um dos produtos da fotossíntese, conforme descrito no texto?'",
+      "respostaA": "Dióxido de carbono",
+      "respostaB": "Oxigênio",
+      "respostaC": "Metano",
+      "respostaD": "Nitrogênio",
+      "respostaCerta": "b",
+      "categoria": "interpretação de texto"
+    },
+    {
+      "id": 289,
+      "pergunta": "Leia o texto a seguir e responda à pergunta: \n\n'A Revolução Russa de 1917 foi um período de agitação política e social que resultou no fim da monarquia czarista e na criação da União Soviética. Este evento histórico foi impulsionado por fatores como a insatisfação popular com a autocracia, as dificuldades econômicas e a influência das ideias marxistas. Qual foi um dos resultados da Revolução Russa de 1917, conforme descrito no texto?'",
+      "respostaA": "O fortalecimento da monarquia czarista",
+      "respostaB": "A criação da União Soviética",
+      "respostaC": "A expansão do império czarista",
+      "respostaD": "A implementação de políticas capitalistas",
+      "respostaCerta": "b",
+      "categoria": "interpretação de texto"
+    },
+    {
+      "id": 290,
+      "pergunta": "Leia o trecho a seguir e responda à pergunta: \n\n'A descoberta da penicilina por Alexander Fleming em 1928 marcou o início da era dos antibióticos. A penicilina é uma substância que mata ou inibe o crescimento de bactérias, sendo utilizada no tratamento de várias infecções bacterianas. Essa descoberta revolucionou a medicina, salvando inúmeras vidas. Qual foi o impacto da descoberta da penicilina, conforme descrito no texto?'",
+      "respostaA": "Iniciou a era dos vírus",
+      "respostaB": "Revolucionou a medicina e salvou vidas",
+      "respostaC": "Aumentou o crescimento de bactérias",
+      "respostaD": "Não teve impacto significativo",
+      "respostaCerta": "b",
+      "categoria": "interpretação de texto"
     }
   ]
 }
