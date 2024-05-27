@@ -59,14 +59,14 @@ export class HomePage {
     AdmobAds.showBannerAd({
       adId:'ca-app-pub-3940256099942544/6300978111',
       //ALTERAR CONFORME O USO
-      isTesting: false,
+      isTesting: true,
       adSize: BannerSize.BANNER,
       adPosition: BannerPosition.TOP,
     }).then(()=>{
-      //this.presentToast('Banner Ad Shown');
+      this.presentToast('Banner Ad Shown');
     })
     .catch((err)=>{
-      //this.presentToast(err.Mensage);
+      this.presentToast(err.Mensage);
     });
   }
 

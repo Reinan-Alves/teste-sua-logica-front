@@ -101,19 +101,19 @@ export class DesafiosComponent implements OnInit {
     AdmobAds.loadInterstitialAd({
       adId: 'ca-app-pub-3940256099942544/1033173712',
       //ALTERAR CONFORME O USO
-      isTesting: false
+      isTesting: true
     }).then(()=>{
-      //this.presentToast('Interstitial Ad Loaded');
+      this.presentToast('Interstitial Ad Loaded');
     }).catch((err)=>{
-      //this.presentToast(err.Mensage);
+      this.presentToast(err.Mensage);
     });
   }
 
   showInterstitialAd(){
     AdmobAds.showInterstitialAd().then(()=>{
-      //this.presentToast('Interstitial Ad showed');
+      this.presentToast('Interstitial Ad showed');
     }).catch((err)=>{
-     // this.presentToast(err.Mensage);
+     this.presentToast(err.Mensage);
     });
   }
 
@@ -121,22 +121,22 @@ export class DesafiosComponent implements OnInit {
     AdmobAds.loadRewardedVideoAd({
       //DESENVOLVIMENTO: 'ca-app-pub-3940256099942544/5224354917'
        //produção: 'ca-app-pub-1642001525444604/9068912717'
-       //EM USO: produção
+       //EM USO: DESENVOLVIMENTO
       adId: 'ca-app-pub-3940256099942544/5224354917',
       //ALTERAR CONFORME O USO
-      isTesting: false,
+      isTesting: true,
     })
     .then(()=>{
-      //this.presentToast('Rewarded video loaded');
+      this.presentToast('Rewarded video loaded');
     })
     .catch((err)=> {
-      //this.presentToast(err.message);
+      this.presentToast(err.message);
     });
   }
 
   showRewardedVideoAd() {
     AdmobAds.showRewardedVideoAd().then(()=>{
-      //this.presentToast('Rewarded Video Ad Showed');
+      this.presentToast('Rewarded Video Ad Showed');
     });
   }
 
